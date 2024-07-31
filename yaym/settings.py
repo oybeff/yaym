@@ -23,11 +23,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-7m0@+n^h5#3($zd23z951o9syl1=i!q9#qui&@a59m(**es1gm'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 from pathlib import Path
 
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ["yourmindca.com", "www.yourmindca.com"]
 
 
 # Application definition
@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'mind',
     'ckeditor',
-    'ckeditor_uploader'
+    'ckeditor_uploader',
+    'whitenoise.runserver_nostatic'
     
 ]
 CKEDITOR_UPLOAD_PATH = 'ckeditor_uploads/'
@@ -74,9 +75,14 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 
+STATICFILES_DIRS = '/home/yourmind/yourmindca.com/django/static_files'
+STATIC_ROOT = '/home/yourmind/yourmindca.com/django'
+MEDIA_URL = 'media/'
+MEDIA_ROOT = '/home/yourmind/yourmindca.com/django'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.locale.LocaleMiddleware',
@@ -87,6 +93,7 @@ MIDDLEWARE = [
 ]
 
 
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 ROOT_URLCONF = 'yaym.urls'
 
@@ -204,4 +211,3 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'yourmindca@gmail.com'
 EMAIL_HOST_PASSWORD = 'dzvcvofqzfedtues'
-
