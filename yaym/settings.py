@@ -77,7 +77,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 
 STATICFILES_DIRS = [
-    ['/home/yourmind/yourmindca.com/django/static'],
+    ('/home/yourmind/yourmindca.com/django/static'),
 ]
 STATIC_ROOT = '/home/yourmind/yourmindca.com/django'
 MEDIA_URL = 'media/'
