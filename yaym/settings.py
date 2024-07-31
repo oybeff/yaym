@@ -84,7 +84,6 @@ MEDIA_URL = 'media/'
 MEDIA_ROOT = '/home/yourmind/yourmindca.com/django'
 
 
-STATIC_ROOT = BASE_DIR / "staticfiles"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
