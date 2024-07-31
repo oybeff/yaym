@@ -1,0 +1,561 @@
+# -*- coding: utf-8 -*-
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+msgid ""
+msgstr ""
+
+#: mind/templates/mind/base.html:9 mind/templates/mind/nav_foot.html:8
+msgid "Document"
+msgstr "Document"
+
+#: mind/templates/mind/base.html:27 mind/templates/mind/base.html:34
+#: mind/templates/mind/find_element.html:9
+msgid "Find Your Element"
+msgstr "Trouvez votre élément"
+
+#: mind/templates/mind/base.html:29
+msgid ""
+"The five elements  wood, fire, earth, water and metal  are regarded as the "
+"building blocks of all natural phenomena. Interconnected yet opposing, they "
+"enhance and complement each other."
+msgstr ""
+"Les cinq éléments du bois, du feu, de la terre, de l'eau et du métal sont "
+"considérés comme les éléments constitutifs de tous les phénomènes "
+"naturels.Interconnectés mais opposés, ils s'améliorent et se complètent."
+
+#: mind/templates/mind/base.html:30
+msgid ""
+"Known as the Wuxing, the elements have been used to interpret everything "
+"from the cosmos to our internal bodies for millennia. They were also the "
+"inspiration behind our initial collection of ten signature scents."
+msgstr ""
+"Connues sous le nom de Wuxing, les éléments ont été utilisés pour "
+"interpréter tout, du cosmos à nos corps internes depuis des millénaires.Ils "
+"ont également été l'inspiration derrière notre collection initiale de dix "
+"parfums de signature."
+
+#: mind/templates/mind/base.html:31
+msgid ""
+"Each of us possesses all five elements within us. But we are guided by a "
+"particular element, which is informed by the date, time and location of our "
+"birth, as well as our gender."
+msgstr ""
+"Chacun de nous possède les cinq éléments en nous.Mais nous sommes guidés par"
+" un élément particulier, qui est informé par la date, l'heure et "
+"l'emplacement de notre naissance, ainsi que par notre sexe."
+
+#: mind/templates/mind/base.html:32
+msgid ""
+"To find your element or to better understand the energies operating within "
+"you, click the link below."
+msgstr ""
+"Pour trouver votre élément ou pour mieux comprendre les énergies "
+"fonctionnant en vous, cliquez sur le lien ci-dessous."
+
+#: mind/templates/mind/base.html:55 mind/templates/mind/nav_foot.html:36
+msgid "About Us"
+msgstr "À propos de nous"
+
+#: mind/templates/mind/base.html:58 mind/templates/mind/base.html:73
+#: mind/templates/mind/base.html:82
+msgid "OUR MISSION"
+msgstr "NOTRE MISSION"
+
+#: mind/templates/mind/base.html:59 mind/templates/mind/base.html:61
+#: mind/templates/mind/base.html:74 mind/templates/mind/base.html:76
+#: mind/templates/mind/base.html:83 mind/templates/mind/base.html:85
+msgid ""
+"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur quas "
+"suscipit ea dolorem inventore. Optio, maiores! Vitae laudantium sed nisi, "
+"dolore cumque officiis eaque. Facilis animi ipsam vel tenetur molestias."
+msgstr ""
+"Lorem très carottes, développeur d'adipising amélioré obligatoire.Rejette la"
+" douleur de l'inventeur.Option, plus grande!De la vie, louange, mais "
+"seulement avec la douleur et quand leurs bureaux sont.Esprit facile ou forcé"
+" d'être gênant."
+
+#: mind/templates/mind/base.html:98 mind/templates/mind/nav_foot.html:39
+#: mind/templates/mind/nav_foot.html:122
+msgid "How We Work"
+msgstr "Comment nous travaillons"
+
+#: mind/templates/mind/base.html:99
+msgid ""
+"We focus on creating relevant content that addresses the mental health "
+"challenges faced by young people today. Our content includes:"
+msgstr ""
+"Nous nous concentrons sur la création de contenu pertinent qui relève des "
+"défis de santé mentale auxquels sont confrontés les jeunes aujourd'hui.Notre"
+" contenu comprend:"
+
+#: mind/templates/mind/base.html:108
+msgid "Contact US"
+msgstr "Contactez-nous"
+
+#: mind/templates/mind/base.html:115
+msgid "Meet Our Team"
+msgstr "Rencontrez notre équipe"
+
+#: mind/templates/mind/base.html:116
+msgid ""
+"Meet our dedicated team, united by a common purpose: to support, uplift, and"
+" champion mental health for all."
+msgstr ""
+"Rencontrez notre équipe dédiée, unie par un objectif commun: soutenir, "
+"élever et défendre la santé mentale pour tous."
+
+#: mind/templates/mind/base.html:122
+msgid "Placeholder image"
+msgstr "Image d'espace réservé"
+
+#: mind/templates/mind/base.html:137 mind/templates/mind/index.html:11
+msgid "Newsletter"
+msgstr "Bulletin"
+
+#: mind/templates/mind/base.html:143
+msgid "Changes on Mental Health"
+msgstr "Changements sur la santé mentale"
+
+#: mind/templates/mind/base.html:144
+msgid ""
+"Mental health clinics help Latinos bridge language and access barriers."
+msgstr ""
+"Les cliniques de santé mentale aident les Latinos à combler la langue et les"
+" obstacles à l'accès."
+
+#: mind/templates/mind/base.html:152
+msgid "Unlocking Opportunities with Mental Health"
+msgstr "Déverrouiller les opportunités avec la santé mentale"
+
+#: mind/templates/mind/base.html:153
+msgid ""
+"Exploring the pivotal role mental health plays in opening doors to personal "
+"and professional growth, fostering resilience, and building a balanced life."
+msgstr ""
+"Explorer le rôle central que la santé mentale joue dans l'ouverture des "
+"portes de la croissance personnelle et professionnelle, de la promotion de "
+"la résilience et de la construction d'une vie équilibrée."
+
+#: mind/templates/mind/base.html:159 mind/templates/mind/base.html:166
+msgid "Side Feature Title"
+msgstr "Titre de la caractéristique latérale"
+
+#: mind/templates/mind/base.html:160 mind/templates/mind/base.html:167
+msgid "Brief description of the side feature content."
+msgstr "Brève description du contenu de la caractéristique latérale."
+
+#: mind/templates/mind/base.html:177 mind/templates/mind/base.html:188
+msgid "A"
+msgstr ""
+
+#: mind/templates/mind/base.html:177
+msgid "rticles"
+msgstr "rticles"
+
+#: mind/templates/mind/base.html:179
+msgid ""
+"This page shares my best articles to read on topics like health, happiness, "
+"creativity, productivity and more. The central question that drives my work "
+"is, How can we live better? To answer that question, I like to write about "
+"science-based ways to solve practical problems."
+msgstr ""
+"Cette page partage mes meilleurs articles à lire sur des sujets comme la "
+"santé, le bonheur, la créativité, la productivité et plus encore.La question"
+" centrale qui anime mon travail est, comment pouvons-nous mieux vivre?Pour "
+"répondre à cette question, j'aime écrire sur les moyens scientifiques de "
+"résoudre des problèmes pratiques."
+
+#: mind/templates/mind/base.html:180
+msgid ""
+"Youll find interesting articles to read on topics like how to stop "
+"procrastinating as well as personal recommendations like my list of the best"
+" books to read and my minimalist travel guide. Ready to dive in? You can use"
+" the categories below to browse my best articles."
+msgstr ""
+"Vous trouverez des articles intéressants à lire sur des sujets comme comment"
+" arrêter la procrastination ainsi que des recommandations personnelles comme"
+" ma liste des meilleurs livres à lire et mon guide de voyage "
+"minimaliste.Prêt à plonger?Vous pouvez utiliser les catégories ci-dessous "
+"pour parcourir mes meilleurs articles."
+
+#: mind/templates/mind/base.html:188
+msgid "ll Articles"
+msgstr "Articles"
+
+#: mind/templates/mind/base.html:189
+msgid "Browse articles by topic"
+msgstr "Parcourir les articles par sujet"
+
+#: mind/templates/mind/base.html:193
+msgid "Creativity"
+msgstr "La créativité"
+
+#: mind/templates/mind/base.html:197 mind/templates/mind/base.html:212
+msgid "For a More Creative Brain Follow These 5 Steps"
+msgstr "Pour un cerveau plus créatif, suivez ces 5 étapes"
+
+#: mind/templates/mind/base.html:200 mind/templates/mind/base.html:214
+msgid "Creativity Is a Process, Not an Event"
+msgstr "La créativité est un processus, pas un événement"
+
+#: mind/templates/mind/base.html:202 mind/templates/mind/base.html:216
+msgid "The Proven Path to Doing Unique and Meaningful Work"
+msgstr "Le chemin éprouvé pour faire un travail unique et significatif"
+
+#: mind/templates/mind/base.html:204
+msgid "READ MORE ARTICLES ON CREATIVITY"
+msgstr "Lire plus d'articles sur la créativité"
+
+#: mind/templates/mind/base.html:209
+msgid "Mental Health"
+msgstr "Santé mentale"
+
+#: mind/templates/mind/base.html:218
+msgid "READ MORE ARTICLES ON MENTAL HEALTH"
+msgstr "Lire plus d'articles sur la santé mentale"
+
+#: mind/templates/mind/base.html:259
+msgid "Get In Touch"
+msgstr "Entrer en contact"
+
+#: mind/templates/mind/base.html:262
+msgid "Send Us Message"
+msgstr "Envoyez-nous un message"
+
+#: mind/templates/mind/base.html:267
+msgid "Name:"
+msgstr "Nom:"
+
+#: mind/templates/mind/base.html:271
+msgid "Email:"
+msgstr "E-mail:"
+
+#: mind/templates/mind/base.html:275
+msgid "Message:"
+msgstr "Message:"
+
+#: mind/templates/mind/base.html:278 mind/templates/mind/find_element.html:62
+msgid "Submit"
+msgstr "Soumettre"
+
+#: mind/templates/mind/base.html:284
+msgid "Contact Us"
+msgstr "Contactez-nous"
+
+#: mind/templates/mind/base.html:285
+msgid ""
+"Not sure what you need? The team at Square Events will be happy to listen to"
+" you and suggest event ideas you haven't considered."
+msgstr ""
+"Vous ne savez pas ce dont vous avez besoin?L'équipe de Square Events sera "
+"heureuse de vous écouter et de suggérer des idées d'événements que vous "
+"n'avez pas considérées."
+
+#: mind/templates/mind/base.html:289
+msgid "Sydney Office: 69 Macquarie St, Sydney, Australia"
+msgstr "Bureau de Sydney: 69 Macquarie St, Sydney, Australie"
+
+#: mind/templates/mind/find_element.html:20
+msgid "Enter Your Name"
+msgstr "Entrez votre nom"
+
+#: mind/templates/mind/find_element.html:21
+msgid "Last Name"
+msgstr "Nom de famille"
+
+#: mind/templates/mind/find_element.html:23
+msgid "First Name"
+msgstr "Prénom"
+
+#: mind/templates/mind/find_element.html:25
+#: mind/templates/mind/find_element.html:43
+#: mind/templates/mind/find_element.html:53
+msgid "Next"
+msgstr ""
+
+#: mind/templates/mind/find_element.html:30
+msgid "Enter Your Birth Time"
+msgstr "Entrez votre temps de naissance"
+
+#: mind/templates/mind/find_element.html:31
+msgid "Month"
+msgstr "Mois"
+
+#: mind/templates/mind/find_element.html:33
+msgid "Day"
+msgstr "Jour"
+
+#: mind/templates/mind/find_element.html:34
+msgid "Year"
+msgstr "Année"
+
+#: mind/templates/mind/find_element.html:35
+msgid "Hour"
+msgstr "Heure"
+
+#: mind/templates/mind/find_element.html:36
+msgid "Minute"
+msgstr "Minute"
+
+#: mind/templates/mind/find_element.html:41
+msgid "I don't know the exact time"
+msgstr "Je ne connais pas l'heure exacte"
+
+#: mind/templates/mind/find_element.html:42
+#: mind/templates/mind/find_element.html:52
+#: mind/templates/mind/find_element.html:61
+msgid "Previous"
+msgstr ""
+
+#: mind/templates/mind/find_element.html:48
+msgid "Enter Your Location"
+msgstr "Entrez votre emplacement"
+
+#: mind/templates/mind/find_element.html:49
+msgid "Region"
+msgstr "Région"
+
+#: mind/templates/mind/find_element.html:51
+msgid "Country"
+msgstr "Pays"
+
+#: mind/templates/mind/find_element.html:58
+msgid "Enter Your Email"
+msgstr "Entrer votre Email"
+
+#: mind/templates/mind/find_element.html:59
+msgid "Email"
+msgstr "E-mail"
+
+#: mind/templates/mind/find_element.html:67 mind/templates/mind/result.html:19
+msgid "Your Element Is:"
+msgstr "Votre élément est:"
+
+#: mind/templates/mind/find_element.html:68 mind/templates/mind/result.html:20
+msgid "Yin Earth"
+msgstr "Terre de yin"
+
+#: mind/templates/mind/find_element.html:69 mind/templates/mind/result.html:21
+msgid "Element Image"
+msgstr "Image d'élément"
+
+#: mind/templates/mind/find_element.html:70 mind/templates/mind/result.html:22
+msgid "nurturing, charismatic, peaceful: You are the soft soil of the garden"
+msgstr "Nourrissant, charismatique, paisible: vous êtes le sol doux du jardin"
+
+#: mind/templates/mind/index.html:20
+msgid "NEWSPAPER"
+msgstr "JOURNAL"
+
+#: mind/templates/mind/index.html:22
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac "
+"consectetur urna. Duis eget interdum ipsum."
+msgstr ""
+"Lorem très carottes, développeur de premier cycle de tomate.Vivant et tomate"
+" push.Parfois, le film est parfois très important."
+
+#: mind/templates/mind/index.html:25 mind/templates/mind/index.html:51
+msgid "Basketball Image"
+msgstr "Image de basket-ball"
+
+#: mind/templates/mind/index.html:26 mind/templates/mind/index.html:52
+msgid "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+msgstr "Lorem très carottes, développeur de premier cycle de tomate."
+
+#: mind/templates/mind/index.html:30
+msgid "Win Medals"
+msgstr "Gagner des médailles"
+
+#: mind/templates/mind/index.html:31
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac "
+"consectetur urna. Duis eget interdum ipsum. Praesent quis maximus elit, non "
+"mattis neque. Nam consequat felis et lacus ultricies finibus."
+msgstr ""
+"Lorem très carottes, développeur de premier cycle de tomate.Vivant et tomate"
+" push.Parfois, le film est parfois très important.Présenter son plus grand "
+"développeur, pas d'immobilier ou.Pour la recette de la gâchette et le patch "
+"des ultriciens se termine."
+
+#: mind/templates/mind/index.html:34 mind/templates/mind/index.html:44
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac "
+"consectetur urna. Duis eget interdum ipsum. Praesent quis maximus elit, non "
+"mattis neque. Nam consequat felis et lacus ultricies finibus. Vivamus ac "
+"ullamcorper dolor. Phasellus at dolor egestas, aliquet nulla eu."
+msgstr ""
+"Lorem très carottes, développeur de premier cycle de tomate.Vivant et tomate"
+" push.Parfois, le film est parfois très important.Présenter son plus grand "
+"développeur, pas d'immobilier ou.Pour la recette de la gâchette et le patch "
+"des ultriciens se termine.Douleur en direct et ullamcorper.Nam à "
+"l'application des consommateurs, bananes sans football."
+
+#: mind/templates/mind/index.html:38
+msgid "High School"
+msgstr "Lycée"
+
+#: mind/templates/mind/index.html:39
+msgid "August, 2023"
+msgstr "Août 2023"
+
+#: mind/templates/mind/index.html:41
+msgid "women's basketball championship won by fauget school"
+msgstr "Championnat de basket-ball féminin gagné par l'école Fauget"
+
+#: mind/templates/mind/index.html:47
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac "
+"consectetur urna. Duis eget interdum ipsum. Praesent quis maximus elit, non "
+"mattis neque. Nam consequat felis et lacus ultricies finibus. Vivamus ac "
+"ullamcorper dolor. Phasellus at dolor egestas, aliquet nulla eu. Etiam "
+"mauris urna, egestas nec tortor quis, dignissim condimentum justo. Quisque "
+"luctus nulla ut sapien bibendum, et tristique quam semper. Nam a semper "
+"ipsum, et faucibus urna. Mauris dictum nisi non diam tincidunt ullamcorper."
+msgstr ""
+"Lorem très carottes, développeur de premier cycle de tomate.Vivant et tomate"
+" push.Parfois, le film est parfois très important.Présenter son plus grand "
+"développeur, pas d'immobilier ou.Pour la recette de la gâchette et le patch "
+"des ultriciens se termine.Douleur en direct et ullamcorper.Nam à "
+"l'application des consommateurs, bananes sans football.Même Mauris Urna, "
+"Egestas Neque Macro n'importe qui, sauce de football juste.Chaque deuil "
+"n'est pas comme la boisson Sapien, et le triste que jamais.Pour toujours "
+"lui-même et la gorge.Mauris a dit que rien n'est des développeurs de "
+"diamètre Ullamcorper."
+
+#: mind/templates/mind/nav_foot.html:33
+msgid "Home"
+msgstr "Maison"
+
+#: mind/templates/mind/nav_foot.html:42
+msgid "Our Team"
+msgstr "Notre équipe"
+
+#: mind/templates/mind/nav_foot.html:45
+msgid "Media"
+msgstr "Médias"
+
+#: mind/templates/mind/nav_foot.html:54
+msgid "Welcome, "
+msgstr ""
+
+#: mind/templates/mind/nav_foot.html:57
+msgid "Log out"
+msgstr "Se déconnecter"
+
+#: mind/templates/mind/nav_foot.html:61
+msgid "Sign up"
+msgstr "S'inscrire"
+
+#: mind/templates/mind/nav_foot.html:70
+msgid "Language"
+msgstr "Langue"
+
+#: mind/templates/mind/nav_foot.html:101
+msgid "National Alliance on Mental Illness"
+msgstr "Alliance nationale sur la maladie mentale"
+
+#: mind/templates/mind/nav_foot.html:112
+msgid "Address"
+msgstr "Adresse"
+
+#: mind/templates/mind/nav_foot.html:113
+msgid "Sydney Office: 69 Macquire st, Sydney, Australia"
+msgstr "Bureau de Sydney: 69 Macquarie St, Sydney, Australie"
+
+#: mind/templates/mind/nav_foot.html:115
+msgid "Phone: 703-524-7600"
+msgstr "Téléphone: 703-524-7600"
+
+#: mind/templates/mind/nav_foot.html:117
+msgid "Email Services: yourmind@gmail.com"
+msgstr "Services par e-mail: yourmind@gmail.com"
+
+#: mind/templates/mind/nav_foot.html:120
+msgid "Quick Links"
+msgstr "Liens rapides"
+
+#: mind/templates/mind/nav_foot.html:121
+msgid "Press & Media"
+msgstr "Presse et médias"
+
+#: mind/templates/mind/nav_foot.html:123
+msgid "Find Element"
+msgstr "Trouver un élément"
+
+#: mind/templates/mind/nav_foot.html:126
+msgid "Policies"
+msgstr "Stratégies"
+
+#: mind/templates/mind/nav_foot.html:127
+msgid "Privacy Policy"
+msgstr "politique de confidentialité"
+
+#: mind/templates/mind/nav_foot.html:128
+msgid "Disclaimer"
+msgstr "Clause de non-responsabilité"
+
+#: mind/templates/mind/nav_foot.html:129
+msgid "State Disclaimer"
+msgstr "Avertissement d'État"
+
+#: mind/templates/mind/nav_foot.html:130
+msgid "Link Policy"
+msgstr "Politique de liaison"
+
+#: mind/templates/mind/nav_foot.html:131
+msgid "YOURMIND Required Disclosures For Written Solicitations"
+msgstr "VOTRE MINDE DES DIVLUSURES DE SOLICITATIONS ÉCRITES"
+
+#: mind/templates/mind/nav_foot.html:132
+msgid "YOURMIND Store Policies"
+msgstr "Les politiques de votre magasin de votre mind"
+
+#: mind/templates/mind/result.html:9
+msgid "Your Element Result"
+msgstr "Votre résultat d'élément"
+
+#: mind/views.py:47
+#, python-brace-format
+msgid "New Contact Form Submission from {name}"
+msgstr "Nouveau formulaire de contact soumission de {nom}"
+
+#: mind/views.py:48
+#, python-brace-format
+msgid ""
+"Name: {name}\n"
+"Email: {email}\n"
+"\n"
+"Message:\n"
+"{msg}"
+msgstr ""
+"Nom nom}\n"
+"Email: {e-mail}\n"
+"\n"
+"Message:\n"
+"{msg}"
+
+#: mind/views.py:55
+#, python-brace-format
+msgid "An error occurred: {e}"
+msgstr "Une erreur s'est produite: {e}"
+
+#, fuzzy, python-format
+#~ msgid "{{ work_item.subtitle|safe }}"
+#~ msgstr "% des articles, des newsletters mensuelles et des journaux, où sont partagés différents conseils sur la gestion de la dépression, de l'anxiété, des histoires de réussite, des documents de recherche et bien d'autres. De plus, les publications quotidiennes sur nos réseaux sociaux sur la santé mentale ne font pas exception !."
+
+#~ msg "{{ work_item.subtitle|safe }}"
+#~ msgstr "des articles, des newsletters mensuelles et des journaux, où sont partagés différents conseils sur la gestion de la dépression, de l'anxiété, des histoires de réussite, des documents de recherche et bien d'autres. De plus, les publications quotidiennes sur nos réseaux sociaux sur la santé mentale ne font pas exception !."
+
+
+#: yaym/settings.py:165
+msgid "English"
+msgstr ""
+
+#: yaym/settings.py:166
+msgid "French"
+msgstr "Français"
+
+#: yaym/settings.py:167
+msgid "Russian"
+msgstr "russe"

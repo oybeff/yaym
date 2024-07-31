@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+{% extends 'mind/nav_foot.html' %}
+{% load static i18n %}
+{% load static i18n %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% trans "Newsletter" %}</title>
+</head>
+
+<body>
+
+    {% block content %}  
+
+    <div class="newspaper">
+      
+        <h1 class="h11">{% trans "NEWSPAPER" %}</h1>
+        <div class="subtitle10">
+            <p>{% trans "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac consectetur urna. Duis eget interdum ipsum." %}</p>
+        </div>
+        <div class="image-container">
+            <img src="{% static 'img/artickle.jpg' %}" alt="{% trans 'Basketball Image' %}">
+            <p class="image-caption">{% trans "Lorem ipsum dolor sit amet, consectetur adipiscing elit." %}</p>
+        </div>
+        <div class="articles">
+            <article>
+                <h2 class="h22">{% trans "Win Medals" %}</h2>
+                <p>{% trans "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac consectetur urna. Duis eget interdum ipsum. Praesent quis maximus elit, non mattis neque. Nam consequat felis et lacus ultricies finibus." %}</p>
+            </article>
+            <article>
+                <p>{% trans "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac consectetur urna. Duis eget interdum ipsum. Praesent quis maximus elit, non mattis neque. Nam consequat felis et lacus ultricies finibus. Vivamus ac ullamcorper dolor. Phasellus at dolor egestas, aliquet nulla eu." %}</p>
+            </article>
+        </div>
+        <header>
+            <div class="header-left">{% trans "High School" %}</div>
+            <div class="header-right">{% trans "August, 2023" %}</div>
+        </header>
+        <h1 class="h11">{% trans "women's basketball championship won by fauget school" %}</h1>
+        <div class="articles">
+            <article>
+                <p>{% trans "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac consectetur urna. Duis eget interdum ipsum. Praesent quis maximus elit, non mattis neque. Nam consequat felis et lacus ultricies finibus. Vivamus ac ullamcorper dolor. Phasellus at dolor egestas, aliquet nulla eu." %}</p>
+            </article>
+            <article>
+                <p>{% trans "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac consectetur urna. Duis eget interdum ipsum. Praesent quis maximus elit, non mattis neque. Nam consequat felis et lacus ultricies finibus. Vivamus ac ullamcorper dolor. Phasellus at dolor egestas, aliquet nulla eu. Etiam mauris urna, egestas nec tortor quis, dignissim condimentum justo. Quisque luctus nulla ut sapien bibendum, et tristique quam semper. Nam a semper ipsum, et faucibus urna. Mauris dictum nisi non diam tincidunt ullamcorper." %}</p>
+            </article>
+        </div>
+        <div class="image-container">
+            <img src="{% static 'img/artickle.jpg' %}" alt="{% trans 'Basketball Image' %}">
+            <p class="image-caption">{% trans "Lorem ipsum dolor sit amet, consectetur adipiscing elit." %}</p>
+        </div>
+    </div>
+   
+    {% endblock %}
+</body>
+
+</html>

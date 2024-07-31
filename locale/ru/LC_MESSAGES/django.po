@@ -1,0 +1,558 @@
+# -*- coding: utf-8 -*-
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+#
+msgid ""
+msgstr ""
+
+#: mind/templates/mind/base.html:9 mind/templates/mind/nav_foot.html:8
+msgid "Document"
+msgstr "Документ"
+
+#: mind/templates/mind/base.html:27 mind/templates/mind/base.html:34
+#: mind/templates/mind/find_element.html:9
+msgid "Find Your Element"
+msgstr "Найдите свой элемент"
+
+#: mind/templates/mind/base.html:29
+msgid ""
+"The five elements  wood, fire, earth, water and metal  are regarded as the "
+"building blocks of all natural phenomena. Interconnected yet opposing, they "
+"enhance and complement each other."
+msgstr ""
+"Пять элементов древесины, огня, земли, воды и металла рассматриваются как "
+"строительные блоки всех природных явлений.Взаимосвязанные, но "
+"противостоящие, они улучшают и дополняют друг друга."
+
+#: mind/templates/mind/base.html:30
+msgid ""
+"Known as the Wuxing, the elements have been used to interpret everything "
+"from the cosmos to our internal bodies for millennia. They were also the "
+"inspiration behind our initial collection of ten signature scents."
+msgstr ""
+"Известные как Wuxing, элементы использовались для интерпретации всего, от "
+"космоса до наших внутренних тел на протяжении тысячелетий.Они также были "
+"вдохновением нашей первоначальной коллекции из десяти подписных ароматов."
+
+#: mind/templates/mind/base.html:31
+msgid ""
+"Each of us possesses all five elements within us. But we are guided by a "
+"particular element, which is informed by the date, time and location of our "
+"birth, as well as our gender."
+msgstr ""
+"Каждый из нас обладает всеми пятью элементами внутри нас.Но мы "
+"руководствуемся конкретным элементом, который информируется датой, временем "
+"и местоположением нашего рождения, а также с нашим полом."
+
+#: mind/templates/mind/base.html:32
+msgid ""
+"To find your element or to better understand the energies operating within "
+"you, click the link below."
+msgstr ""
+"Чтобы найти свой элемент или лучше понять энергии, работающие внутри вас, "
+"нажмите на ссылку ниже."
+
+#: mind/templates/mind/base.html:55 mind/templates/mind/nav_foot.html:36
+msgid "About Us"
+msgstr "О нас"
+
+#: mind/templates/mind/base.html:58 mind/templates/mind/base.html:73
+#: mind/templates/mind/base.html:82
+msgid "OUR MISSION"
+msgstr "НАША МИССИЯ"
+
+#: mind/templates/mind/base.html:59 mind/templates/mind/base.html:61
+#: mind/templates/mind/base.html:74 mind/templates/mind/base.html:76
+#: mind/templates/mind/base.html:83 mind/templates/mind/base.html:85
+msgid ""
+"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur quas "
+"suscipit ea dolorem inventore. Optio, maiores! Vitae laudantium sed nisi, "
+"dolore cumque officiis eaque. Facilis animi ipsam vel tenetur molestias."
+msgstr ""
+"Lorem очень морковь, обязательный улучшенный разработчик "
+"Adipisuciate.Отвергает боль изобретателя.Вариант, больше!Жизни, похвалы, но "
+"только с болью, и когда их офисы.Легкие умы или обязательные быть "
+"неприятными."
+
+#: mind/templates/mind/base.html:98 mind/templates/mind/nav_foot.html:39
+#: mind/templates/mind/nav_foot.html:122
+msgid "How We Work"
+msgstr "Как мы работаем"
+
+#: mind/templates/mind/base.html:99
+msgid ""
+"We focus on creating relevant content that addresses the mental health "
+"challenges faced by young people today. Our content includes:"
+msgstr ""
+"Мы сосредоточены на создании соответствующего контента, который решает "
+"проблемы психического здоровья, с которыми сегодня сталкиваются молодые "
+"люди.Наш контент включает в себя:"
+
+#: mind/templates/mind/base.html:108
+msgid "Contact US"
+msgstr "Связаться с нами"
+
+#: mind/templates/mind/base.html:115
+msgid "Meet Our Team"
+msgstr "Познакомьтесь с нашей командой"
+
+#: mind/templates/mind/base.html:116
+msgid ""
+"Meet our dedicated team, united by a common purpose: to support, uplift, and"
+" champion mental health for all."
+msgstr ""
+"Познакомьтесь с нашей преданной командой, объединенной общей целью: "
+"поддержать, подняться и чемпионат психического здоровья для всех."
+
+#: mind/templates/mind/base.html:122
+msgid "Placeholder image"
+msgstr "Изображение заполнителя"
+
+#: mind/templates/mind/base.html:137 mind/templates/mind/index.html:11
+msgid "Newsletter"
+msgstr "Новостная рассылка"
+
+#: mind/templates/mind/base.html:143
+msgid "Changes on Mental Health"
+msgstr "Изменения в психическом здоровье"
+
+#: mind/templates/mind/base.html:144
+msgid ""
+"Mental health clinics help Latinos bridge language and access barriers."
+msgstr ""
+"Психические клиники помогают латиноамериканским языку моста и барьеры "
+"доступа."
+
+#: mind/templates/mind/base.html:152
+msgid "Unlocking Opportunities with Mental Health"
+msgstr "Разблокировать возможности с психическим здоровьем"
+
+#: mind/templates/mind/base.html:153
+msgid ""
+"Exploring the pivotal role mental health plays in opening doors to personal "
+"and professional growth, fostering resilience, and building a balanced life."
+msgstr ""
+"Изучение ключевой роли психического здоровья играет в открытии дверей для "
+"личного и профессионального роста, повышения устойчивости и создания "
+"сбалансированной жизни."
+
+#: mind/templates/mind/base.html:159 mind/templates/mind/base.html:166
+msgid "Side Feature Title"
+msgstr "Название боковой функции"
+
+#: mind/templates/mind/base.html:160 mind/templates/mind/base.html:167
+msgid "Brief description of the side feature content."
+msgstr "Краткое описание содержимого боковой функции."
+
+#: mind/templates/mind/base.html:177 mind/templates/mind/base.html:188
+msgid "A"
+msgstr "А"
+
+#: mind/templates/mind/base.html:177
+msgid "rticles"
+msgstr "rticles"
+
+#: mind/templates/mind/base.html:179
+msgid ""
+"This page shares my best articles to read on topics like health, happiness, "
+"creativity, productivity and more. The central question that drives my work "
+"is, How can we live better? To answer that question, I like to write about "
+"science-based ways to solve practical problems."
+msgstr ""
+"Эта страница делятся моими лучшими статьями, чтобы читать по таким темам, "
+"как здоровье, счастье, творчество, производительность и многое "
+"другое.Центральный вопрос, который движет моей работой, - как мы можем жить "
+"лучше?Чтобы ответить на этот вопрос, мне нравится писать о научных способах "
+"решения практических проблем."
+
+#: mind/templates/mind/base.html:180
+msgid ""
+"Youll find interesting articles to read on topics like how to stop "
+"procrastinating as well as personal recommendations like my list of the best"
+" books to read and my minimalist travel guide. Ready to dive in? You can use"
+" the categories below to browse my best articles."
+msgstr ""
+"Вы найдете интересные статьи, которые можно прочитать по таким темам, как о "
+"том, как прекратить откладывание, а также личные рекомендации, такие как мой"
+" список лучших книг для чтения и мой минималистский путеводитель.Готовы "
+"погрузиться?Вы можете использовать приведенные ниже категории, чтобы "
+"просмотреть мои лучшие статьи."
+
+#: mind/templates/mind/base.html:188
+msgid "ll Articles"
+msgstr "LL Статьи"
+
+#: mind/templates/mind/base.html:189
+msgid "Browse articles by topic"
+msgstr "Просматривать статьи по теме"
+
+#: mind/templates/mind/base.html:193
+msgid "Creativity"
+msgstr "Креативность"
+
+#: mind/templates/mind/base.html:197 mind/templates/mind/base.html:212
+msgid "For a More Creative Brain Follow These 5 Steps"
+msgstr "Для более творческого мозга следуйте этим 5 шагам"
+
+#: mind/templates/mind/base.html:200 mind/templates/mind/base.html:214
+msgid "Creativity Is a Process, Not an Event"
+msgstr "Творчество - это процесс, а не событие"
+
+#: mind/templates/mind/base.html:202 mind/templates/mind/base.html:216
+msgid "The Proven Path to Doing Unique and Meaningful Work"
+msgstr "Проверенный путь к уникальной и значимой работе"
+
+#: mind/templates/mind/base.html:204
+msgid "READ MORE ARTICLES ON CREATIVITY"
+msgstr "Читать больше статей о творчестве"
+
+#: mind/templates/mind/base.html:209
+msgid "Mental Health"
+msgstr "Душевное здоровье"
+
+#: mind/templates/mind/base.html:218
+msgid "READ MORE ARTICLES ON MENTAL HEALTH"
+msgstr "Прочитайте больше статей о психическом здоровье"
+
+#: mind/templates/mind/base.html:259
+msgid "Get In Touch"
+msgstr "Связаться"
+
+#: mind/templates/mind/base.html:262
+msgid "Send Us Message"
+msgstr "Отправить нам сообщение"
+
+#: mind/templates/mind/base.html:267
+msgid "Name:"
+msgstr "Имя:"
+
+#: mind/templates/mind/base.html:271
+msgid "Email:"
+msgstr "Электронная почта:"
+
+#: mind/templates/mind/base.html:275
+msgid "Message:"
+msgstr "Сообщение:"
+
+#: mind/templates/mind/base.html:278 mind/templates/mind/find_element.html:62
+msgid "Submit"
+msgstr "Представлять на рассмотрение"
+
+#: mind/templates/mind/base.html:284
+msgid "Contact Us"
+msgstr "Связаться с нами"
+
+#: mind/templates/mind/base.html:285
+msgid ""
+"Not sure what you need? The team at Square Events will be happy to listen to"
+" you and suggest event ideas you haven't considered."
+msgstr ""
+"Не уверен, что вам нужно?Команда на Square Events будет рада выслушать вас и"
+" предложить идеи событий, которые вы не рассмотрели."
+
+#: mind/templates/mind/base.html:289
+msgid "Sydney Office: 69 Macquarie St, Sydney, Australia"
+msgstr "Сиднейский офис: 69 Macquarie St, Сидней, Австралия"
+
+#: mind/templates/mind/find_element.html:20
+msgid "Enter Your Name"
+msgstr "Введите ваше имя"
+
+#: mind/templates/mind/find_element.html:21
+msgid "Last Name"
+msgstr "Фамилия"
+
+#: mind/templates/mind/find_element.html:23
+msgid "First Name"
+msgstr "Имя"
+
+#: mind/templates/mind/find_element.html:25
+#: mind/templates/mind/find_element.html:43
+#: mind/templates/mind/find_element.html:53
+msgid "Next"
+msgstr "Следующий"
+
+#: mind/templates/mind/find_element.html:30
+msgid "Enter Your Birth Time"
+msgstr "Войдите в свое время рождения"
+
+#: mind/templates/mind/find_element.html:31
+msgid "Month"
+msgstr "Месяц"
+
+#: mind/templates/mind/find_element.html:33
+msgid "Day"
+msgstr "День"
+
+#: mind/templates/mind/find_element.html:34
+msgid "Year"
+msgstr "Год"
+
+#: mind/templates/mind/find_element.html:35
+msgid "Hour"
+msgstr "Час"
+
+#: mind/templates/mind/find_element.html:36
+msgid "Minute"
+msgstr "Минута"
+
+#: mind/templates/mind/find_element.html:41
+msgid "I don't know the exact time"
+msgstr "Я не знаю точного времени"
+
+#: mind/templates/mind/find_element.html:42
+#: mind/templates/mind/find_element.html:52
+#: mind/templates/mind/find_element.html:61
+msgid "Previous"
+msgstr "Предыдущий"
+
+#: mind/templates/mind/find_element.html:48
+msgid "Enter Your Location"
+msgstr "Введите ваше местоположение"
+
+#: mind/templates/mind/find_element.html:49
+msgid "Region"
+msgstr "Область"
+
+#: mind/templates/mind/find_element.html:51
+msgid "Country"
+msgstr "Страна"
+
+#: mind/templates/mind/find_element.html:58
+msgid "Enter Your Email"
+msgstr "Введите адрес электронной почты"
+
+#: mind/templates/mind/find_element.html:59
+msgid "Email"
+msgstr "Электронная почта"
+
+#: mind/templates/mind/find_element.html:67 mind/templates/mind/result.html:19
+msgid "Your Element Is:"
+msgstr "Ваш элемент:"
+
+#: mind/templates/mind/find_element.html:68 mind/templates/mind/result.html:20
+msgid "Yin Earth"
+msgstr "Инь Земля"
+
+#: mind/templates/mind/find_element.html:69 mind/templates/mind/result.html:21
+msgid "Element Image"
+msgstr "Элемент изображение"
+
+#: mind/templates/mind/find_element.html:70 mind/templates/mind/result.html:22
+msgid "nurturing, charismatic, peaceful: You are the soft soil of the garden"
+msgstr "заболевание, харизматичное, мирное: вы мягкая почва сада"
+
+#: mind/templates/mind/index.html:20
+msgid "NEWSPAPER"
+msgstr "ГАЗЕТА"
+
+#: mind/templates/mind/index.html:22
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac "
+"consectetur urna. Duis eget interdum ipsum."
+msgstr ""
+"Lorem очень морковь, томатный бакалавриат разработчик.Живи и томатный "
+"толчок.Иногда фильм иногда очень важен."
+
+#: mind/templates/mind/index.html:25 mind/templates/mind/index.html:51
+msgid "Basketball Image"
+msgstr "Баскетбольный образ"
+
+#: mind/templates/mind/index.html:26 mind/templates/mind/index.html:52
+msgid "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+msgstr "Lorem очень морковь, томатный бакалавриат разработчик."
+
+#: mind/templates/mind/index.html:30
+msgid "Win Medals"
+msgstr "Выиграть медали"
+
+#: mind/templates/mind/index.html:31
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac "
+"consectetur urna. Duis eget interdum ipsum. Praesent quis maximus elit, non "
+"mattis neque. Nam consequat felis et lacus ultricies finibus."
+msgstr ""
+"Lorem очень морковь, томатный бакалавриат разработчик.Живи и томатный "
+"толчок.Иногда фильм иногда очень важен.Представьте своего крупнейшего "
+"застройщика, нет недвижимости или.Для рецепта спускового крючка и патча "
+"ультрациров ​​заканчивается."
+
+#: mind/templates/mind/index.html:34 mind/templates/mind/index.html:44
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac "
+"consectetur urna. Duis eget interdum ipsum. Praesent quis maximus elit, non "
+"mattis neque. Nam consequat felis et lacus ultricies finibus. Vivamus ac "
+"ullamcorper dolor. Phasellus at dolor egestas, aliquet nulla eu."
+msgstr ""
+"Lorem очень морковь, томатный бакалавриат разработчик.Живи и томатный "
+"толчок.Иногда фильм иногда очень важен.Представьте своего крупнейшего "
+"застройщика, нет недвижимости или.Для рецепта спускового крючка и патча "
+"ультрациров ​​заканчивается.Живи и боль в улламкорперке.Нам в "
+"правоприменении потребителей, бананы нет футбола."
+
+#: mind/templates/mind/index.html:38
+msgid "High School"
+msgstr "Средняя школа"
+
+#: mind/templates/mind/index.html:39
+msgid "August, 2023"
+msgstr "Август, 2023 год"
+
+#: mind/templates/mind/index.html:41
+msgid "women's basketball championship won by fauget school"
+msgstr "Чемпионат по баскетболу женского баскетбола выиграл школой Фаугет"
+
+#: mind/templates/mind/index.html:47
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac "
+"consectetur urna. Duis eget interdum ipsum. Praesent quis maximus elit, non "
+"mattis neque. Nam consequat felis et lacus ultricies finibus. Vivamus ac "
+"ullamcorper dolor. Phasellus at dolor egestas, aliquet nulla eu. Etiam "
+"mauris urna, egestas nec tortor quis, dignissim condimentum justo. Quisque "
+"luctus nulla ut sapien bibendum, et tristique quam semper. Nam a semper "
+"ipsum, et faucibus urna. Mauris dictum nisi non diam tincidunt ullamcorper."
+msgstr ""
+"Lorem очень морковь, томатный бакалавриат разработчик.Живи и томатный "
+"толчок.Иногда фильм иногда очень важен.Представьте своего крупнейшего "
+"застройщика, нет недвижимости или.Для рецепта спускового крючка и патча "
+"ультрациров ​​заканчивается.Живи и боль в улламкорперке.Нам в "
+"правоприменении потребителей, бананы нет футбола.Даже Маурис Урна, Egestas "
+"Neque Macro любого, футбольный соус.Каждый траур не такой, как напиток "
+"Sapien, и грустный, чем когда -либо.Для самого самого и горла.Маурис сказал,"
+" что ничто не является разработчиком диаметром Ullamcorper."
+
+#: mind/templates/mind/nav_foot.html:33
+msgid "Home"
+msgstr "Дом"
+
+#: mind/templates/mind/nav_foot.html:42
+msgid "Our Team"
+msgstr "Наша команда"
+
+#: mind/templates/mind/nav_foot.html:45
+msgid "Media"
+msgstr "СМИ"
+
+#: mind/templates/mind/nav_foot.html:54
+msgid "Welcome, "
+msgstr "Добро пожаловать,"
+
+#: mind/templates/mind/nav_foot.html:57
+msgid "Log out"
+msgstr "Выйти"
+
+#: mind/templates/mind/nav_foot.html:61
+msgid "Sign up"
+msgstr "Зарегистрироваться"
+
+#: mind/templates/mind/nav_foot.html:70
+msgid "Language"
+msgstr "Язык"
+
+#: mind/templates/mind/nav_foot.html:101
+msgid "National Alliance on Mental Illness"
+msgstr "Национальный альянс по психическим заболеваниям"
+
+#: mind/templates/mind/nav_foot.html:112
+msgid "Address"
+msgstr "Адрес"
+
+#: mind/templates/mind/nav_foot.html:113
+msgid "Sydney Office: 69 Macquire st, Sydney, Australia"
+msgstr "Сиднейский офис: 69 Macquarie St, Сидней, Австралия"
+
+#: mind/templates/mind/nav_foot.html:115
+msgid "Phone: 703-524-7600"
+msgstr "Телефон: 703-524-7600"
+
+#: mind/templates/mind/nav_foot.html:117
+msgid "Email Services: yourmind@gmail.com"
+msgstr "Электронные услуги: yourmind@gmail.com"
+
+#: mind/templates/mind/nav_foot.html:120
+msgid "Quick Links"
+msgstr "Быстрые ссылки"
+
+#: mind/templates/mind/nav_foot.html:121
+msgid "Press & Media"
+msgstr "Печатные СМИ"
+
+#: mind/templates/mind/nav_foot.html:123
+msgid "Find Element"
+msgstr "Найти элемент"
+
+#: mind/templates/mind/nav_foot.html:126
+msgid "Policies"
+msgstr "Политики"
+
+#: mind/templates/mind/nav_foot.html:127
+msgid "Privacy Policy"
+msgstr "политика конфиденциальности"
+
+#: mind/templates/mind/nav_foot.html:128
+msgid "Disclaimer"
+msgstr "Отказ от ответственности"
+
+#: mind/templates/mind/nav_foot.html:129
+msgid "State Disclaimer"
+msgstr "Государственный отказ от ответственности"
+
+#: mind/templates/mind/nav_foot.html:130
+msgid "Link Policy"
+msgstr "Ссылка политика"
+
+#: mind/templates/mind/nav_foot.html:131
+msgid "YOURMIND Required Disclosures For Written Solicitations"
+msgstr "Требуется раскрытие информации о письменных предложениях"
+
+#: mind/templates/mind/nav_foot.html:132
+msgid "YOURMIND Store Policies"
+msgstr "Политика в магазине"
+
+#: mind/templates/mind/result.html:9
+msgid "Your Element Result"
+msgstr "Ваш элемент результат"
+
+#: mind/views.py:47
+#, python-brace-format
+msgid "New Contact Form Submission from {name}"
+msgstr "Новая контактная форма подачи от {name}"
+
+#: mind/views.py:48
+#, python-brace-format
+msgid ""
+"Name: {name}\n"
+"Email: {email}\n"
+"\n"
+"Message:\n"
+"{msg}"
+msgstr ""
+"Имя: {имя}\n"
+"Электронная почта: {электронная почта}\n"
+"\n"
+"Сообщение:\n"
+"{msg}"
+
+#: mind/views.py:55
+#, python-brace-format
+msgid "An error occurred: {e}"
+msgstr "Произошла ошибка: {e}"
+
+#, fuzzy, python-format
+#~ MSGID "{{ work_item.subtitle|safe }}"
+#~ MSGSTR "% Презентации и мастер-классы. Несмотря на удаленную работу, мы время от времени проводим семинары и презентации для повышения осведомленности о психическом здоровье, где у нас есть возможность напрямую взаимодействовать с нашей аудиторией. Эти значимые мероприятия проходят в Сиднее, Окленде и Ташкенте. !."
+
+#~ MSGID "{% work_item.subtitle|safe %}"
+#~ MSGSTR "Презентации и мастер-классы. Несмотря на удаленную работу, мы время от времени проводим семинары и презентации для повышения осведомленности о психическом здоровье, где у нас есть возможность напрямую взаимодействовать с нашей аудиторией. Эти значимые мероприятия проходят в Сиднее, Окленде и Ташкенте.."
+
+#: yaym/settings.py:165
+msgid "English"
+msgstr "Английский"
+
+#: yaym/settings.py:166
+msgid "French"
+msgstr "Французский"
+
+#: yaym/settings.py:167
+msgid "Russian"
+msgstr "Русский"

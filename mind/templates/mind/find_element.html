@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+{% extends "mind/nav_foot.html" %}
+{% load i18n %}
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% trans "Find Your Element" %}</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+  {% block content %}
+  <div class="bg10">
+   
+
+    <div id="form-container" class="form-container">
+        <!-- Step 1: Name -->
+        <div class="step active" id="step-1">
+        <h2>{% trans "Enter Your Name" %}</h2>
+        <input type="text" id="last-name" placeholder="{% trans 'Last Name' %}">
+        <span id="last-name-error" class="error"></span>
+        <input type="text" id="first-name" placeholder="{% trans 'First Name' %}">
+        <span id="first-name-error" class="error"></span>
+        <button onclick="nextStep(2)">{% trans "Next" %}</button>
+        </div>
+
+        <!-- Step 2: Date of Birth -->
+        <div class="step" id="step-2">
+        <h2>{% trans "Enter Your Birth Time" %}</h2>
+        <input type="text" id="dob-month" placeholder="{% trans 'Month' %}">
+        <span id="dob-error" class="error"></span>
+        <input type="text" id="dob-day" placeholder="{% trans 'Day' %}">
+        <input type="text" id="dob-year" placeholder="{% trans 'Year' %}">
+        <input type="text" id="dob-hour" placeholder="{% trans 'Hour' %}">
+        <input type="text" id="dob-minute" placeholder="{% trans 'Minute' %}">
+        <select id="dob-period">
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+        </select>
+        <input type="checkbox" id="unknown-time">{% trans "I don't know the exact time" %}
+        <button onclick="prevStep(1)">{% trans "Previous" %}</button>
+        <button onclick="nextStep(3)">{% trans "Next" %}</button>
+        </div>
+
+        <!-- Step 3: Location -->
+        <div class="step" id="step-3">
+        <h2>{% trans "Enter Your Location" %}</h2>
+        <input type="text" id="region" placeholder="{% trans 'Region' %}">
+        <span id="location-error" class="error"></span>
+        <input type="text" id="country" placeholder="{% trans 'Country' %}">
+        <button onclick="prevStep(2)">{% trans "Previous" %}</button>
+        <button onclick="nextStep(4)">{% trans "Next" %}</button>
+        </div>
+
+        <!-- Step 4: Email -->
+        <div class="step" id="step-4">
+        <h2>{% trans "Enter Your Email" %}</h2>
+        <input type="email" id="email" placeholder="{% trans 'Email' %}">
+        <span id="email-error" class="error"></span>
+        <button onclick="prevStep(3)">{% trans "Previous" %}</button>
+        <button onclick="submitForm()">{% trans "Submit" %}</button>
+        </div>
+    </div>
+   
+    <div id="result-container" class="result-container" style="display: none;">
+        <h1>{% trans "Your Element Is:" %}</h1>
+        <h2 id="element-name">{% trans "Yin Earth" %}</h2>
+        <img id="element-image" src="https://www.theharmonist.eu/cdn/shop/files/harmonist-elements-page-earth-gif.gif?v=1615323006&width=714" alt="{% trans 'Element Image' %}">
+        <p id="element-description">{% trans "nurturing, charismatic, peaceful: You are the soft soil of the garden" %}</p>
+        <div id="result-details" class="result-details">
+            <!-- Dynamic content inserted by JavaScript -->
+             
+        </div>
+    </div>
+    <script src="{% static 'js/script.js' %}"></script>
+</div>
+  {% endblock %}
+</body>
+</html>

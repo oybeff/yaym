@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+{% load static %}
+{% load i18n %}
+<html lang="{{ LANGUAGE_CODE }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% trans "Document" %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" media='screen'>
+    <link rel="stylesheet" href="{% static 'css/bulma.min.css' %}" type="text/css" media='screen'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    {% csrf_token %}
+
+    <div class="navv mb-6">
+        <nav class="navbar container navv" role="navigation" aria-label="main navigation" id="home">
+          <div class="navbar-brand pr-6 navv">
+            <figure class="image is-64x64">
+              <img src="{% static 'img/logo3.png' %}" alt="Logo">
+            </figure>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+
+          <div id="navbarBasicExample" class="navbar-menu navv">
+            <div class="navbar-start ml-6">
+              <a href="{% url 'home' %}" class="navbar-item mx-6">
+                 {% trans "Home" %}
+              </a>
+              <a href="#aboutus" class="navbar-item mx-6">
+                {% trans "About Us" %}
+              </a>
+              <a href="#howwework" class="navbar-item mx-6">
+                  {% trans "How We Work" %}
+              </a>
+              <a href="#team" class="navbar-item mx-6">
+                {% trans "Our Team" %}
+              </a>
+              <a href="#media" class="navbar-item mx-6">
+                {% trans "Media" %}
+              </a>
+            </div>
+
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <div class="buttons">
+                  {% if user.is_authenticated %}
+                  <span class="navbar-item subtitle is-7">
+                    {% trans "Welcome, " %} {{ user.username }}!
+                  </span>
+                  <a href="{% url 'logout' %}" class="button is-info">
+                    {% trans "Log out" %}
+                  </a>
+                  {% else %}
+                  <a href="{% url 'register' %}" class="button is-info">
+                    {% trans "Sign up" %}
+                  </a>
+                  {% endif %}
+                </div>
+              </div>
+              <div class="navbar-item">
+                <div class="dropdown is-hoverable">
+                  <div class="dropdown-trigger">
+                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                      <span>{% trans "Language" %}</span>
+                      <span class="icon is-small">
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                      </span>
+                    </button>
+                  </div>
+                  <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                    <div class="dropdown-content">
+                      <form action="{% url 'set_language' %}" method="post">
+                        {% csrf_token %}
+                        <input name="next" type="hidden" value="{{ request.path }}" />
+                        <button type="submit" name="language" value="en" class="dropdown-item">English</button>
+                        <button type="submit" name="language" value="fr" class="dropdown-item">Français</button>
+                        <button type="submit" name="language" value="ru" class="dropdown-item">Русский</button>
+                    </form>
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+    </div>     
+
+    {% block content %}{% endblock %}
+
+    <footer class="footer1">
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="{% static 'img/logo2.png' %}" alt="NAMI Logo" class="logo">
+                <p>{% trans "National Alliance on Mental Illness" %}</p>
+                <div class="social-icons">
+                  <a href=""><i class="fa-brands fa-instagram mx-5 has-text-white"></i></a>
+                  <a href=""><i class="fa-brands fa-telegram mx-3 has-text-white"></i></a>
+                  <a href=""><i class="fa-brands fa-linkedin mx-3 has-text-white"></i></a>
+                  <a href=""><i class="fa-brands fa-youtube mx-5 has-text-white"></i></a>
+                </div>
+                <p>Copyright &copy; 2024 NAMI. All rights reserved.</p>
+            </div>
+            <div class="footer-right">
+                <div class="footer-column">
+                    <p class="footer-heading">{% trans "Address" %}</p>
+                    <p>{% trans "Sydney Office: 69 Macquire st, Sydney, Australia" %}</p>
+                    <br>
+                    <p>{% trans "Phone: 703-524-7600" %}</p>
+                    <br>
+                    <p>{% trans "Email Services: yourmind@gmail.com" %}</p>
+                </div>
+                <div class="footer-column">
+                    <p class="footer-heading">{% trans "Quick Links" %}</p>
+                    <a href="#">{% trans "Press & Media" %}</a>
+                    <a href="#">{% trans "How We Work" %}</a>
+                    <a href="#">{% trans "Find Element" %}</a>
+                </div>
+                <div class="footer-column">
+                    <p class="footer-heading">{% trans "Policies" %}</p>
+                    <a href="#">{% trans "Privacy Policy" %}</a>
+                    <a href="#">{% trans "Disclaimer" %}</a>
+                    <a href="#">{% trans "State Disclaimer" %}</a>
+                    <a href="#">{% trans "Link Policy" %}</a>
+                    <a href="#">{% trans "YOURMIND Required Disclosures For Written Solicitations" %}</a>
+                    <a href="#">{% trans "YOURMIND Store Policies" %}</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+  
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

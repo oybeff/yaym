@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends "mind/nav_foot.html" %}
+{% load i18n %}
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% trans "Your Element Result" %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    {% block content %}
+    <div id="form-container" class="form-container">
+      <!-- Form steps -->
+    </div>
+
+    <div id="result-container" class="result-container" style="display: none;">
+        <h1>{% trans "Your Element Is:" %}</h1>
+        <h2 id="element-name">{% trans "Yin Earth" %}</h2>
+        <img id="element-image" src="https://www.theharmonist.eu/cdn/shop/files/harmonist-elements-page-earth-gif.gif?v=1615323006&width=714" alt="{% trans 'Element Image' %}">
+        <p id="element-description">{% trans "nurturing, charismatic, peaceful: You are the soft soil of the garden" %}</p>
+        <div id="elementSuggestions" class="result-details">
+            <!-- Dynamic content inserted by JavaScript -->
+             
+        </div>
+    </div>
+    <script src="{% static 'js/script.js' %}"></script>
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+{% extends "mind/nav_foot.html" %}
+{% load i18n %}
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}{% trans "Document" %}{% endblock %}</title>
+</head>
+<body>
+  {% block content %}
+
+  <a href="#home"><button class="scroll-button"><i class="fa-solid fa-up-long"></i></button></a>
+ 
+  <header class="mb-6 hd" id="header-section">
+    <div class="columns">
+      <div class="column is-7">
+        <figure class="image">
+          <img src="https://www.theharmonist.eu/cdn/shop/files/wood-reflection-harmonist.gif?v=1615322009&width=1000" alt="">
+        </figure>
+      </div>
+      <div class="column is-5 cd1">
+        <div class="card">
+          <div class="card-content">
+            <div class="content">
+               <h1 class="fe title is-1">{% trans "Find Your Element" %}</h1>
+              <div class="fe2">
+                <h3 class="has-text-grey"> {% trans "The five elements – wood, fire, earth, water and metal – are regarded as the building blocks of all natural phenomena. Interconnected yet opposing, they enhance and complement each other." %} </h3>
+                <h3 class="has-text-grey">{% blocktrans %}Known as the Wuxing, the elements have been used to interpret everything from the cosmos to our internal bodies for millennia. They were also the inspiration behind our initial collection of ten signature scents.{% endblocktrans %}</h3>
+                <h3 class="has-text-grey">{% blocktrans %}Each of us possesses all five elements within us. But we are guided by a particular element, which is informed by the date, time and location of our birth, as well as our gender.{% endblocktrans %}</h3>
+                <h3 class="has-text-grey">{% blocktrans %}To find your element or to better understand the energies operating within you, click the link below.{% endblocktrans %}</h3>
+              </div>
+              <u><a href="{% url "find_element" %}" class="subtitle is-4 has-text-grey">{% trans "Find Your Element" %}</a></u>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="sp">
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+  </div>
+
+  <section class="container" id="aboutus">
+    <h1 class="title is-1">{% trans "About Us" %}</h1>
+    <div class="columns">
+      <div class="column1">
+        <h1 class="title is-1 has-text-white">{% trans "OUR MISSION" %}</h1>
+        <p>{% trans "Our mission is to raise awareness and increase the availability, approachability, and accessibility of mental health services in Central  Asian countries. We cherish developing a community that is encouraging and kind, getting in touch with our inner selves, and working with organizations and mental health specialists. We seek to bridge generational and cultural gaps because we acknowledge the cultural foundations associated with experiences connected to mental health. ." %}</p>
+          <br>
+      </div>
+      <div class="column is-6">
+        <img src="https://www.google.com/url?sa=i&url=http%3A%2F%2Feyecarebd.org%2Four-vision-icon-png-4%2F&psig=AOvVaw2gqcybBniOo7TJnF-rLebD&ust=1722509871567000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLiszLqP0YcDFQAAAAAdAAAAABAE" alt="">
+      </div>     
+    </div>
+
+    <div class="columns">
+      <div class="column is-6">
+        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Fmission_1628441&psig=AOvVaw1Y7Jau60dL22ZMhFDjWIH_&ust=1722509969821000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCODPm-qP0YcDFQAAAAAdAAAAABAE" alt="">
+      </div>     
+      <div class="column2">
+        <h1 class="title is-1 has-text-white">{% trans "OUR VISION" %}</h1>
+        <p>{% trans "We envision a future where mental health is easily accessible and approachable for all Asian communities across the subregion. We aspire to promote understanding and provide essential resources to support emotional well-being. By integrating cultural insights and leveraging digital transformation, we aim to create a healthier, more resilient society where mental health is prioritized and valued.." %}</p>
+          <br>
+      </div>
+    </div>
+
+    <div class="columns">
+      <div class="column3">
+        <h1 class="title is-1 has-text-white">{% trans "OUR GOAL" %}</h1>
+        <p>{% trans "We aim to become a leading project assisting people in maintaining and improving their mental health through presentations and workshops, raising awareness. Our goal is to establish a more resilient and healthier society where mental health is regarded as a vital aspect of life by incorporating cultural insights and utilizing digital change.." %}</p>
+          <br>
+      </div>
+      <div class="column is-6">
+      </div>     
+    </div>
+  </section>
+
+  <hr>
+
+  <section id="howwework">
+    <div class="text1">
+      <div class="text2">
+        <h1 class="title is-1 has-text-white">{% trans "How We Work" %}</h1>
+        <p>{% trans "We focus on creating relevant content that addresses the mental health challenges faced by young people today. Our content includes:" %}</p>
+      </div>
+      <div class="columns has-text-white has-text-centered">
+        {% for work_item in work %}
+          <div class="column is-4">
+            <h1>{{ work_item.subtitle|safe }}</h1>
+          </div>
+        {% endfor %}
+      </div>
+      <a href="#contack"><button class="button btn2 is-success">{% trans "Contact US" %}</button></a>
+    </div>
+
+    <img class="bg3" src="{% static 'img/bg10.png' %}" alt="">
+  </section>
+
+  <section class="container5 mt-6 team" id="team">
+    <h1 class="title is-1 has-text-centered has-text-white pb-4">{% trans "Meet Our Team" %}</h1>
+    <p class="subtitle is-4 has-text-centered">{% trans "Meet our dedicated team, united by a common purpose: to support, uplift, and champion mental health for all." %}</p>
+    <div class="columns column4">
+      {% for team in team %}
+        <div class="column is-4 column4">
+          <div class="card">
+            <figure class="image">
+              <img src="{{ team.img.url }}" alt="{% trans 'Placeholder image' %}"/>
+            </figure>
+            <div class="card-content">
+              <h1 class="title is-3">{{ team.title }}</h1>
+              <h1 class="subtitle is">{{ team.subtitle }}</h1>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <hr>
+
+  <section class="mb-6">
+    <h1 class="title is-1 ml-5 text3">{% trans "Newsletter" %}</h1>
+    <div class="container1">
+      <a href="{% url 'newsletter' %}">
+        <div class="main-feature">
+          <div class="feature-img" style="background-image: url('{% static "img/brain.webp" %}')"></div>
+          <div class="feature-info">
+            <h2>{% trans "Changes on Mental Health" %}</h2>
+            <p>{% trans "Mental health clinics help Latinos bridge language and access barriers." %}</p>
+          </div>
+        </div>
+      </a>
+      <div class="side-features">
+        <div class="side-feature">
+          <div class="feature-img" style="background-image: url('{% static "img/chance.jpg" %}');"></div>
+          <div class="feature-info">
+            <h3>{% trans "Unlocking Opportunities with Mental Health" %}</h3>
+            <p>{% trans "Exploring the pivotal role mental health plays in opening doors to personal and professional growth, fostering resilience, and building a balanced life." %}</p>
+          </div>
+        </div>
+        <div class="side-feature">
+          <div class="feature-img" style="background-image: url('{% static 'img/bg5.jpg' %}');"></div>
+          <div class="feature-info">
+            <h3>{% trans "Side Feature Title" %}</h3>
+            <p>{% trans "Brief description of the side feature content." %}</p>
+          </div>
+        </div>
+        <div class="side-feature">
+          <div class="feature-img" style="background-image: url('{% static 'img/bg5.jpg' %}');"></div>
+          <div class="feature-info">
+            <h3>{% trans "Side Feature Title" %}</h3>
+            <p>{% trans "Brief description of the side feature content." %}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  ... 
+  <section class="container articl mt-6" id="media">
+    <div class="columns p-6">
+      <div class="column is-5">
+        <h1 class="title is-2 artickleh1"><span class="firstl">{% trans "A" %}</span>{% trans "rticles" %}</h1>
+        <div class="artickletext">
+          <p>{% trans "This page shares my best articles to read on topics like health, happiness, creativity, productivity and more. The central question that drives my work is, “How can we live better?” To answer that question, I like to write about science-based ways to solve practical problems." %}</p>
+          <p class="mt-5">{% trans "You’ll find interesting articles to read on topics like how to stop procrastinating as well as personal recommendations like my list of the best books to read and my minimalist travel guide. Ready to dive in? You can use the categories below to browse my best articles." %}</p>
+        </div>
+      </div>
+      <div class="column is-6 ml-6 ">
+        <img src="../../static/img/artickle.jpg" alt="">
+      </div>
+    </div>
+  
+    <h1 class="title is-1 has-text-centered font1"><span class="firstl">{% trans "A" %}</span>{% trans "ll Articles" %}</h1>
+    <p class="subtitle is-4 has-text-centered mt-3">{% trans "Browse articles by topic" %}</p>
+  
+    <div class="columns articlepading">
+      <div class="column is-7">
+        <h1 class="title is-2 font1 hv2">{% trans "Creativity" %}</h1>
+        <div class="font2">
+          <hr class="line">
+          <a href="{% url 'articles' %}">
+            <p class="hv">{% trans "For a More Creative Brain Follow These 5 Steps" %}</p>
+            <hr class="line">
+          </a>
+          <p class="hv has-text-black">{% trans "Creativity Is a Process, Not an Event" %}</p>
+          <hr class="line">
+          <p class="hv">{% trans "The Proven Path to Doing Unique and Meaningful Work" %}</p>
+          <hr class="line">
+          <p class="font3 hv">{% trans "READ MORE ARTICLES ON CREATIVITY" %} <i class="fa-solid fa-arrow-right ml-4"></i></p>
+        </div>
+      </div>
+  
+      <div class="column is-5">
+        <h1 class="title is-2 font1 hv">{% trans "Mental Health" %}</h1>
+        <div class="font2">
+          <hr class="line">
+          <p class="hv">{% trans "For a More Creative Brain Follow These 5 Steps" %}</p>
+          <hr class="line">
+          <p class="hv">{% trans "Creativity Is a Process, Not an Event" %}</p>
+          <hr class="line">
+          <p class="hv">{% trans "The Proven Path to Doing Unique and Meaningful Work" %}</p>
+          <hr class="line">
+          <p class="font3 hv">{% trans "READ MORE ARTICLES ON MENTAL HEALTH" %} <i class="fa-solid fa-arrow-right ml-4"></i></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section>
+    <div class="slideshow-container mt-6 mb-4">
+      <div class="mySlides fade">
+        <figure class="image is-16by9">
+          <iframe class="has-ratio" width="340" height="260" src="https://www.youtube.com/embed/YE7VzlLtp-4" frameborder=""></iframe>
+        </figure>
+      </div>
+  
+      <div class="mySlides fade">
+        <figure class="image is-16by9">
+          <iframe class="has-ratio" width="340" height="260" src="https://www.youtube.com/embed/NVmnw5k6Fb4" frameborder=""></iframe>
+        </figure>
+      </div>
+  
+      <div class="mySlides fade">
+        <figure class="image is-16by9">
+          <iframe class="has-ratio" width="340" height="260" src="https://www.youtube.com/embed/YE7VzlLtp-4" frameborder="1"></iframe>
+        </figure>
+      </div>
+  
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+  
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+  </section>
+  
+  <section class="contack mt-5" id="contack">
+    <h1 class="ml-5 secondl">{% trans "Get In Touch" %}</h1>
+    <div class="columns">
+      <div class="column is-8">
+        <h1 class="title is-3 ml-5 has-text-white">{% trans "Send Us Message" %}</h1>
+        <div class="contact-form-container">
+          <form action="{% url 'home' %}" method="POST">
+            {% csrf_token %}
+            <div class="form-group">
+              <label for="name">{% trans "Name:" %}</label>
+              {{form.name}}
+            </div>
+            <div class="form-group">
+              <label for="email">{% trans "Email:" %}</label>
+              {{form.email}}
+            </div>
+            <div class="form-group">
+              <label for="message">{% trans "Message:" %}</label>
+              {{form.msg}}
+            </div>
+            <button type="submit">{% trans "Submit" %}</button>
+          </form>
+        </div>
+      </div>
+  
+      <div class="ct1 has-text-white">
+        <h1 class="title is-2 has-text-white">{% trans "Contact Us" %}</h1>
+        <p class="mb-5">{% trans "Not sure what you need? The team at Square Events will be happy to listen to you and suggest event ideas you haven't considered." %}</p>
+        <ul>
+          <li><i class="fa-solid fa-envelope"></i> info@youandyourmind.org</li>
+          <li><i class="fa-solid fa-phone my-3"></i> +998 (XX) XXX-XXXX</li>
+          <li><i class="fa-solid fa-location-dot"></i> {% trans "Sydney Office: 69 Macquarie St, Sydney, Australia" %}</li>
+        </ul>
+        <div class="columns pt-5 title is-4">
+          <a href=""><i class="fa-brands fa-instagram mx-5 has-text-white"></i></a>
+          <a href=""><i class="fa-brands fa-telegram mx-5 has-text-white"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin mx-5 has-text-white"></i></a>
+          <a href=""><i class="fa-brands fa-youtube mx-5 has-text-white"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+<script src="../../static/js/script.js"></script>
+{% endblock %}
+
+</body>
+</html>

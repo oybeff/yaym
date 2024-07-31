@@ -1,0 +1,65 @@
+{% extends 'mind/nav_foot.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container7">
+        <div class="login-box">
+            <h2>Welcome Back!</h2>
+            <p>To keep connected with us please login with your personal info</p>
+            <a href="{% url 'login' %}" class="btn">Sign In</a>
+        </div>
+
+        <div id="signup-box" class="signup-box">
+            <h2>Create Account</h2>
+            <div class="social-container">
+                <a href="#" class="social">f</a>
+                <a href="#" class="social">g+</a>
+                <a href="#" class="social">in</a>
+            </div>
+            <p>or use your email for registration</p>
+            
+            <form method="post" action="{% url 'register' %}">
+                {% csrf_token %}
+                {% if form.errors %}
+                <div class="errorlist">
+                    <ul>
+                        {% for field, errors in form.errors.items %}
+                            <li>{{ field }}: {{ errors|join:", " }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+
+                <label for="id_username">Username:</label>
+                {{ form.username }}
+                {% if form.username.errors %}
+                <span class="error">{{ form.username.errors.as_text }}</span>
+                {% endif %}
+                <label for="id_email">Email:</label>
+                {{ form.email }}
+                {% if form.email.errors %}
+                <span class="error">{{ form.email.errors.as_text }}</span>
+                {% endif %}
+                <label for="id_password1">Password:</label>
+                {{ form.password1 }}
+                {% if form.password1.errors %}
+                <span class="error">{{ form.password1.errors.as_text }}</span>
+                {% endif %}
+                <label for="id_password2">Password confirmation:</label>
+                {{ form.password2 }}
+                {% if form.password2.errors %}
+                <span class="error">{{ form.password2.errors.as_text }}</span>
+                {% endif %}
+                <button type="submit" class="btn">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    {% endblock %}
+</body>
+</html>
