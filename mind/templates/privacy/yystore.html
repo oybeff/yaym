@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% extends 'mind/nav_foot.html' %}
+{% load static i18n %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% trans "Privacy" %}</title>
+</head>
+
+<body>
+
+    {% block content %}  
+
+    <div class="container">
+        <h1 class="has-text-black title is-2">{% trans "YOUR MIND Store Policies" %}</h1>
+        <hr class="has-background-black">
+        <p class="title is-3">Objective:
+        <h2 class='subtitle is-4'>{% trans " To govern the operations of any online or physical stores operated by Your Mind." %}</h2>
+        </p>
+        <p class="title is-3">Scope
+        <h2 class='subtitle is-4 mb-6'>{% trans "This policy applies to all sales and transactions conducted by Your Mind’s store." %}</h2>
+        </p>
+        <p class="title is-2">{% trans "Policy:" %}</p>
+        <p class="subtitle is-4">
+            {% trans "- Product Information: All products sold by Your Mind will be accurately described and fairly priced." %}
+        </p>
+        <p class="subtitle is-4">
+            {% trans "- Non-Profit Nature: All proceeds from the store will be used to support the mission of Your Mind." %}
+        </p>
+        <p class="subtitle is-4">
+            {% trans "- Refunds and Returns: Your Mind will provide clear policies on refunds and returns, ensuring customer satisfaction while maintaining the organization’s non-profit objectives." %}
+        </p>
+        <p class="subtitle is-4 mb-4">
+            {% trans "- Compliance: All store operations will comply with relevant consumer protection laws in Australia and Central Asia." %}
+        </p>
+    </div>
+
+    {% endblock %}
+</body>
+
+</html>

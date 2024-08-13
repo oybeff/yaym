@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+{% extends 'mind/nav_foot.html' %}
+{% load static i18n %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% trans "Privacy" %}</title>
+</head>
+
+<body>
+
+    {% block content %}  
+
+    <div class="container">
+        <h1 class="has-text-black title is-2">{% trans "YOUR MIND Required Disclosures for Written Solicitations" %}</h1>
+        <hr class="has-background-black">
+        <p class="title is-3">Objective:
+        <h2 class='subtitle is-4'>{% trans "To ensure transparency and compliance with legal requirements for written solicitations" %}</h2>
+        </p>
+        <p class="title is-3">Scope
+        <h2 class='subtitle is-4 mb-6'>{% trans "This policy applies to all written solicitations for donations, support, or participation.." %}</h2>
+        </p>
+        <p class="title is-2">{% trans "Policy:" %}</p>
+        <p class="subtitle is-4">
+            {% trans "- Disclosure of Information: All written solicitations will include the following information:" %}
+        </p>
+        <p class="subtitle is-4">
+            {% trans "- The mission and purpose of Your Mind." %}
+        </p>
+        <p class="subtitle is-4">
+            {% trans "- How the funds will be used." %}
+        </p>
+        <p class="subtitle is-4">
+            {% trans "- Contact information for Your Mind." %}
+        </p>
+        <p class="subtitle is-4">
+            {% trans "- A statement confirming the non-profit status of the organization." %}
+        </p>
+        <p class="subtitle is-4">
+            {% trans "- Accuracy: All information provided in solicitations will be accurate and not misleading." %}
+        </p>
+        <p class="subtitle is-4 mb-4">
+            {% trans "- Opt-Out: Recipients of solicitations will be provided with an option to opt-out of future communications." %}
+        </p>
+    </div>
+
+    {% endblock %}
+</body>
+
+</html>

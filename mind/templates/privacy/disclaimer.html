@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% extends 'mind/nav_foot.html' %}
+{% load static i18n %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% trans "Privacy" %}</title>
+</head>
+
+<body>
+
+    {% block content %}  
+
+    <div class="container">
+        <h1 class="has-text-black title is-2">{% trans "Disclaimer" %}</h1>
+        <hr class="has-background-black">
+        <p class="title is-3">Objective:
+        <h2 class='subtitle is-4'>{% trans "Objective: To clarify the limitations of liability and ensure transparency in the <br> organization's operations.." %}</h2>
+        </p>
+        <p class="title is-3">Scope
+        <h2 class='subtitle is-4 mb-6'>{% trans "This policy applies to all communications, services, and activities of <br> Your Mind.." %}</h2>
+        </p>
+        <p class="title is-2">{% trans "Policy:" %}</p>
+        <p class="subtitle is-4">
+            {% trans " - General Disclaimer: Your Mind provides information and services on an 'as is' basis. While we strive for accuracy, we make no representations or warranties regarding the completeness, accuracy, or reliability of the information." %}
+        </p>
+        <p class="subtitle is-4">
+            {% trans " - No Professional Advice: The information provided by Your Mind is not a substitute for professional advice. Individuals should seek professional assistance for specific concerns." %}
+        </p>
+        <p class="subtitle is-4 mb-2">
+            {% trans " - Limitation of Liability: Your Mind will not be liable for any direct, indirect, incidental, or consequential damages arising from the use of its services or information." %}
+        </p>
+    </div>
+
+    {% endblock %}
+</body>
+
+</html>

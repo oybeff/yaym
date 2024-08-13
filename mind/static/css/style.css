@@ -2,7 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;700&display=swap');
 .navv {
   background-color: #ADD8E6;
+  position: sticky;
+  top: 0;
+  z-index: 1000; 
 }
+
+
+
+
 
 .img1 {
     margin-bottom: 200px;
@@ -237,7 +244,6 @@
 .articl {
   background-color: #F9F8F4;
   margin-top: 300px;
-  padding-top: 200px;
 }
 
 .artickletext{
@@ -411,7 +417,6 @@
 .firstl{
   color: #BEA28D;
 }
-
 
 
 
@@ -911,4 +916,337 @@ body {
 
 .bgresult {
   background-image: url('https://www.theharmonist.eu/cdn/shop/files/harmonist-elements-page-earth-gif.gif?v=1615323006&width=714');
+}
+
+
+.container10 {
+  max-width: 1300px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #f7f7f7;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.accordion {
+  margin-top: 20px;
+}
+
+.accordion-item {
+  border-top: 1px solid #ddd;
+}
+
+.accordion-button {
+  width: 100%;
+  padding: 15px;
+  text-align: left;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-button:hover {
+  background: #f4f4f4;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.8s ease-out;
+  padding: 0 15px;
+  background: #f9f9f9;
+}
+
+.accordion-content p {
+  font-weight: 700; /* Bold */
+  color: #222; 
+}
+
+.iconplus {
+  font-size: 14px;
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+.fa-minus {
+  transform: rotate(180deg);
+}
+
+
+.gallaries {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.gallaries h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.gallaries p {
+  margin: 10px 0 0;
+  font-size: 1.2em;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  padding: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-item.wide {
+  grid-column: span 2;
+}
+
+.gallery-item.tall {
+  grid-row: span 2;
+}
+
+
+
+a {
+  color: inherit; /* Keeps the color the same as the parent element */
+  text-decoration: none; /* Removes the underline */
+}
+
+a:visited, a:active {
+  color: inherit; /* Prevents color change after clicking */
+  text-decoration: none; /* Ensures the underline stays removed */
+}
+
+
+.newsletter-container {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.newsletter-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #333;
+}
+
+.newsletter-overview {
+  font-size: 16px;
+  color: #666;
+  margin-top: 10px;
+}
+
+.newsletter-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.newsletter-section img {
+  width: 45%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter-content {
+  width: 50%;
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.newsletter-content h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.newsletter-content p {
+  margin-bottom: 15px;
+}
+
+
+.creative-sections {
+  padding: 50px 0;
+  border-radius: 15px;
+}
+.section-item {
+  box-sizing: border-box;
+  padding: 20px;
+  margin: 0 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 25%; /* Default width for side items */
+  flex: 0 0 25%; /* Set flex-basis to match width */
+}
+
+
+.section-item img {
+  max-width: 70%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+
+.section-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.image-container {
+  flex: 0 0 150px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.image-container img {
+  width: 90%;
+  transition: transform 0.3s ease;
+}
+
+.section-item:hover .image-container img {
+  transform: scale(1.1);
+}
+
+.section-content {
+  flex: 1;
+}
+
+.stylized-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  color: #333;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.stylized-text {
+  font-family: 'Lora', serif;
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.slider-container {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.section-item {
+  min-width: 33.33%; /* Each item takes up one-third of the slider container */
+  box-sizing: border-box;
+  padding: 20px;
+  margin: 0 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-item:nth-child(2) {
+  transform: scale(1.05); /* Slightly enlarge the middle item */
+  z-index: 1;
+}
+
+.section-item img {
+  max-width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.section-item:hover img {
+  transform: scale(1.1);
+}
+
+.slider-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.slider-control {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 50%;
+}
+
+.slider-control:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.slider-dots {
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.slider-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.slider-dot.active {
+  background-color: #333;
 }

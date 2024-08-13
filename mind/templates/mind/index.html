@@ -15,43 +15,60 @@
 
     {% block content %}  
 
-    <div class="newspaper">
-      
-        <h1 class="h11">{% trans "NEWSPAPER" %}</h1>
-        <div class="subtitle10">
-            <p>{% trans "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac consectetur urna. Duis eget interdum ipsum." %}</p>
-        </div>
-        <div class="image-container">
-            <img src="{% static 'img/artickle.jpg' %}" alt="{% trans 'Basketball Image' %}">
-            <p class="image-caption">{% trans "Lorem ipsum dolor sit amet, consectetur adipiscing elit." %}</p>
-        </div>
-        <div class="articles">
-            <article>
-                <h2 class="h22">{% trans "Win Medals" %}</h2>
-                <p>{% trans "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac consectetur urna. Duis eget interdum ipsum. Praesent quis maximus elit, non mattis neque. Nam consequat felis et lacus ultricies finibus." %}</p>
-            </article>
-            <article>
-                <p>{% trans "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac consectetur urna. Duis eget interdum ipsum. Praesent quis maximus elit, non mattis neque. Nam consequat felis et lacus ultricies finibus. Vivamus ac ullamcorper dolor. Phasellus at dolor egestas, aliquet nulla eu." %}</p>
-            </article>
-        </div>
-        <header>
-            <div class="header-left">{% trans "High School" %}</div>
-            <div class="header-right">{% trans "August, 2023" %}</div>
+    <div class="newsletter-container">
+        <header class="newsletter-header">
+            <div class="newsletter-title">
+                Mental Health Awareness: Breaking the Silence
+            </div>
+            <div class="newsletter-overview">
+                <!-- Backend will inject this content -->
+            </div>
         </header>
-        <h1 class="h11">{% trans "women's basketball championship won by fauget school" %}</h1>
-        <div class="articles">
-            <article>
-                <p>{% trans "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac consectetur urna. Duis eget interdum ipsum. Praesent quis maximus elit, non mattis neque. Nam consequat felis et lacus ultricies finibus. Vivamus ac ullamcorper dolor. Phasellus at dolor egestas, aliquet nulla eu." %}</p>
-            </article>
-            <article>
-                <p>{% trans "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac consectetur urna. Duis eget interdum ipsum. Praesent quis maximus elit, non mattis neque. Nam consequat felis et lacus ultricies finibus. Vivamus ac ullamcorper dolor. Phasellus at dolor egestas, aliquet nulla eu. Etiam mauris urna, egestas nec tortor quis, dignissim condimentum justo. Quisque luctus nulla ut sapien bibendum, et tristique quam semper. Nam a semper ipsum, et faucibus urna. Mauris dictum nisi non diam tincidunt ullamcorper." %}</p>
-            </article>
-        </div>
-        <div class="image-container">
-            <img src="{% static 'img/artickle.jpg' %}" alt="{% trans 'Basketball Image' %}">
-            <p class="image-caption">{% trans "Lorem ipsum dolor sit amet, consectetur adipiscing elit." %}</p>
-        </div>
+    
+        <section class="newsletter-section" id="understanding-mental-health">
+            <div class="newsletter-content">
+                <!-- Backend will inject this content -->
+             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam officiis fugit at iure nam harum id sapiente sint quos nulla. Nihil sed quis ut excepturi quas libero consequuntur reprehenderit eligendi!</p>
+
+            </div>
+            <img src="https://unsplash.com/photos/understanding-mental-health.jpg" alt="Understanding Mental Health">
+        </section>
+    
+        <section class="newsletter-section" id="recognizing-signs">
+            <img src="https://unsplash.com/photos/recognizing-signs.jpg" alt="Recognizing the Signs">
+            <div class="newsletter-content">
+             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam officiis fugit at iure nam harum id sapiente sint quos nulla. Nihil sed quis ut excepturi quas libero consequuntur reprehenderit eligendi!</p>
+            </div>
+        </section>
+    
+        <section class="newsletter-section" id="open-conversations">
+            <div class="newsletter-content">
+                <!-- Backend will inject this content -->
+             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam officiis fugit at iure nam harum id sapiente sint quos nulla. Nihil sed quis ut excepturi quas libero consequuntur reprehenderit eligendi!</p>
+
+            </div>
+            <img src="https://unsplash.com/photos/open-conversations.jpg" alt="Open Conversations">
+        </section>
+    
+        <section class="newsletter-section" id="resources-support">
+            <img src="https://unsplash.com/photos/resources-support.jpg" alt="Resources for Support">
+            <div class="newsletter-content">
+                <!-- Backend will inject this content -->
+             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam officiis fugit at iure nam harum id sapiente sint quos nulla. Nihil sed quis ut excepturi quas libero consequuntur reprehenderit eligendi!</p>
+
+            </div>
+        </section>
+    
+        <section class="newsletter-section" id="self-care">
+            <div class="newsletter-content">
+                <!-- Backend will inject this content -->
+             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam officiis fugit at iure nam harum id sapiente sint quos nulla. Nihil sed quis ut excepturi quas libero consequuntur reprehenderit eligendi!</p>
+
+            </div>
+            <img src="https://unsplash.com/photos/self-care.jpg" alt="Taking Care of Your Mental Health">
+        </section>
     </div>
+    
    
     {% endblock %}
 </body>

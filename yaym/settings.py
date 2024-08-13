@@ -23,11 +23,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-7m0@+n^h5#3($zd23z951o9syl1=i!q9#qui&@a59m(**es1gm'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 from pathlib import Path
 
 
-ALLOWED_HOSTS = ["yourmindca.com", "www.yourmindca.com"]
+ALLOWED_HOSTS = []
 
 
 # Application definition

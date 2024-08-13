@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% extends 'mind/nav_foot.html' %}
+{% load static i18n %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% trans "Privacy" %}</title>
+</head>
+
+<body>
+
+    {% block content %}  
+
+    <div class="container">
+        <h1 class="has-text-black title is-2">{% trans "Privacy Policy" %}</h1>
+        <hr class="has-background-black">
+        <p class="title is-3">Objective:
+        <h2 class='subtitle is-4'>{% trans "To ensure the protection of personal information of all individuals associated <br> with Your Mind." %}</h2>
+        </p>
+        <p class="title is-3">Scope
+        <h2 class='subtitle is-4 mb-6'>{% trans "This policy applies to all employees, volunteers, donors, and beneficiaries <br> of Your Mind." %}</h2>
+        </p>
+        <p class="title is-2">{% trans "Policy:" %}</p>
+        <p class="subtitle is-4">
+            {% trans "- Collection of Information: Your Mind collects personal information only for the purpose of fulfilling its mission. This includes names, contact information, and other relevant details." %}
+        </p>
+        <p class="subtitle is-4">
+            {% trans "- Use of Information: Personal information will only be used for the purpose it was collected, including communication, reporting, and service delivery." %}
+        </p>
+        <p class="subtitle is-4">
+            {% trans "- Storage and Security: Personal information will be stored securely and only accessible to authorized personnel." %}
+        </p>
+        <p class="subtitle is-4">
+            {% trans "- Disclosure: Personal information will not be disclosed to third parties without consent, except where required by law." %}
+        </p>
+        <p class="subtitle is-4">
+            {% trans "- Access and Correction: Individuals have the right to access their personal information and request corrections if necessary." %}
+        </p>
+        <p class="subtitle is-4 mb-4">
+            {% trans "- Complaints: Complaints about breaches of privacy should be directed to the Privacy Officer at Your Mind." %}
+        </p>
+    </div>
+
+    {% endblock %}
+</body>
+
+</html>

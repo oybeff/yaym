@@ -17,6 +17,8 @@ from django.http import HttpResponse
 from django.core.mail import send_mail
 from django.conf import settings
 from django.shortcuts import render, redirect
+from .models import UserProfile
+from datetime import datetime
 from .forms import CustomUserCreationForm, ContactForm 
 from django.contrib.auth import logout
 from django.shortcuts import render # type: ignore
@@ -26,8 +28,6 @@ ssl._create_default_https_context = ssl._create_unverified_context
 
 def index(request):
     work_item = Work.objects.all()
-    print(work_item)
-    team = Team.objects.all()
     article = Article.objects.all()
     newsletter = Newsletter.objects.all()
     translated_works = []
@@ -101,9 +101,7 @@ def logout_view(request):
 
 # views.py
 # views.py
-from django.shortcuts import render, redirect
-from .models import UserProfile
-from datetime import datetime
+
 
 def multi_step_form(request):
     if request.method == 'POST':
@@ -142,3 +140,50 @@ def multi_step_form(request):
 
 def result(request):
     return render(request, "mind/result.html",)
+
+def privacy(request):
+    return render(request, "privacy/privacy_policy.html",)
+
+def disclaimer(request):
+    return render(request, "privacy/disclaimer.html")
+
+def statedc(request):
+    return render(request, "privacy/statedc.html")
+
+def linkpolicy(request):
+    return render(request, "privacy/linkpolicy.html")
+
+def yyrequired(request):
+    return render(request, "privacy/yyrequired.html")
+
+def yystore(request):
+    return render(request, "privacy/yystore.html")
+
+def team(request):
+    team = Team.objects.all()
+
+    context = {
+        'team': team,
+    }
+
+    return render(request, "mind/team.html", context)
+
+def articlepage(request):
+    return render(request, "mind/articlepage.html")
+
+
+def howwework(request):
+    work_item = Work.objects.all()
+    translated_works = []
+
+    for work in work_item:
+        translated_subtitle = _(work.subtitle)  # Mark for translation
+        translated_works.append({'subtitle': translated_subtitle})
+
+    
+
+    context = {
+        'work': translated_works,
+    }
+
+    return render(request, "mind/howwework.html", context)

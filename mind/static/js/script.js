@@ -1,29 +1,3 @@
-let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) { slideIndex = 1 }
-  if (n < 1) { slideIndex = slides.length }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
-}
 
 function nextStep(step) {
   if (validateStep(step - 1)) {
@@ -393,4 +367,59 @@ function toggleDescription(id) {
     description.style.display = 'block';
     sign.textContent = '-';
   }
+}
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const accordions = document.querySelectorAll('.accordion-button');
+  accordions.forEach(button => {
+      button.addEventListener('click', function () {
+          console.log('Accordion button clicked');
+          const content = this.nextElementSibling;
+          this.classList.toggle('active');
+          const icon = this.querySelector('.iconplus');
+
+          if (content.style.maxHeight) {
+              content.style.maxHeight = null;
+              icon.classList.remove('fa-minus');
+              icon.classList.add('fa-plus');
+          } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+              icon.classList.remove('fa-plus');
+              icon.classList.add('fa-minus');
+          }
+      });
+  });
+});
+
+
+
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) { slideIndex = 1 }
+  if (n < 1) { slideIndex = slides.length }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
 }

@@ -2,16 +2,19 @@
 {% extends "mind/nav_foot.html" %}
 {% load i18n %}
 {% load static %}
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{% block title %}{% trans "Document" %}{% endblock %}</title>
+  <title>{% block title %}{% trans "Your Mind" %}{% endblock %}</title>
+  <meta name="google-site-verification" content="GaocjW8mLgZmXZy5nsBerFneJuO2XnPm47qNVoEH-yA">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie.min.js"></script>
 </head>
 <body>
   {% block content %}
 
-  <a href="#home"><button class="scroll-button"><i class="fa-solid fa-up-long"></i></button></a>
+  <a href="#contact"><button class="scroll-button"><i class="fa-solid fa-phone"></i></button></a>
  
   <header class="mb-6 hd" id="header-section">
     <div class="columns">
@@ -88,48 +91,36 @@
 
   <hr>
 
-  <section id="howwework">
-    <div class="text1">
-      <div class="text2">
-        <h1 class="title is-1 has-text-white">{% trans "How We Work" %}</h1>
-        <p>{% trans "We focus on creating relevant content that addresses the mental health challenges faced by young people today. Our content includes:" %}</p>
-      </div>
-      <div class="columns has-text-white has-text-centered">
-        {% for work_item in work %}
-          <div class="column is-4">
-            <h1>{{ work_item.subtitle|safe }}</h1>
-          </div>
-        {% endfor %}
-      </div>
-      <a href="#contack"><button class="button btn2 is-success">{% trans "Contact US" %}</button></a>
-    </div>
 
-    <img class="bg3" src="{% static 'img/bg10.png' %}" alt="">
-  </section>
 
-  <section class="container5 mt-6 team" id="team">
-    <h1 class="title is-1 has-text-centered has-text-white pb-4">{% trans "Meet Our Team" %}</h1>
-    <p class="subtitle is-4 has-text-centered">{% trans "Meet our dedicated team, united by a common purpose: to support, uplift, and champion mental health for all." %}</p>
-    <div class="columns column4">
-      {% for team in team %}
-        <div class="column is-4 column4">
-          <div class="card">
-            <figure class="image">
-              <img src="{{ team.img.url }}" alt="{% trans 'Placeholder image' %}"/>
-            </figure>
-            <div class="card-content">
-              <h1 class="title is-3">{{ team.title }}</h1>
-              <h1 class="subtitle is">{{ team.subtitle }}</h1>
-            </div>
-          </div>
-        </div>
-      {% endfor %}
-    </div>
-  </section>
+<section class="gallaries">
+        <h1>YourMind Photo Gallery</h1>
+        <p>With Creative & Unique Style</p>
+    </section>
+    <section class="gallery">
+      <div class="gallery-item tall"><img src="{% static "img/m2.jpg" %}" alt="Mental Health Image 1"></div>
+      <div class="gallery-item"><img src="{% static "img/m1.jpg" %}" alt="Mental Health Image 4"></div>
+      <div class="gallery-item wide"><img src="{% static "img/m3.jpg" %}" alt="Mental Health Image 3"></div>
+      <div class="gallery-item"><img src="{% static "img/m4.jpg" %}" alt="Mental Health Image 4"></div>
+      <div class="gallery-item tall"><img src="{% static "img/m5.jpg" %}" alt="Mental Health Image 5"></div>
+      <div class="gallery-item"><img src="{% static "img/m6.jpg" %}" alt="Mental Health Image 6"></div>
+      <div class="gallery-item"><img src="{% static "img/m15.jpg" %}" alt="Mental Health Image 6"></div>
+      <div class="gallery-item"><img src="{% static "img/m17.jpg" %}" alt="Mental Health Image 6"></div>
+      <div class="gallery-item wide"><img src="{% static "img/m7.jpg" %}" alt="Mental Health Image 3"></div>
+      <div class="gallery-item"><img src="{% static "img/m9.jpg" %}" alt="Mental Health Image 9"></div>
+      <div class="gallery-item"><img src="{% static "img/m10.jpg" %}" alt="Mental Health Image 10"></div>
+      <div class="gallery-item wide"><img src="{% static "img/m11.jpg" %}" alt="Mental Health Image 11"></div>
+      <div class="gallery-item"><img src="{% static "img/m12.jpg" %}" alt="Mental Health Image 12"></div>
+      <div class="gallery-item wide"><img src="{% static "img/m14.jpg" %}" alt="Mental Health Image 3"></div>
 
-  <hr>
+</section>
 
-  <section class="mb-6">
+
+
+
+  <hr>  
+  {% comment %} 
+  <section id="newsletter" class="mb-6">
     <h1 class="title is-1 ml-5 text3">{% trans "Newsletter" %}</h1>
     <div class="container1">
       <a href="{% url 'newsletter' %}">
@@ -165,93 +156,55 @@
         </div>
       </div>
     </div>
-  </section>
-  ... 
-  <section class="container articl mt-6" id="media">
-    <div class="columns p-6">
-      <div class="column is-5">
-        <h1 class="title is-2 artickleh1"><span class="firstl">{% trans "A" %}</span>{% trans "rticles" %}</h1>
-        <div class="artickletext">
-          <p>{% trans "This page shares my best articles to read on topics like health, happiness, creativity, productivity and more. The central question that drives my work is, “How can we live better?” To answer that question, I like to write about science-based ways to solve practical problems." %}</p>
-          <p class="mt-5">{% trans "You’ll find interesting articles to read on topics like how to stop procrastinating as well as personal recommendations like my list of the best books to read and my minimalist travel guide. Ready to dive in? You can use the categories below to browse my best articles." %}</p>
+  </section> {% endcomment %}
+
+  <div class="slider-container">
+    <div class="slider-wrapper">
+      <div class="section-item">
+        <img src="{% static 'img/m18.png' %}" alt="Stylish Image">
+        <div class="section-content">
+          <h2 class="stylized-title">STYLISH</h2>
+          <p class="stylized-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
       </div>
-      <div class="column is-6 ml-6 ">
-        <img src="../../static/img/artickle.jpg" alt="">
-      </div>
-    </div>
-  
-    <h1 class="title is-1 has-text-centered font1"><span class="firstl">{% trans "A" %}</span>{% trans "ll Articles" %}</h1>
-    <p class="subtitle is-4 has-text-centered mt-3">{% trans "Browse articles by topic" %}</p>
-  
-    <div class="columns articlepading">
-      <div class="column is-7">
-        <h1 class="title is-2 font1 hv2">{% trans "Creativity" %}</h1>
-        <div class="font2">
-          <hr class="line">
-          <a href="{% url 'articles' %}">
-            <p class="hv">{% trans "For a More Creative Brain Follow These 5 Steps" %}</p>
-            <hr class="line">
-          </a>
-          <p class="hv has-text-black">{% trans "Creativity Is a Process, Not an Event" %}</p>
-          <hr class="line">
-          <p class="hv">{% trans "The Proven Path to Doing Unique and Meaningful Work" %}</p>
-          <hr class="line">
-          <p class="font3 hv">{% trans "READ MORE ARTICLES ON CREATIVITY" %} <i class="fa-solid fa-arrow-right ml-4"></i></p>
+      <div class="section-item">
+        <img src="{% static 'img/m5.jpg' %}" alt="Stylish Image">
+        <div class="section-content">
+          <h2 class="stylized-title">STYLISH</h2>
+          <p class="stylized-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
       </div>
-  
-      <div class="column is-5">
-        <h1 class="title is-2 font1 hv">{% trans "Mental Health" %}</h1>
-        <div class="font2">
-          <hr class="line">
-          <p class="hv">{% trans "For a More Creative Brain Follow These 5 Steps" %}</p>
-          <hr class="line">
-          <p class="hv">{% trans "Creativity Is a Process, Not an Event" %}</p>
-          <hr class="line">
-          <p class="hv">{% trans "The Proven Path to Doing Unique and Meaningful Work" %}</p>
-          <hr class="line">
-          <p class="font3 hv">{% trans "READ MORE ARTICLES ON MENTAL HEALTH" %} <i class="fa-solid fa-arrow-right ml-4"></i></p>
+      <div class="section-item">
+        <img src="{% static 'img/m6.jpg' %}" alt="Stylish Image">
+        <div class="section-content">
+          <h2 class="stylized-title">STYLISH</h2>
+          <p class="stylized-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+      <div class="section-item">
+        <img src="{% static 'img/m4.jpg' %}" alt="Trandy Image">
+        <div class="section-content">
+          <h2 class="stylized-title">TRENDY</h2>
+          <p class="stylized-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </div>
+      <div class="section-item">
+        <img src="{% static 'img/m18.png' %}" alt="Stylish Image">
+        <div class="section-content">
+          <h2 class="stylized-title">MODERN</h2>
+          <p class="stylized-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
         </div>
       </div>
     </div>
-  </section>
-  
-  <section>
-    <div class="slideshow-container mt-6 mb-4">
-      <div class="mySlides fade">
-        <figure class="image is-16by9">
-          <iframe class="has-ratio" width="340" height="260" src="https://www.youtube.com/embed/YE7VzlLtp-4" frameborder=""></iframe>
-        </figure>
-      </div>
-  
-      <div class="mySlides fade">
-        <figure class="image is-16by9">
-          <iframe class="has-ratio" width="340" height="260" src="https://www.youtube.com/embed/NVmnw5k6Fb4" frameborder=""></iframe>
-        </figure>
-      </div>
-  
-      <div class="mySlides fade">
-        <figure class="image is-16by9">
-          <iframe class="has-ratio" width="340" height="260" src="https://www.youtube.com/embed/YE7VzlLtp-4" frameborder="1"></iframe>
-        </figure>
-      </div>
-  
-      <!-- Next and previous buttons -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <div class="slider-controls">
+      <button class="slider-control prev">❮</button>
+      <button class="slider-control next">❯</button>
     </div>
-    <br>
+  </div>
   
-    <!-- The dots/circles -->
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-  </section>
-  
-  <section class="contack mt-5" id="contack">
+
+
+<section class="contack mt-5" id="contact">
     <h1 class="ml-5 secondl">{% trans "Get In Touch" %}</h1>
     <div class="columns">
       <div class="column is-8">
@@ -280,22 +233,23 @@
         <h1 class="title is-2 has-text-white">{% trans "Contact Us" %}</h1>
         <p class="mb-5">{% trans "Not sure what you need? The team at Square Events will be happy to listen to you and suggest event ideas you haven't considered." %}</p>
         <ul>
-          <li><i class="fa-solid fa-envelope"></i> info@youandyourmind.org</li>
-          <li><i class="fa-solid fa-phone my-3"></i> +998 (XX) XXX-XXXX</li>
+          <li><i class="fa-solid fa-envelope"></i>yourmindca@gmail.com</li>
+          <li><i class="fa-solid fa-phone my-3"></i>+61 447 686 640</li>
           <li><i class="fa-solid fa-location-dot"></i> {% trans "Sydney Office: 69 Macquarie St, Sydney, Australia" %}</li>
         </ul>
         <div class="columns pt-5 title is-4">
-          <a href=""><i class="fa-brands fa-instagram mx-5 has-text-white"></i></a>
-          <a href=""><i class="fa-brands fa-telegram mx-5 has-text-white"></i></a>
-          <a href=""><i class="fa-brands fa-linkedin mx-5 has-text-white"></i></a>
-          <a href=""><i class="fa-brands fa-youtube mx-5 has-text-white"></i></a>
+          <a target="_blank" href="https://www.instagram.com/yourmindca?igsh=bzh0ZDJiczJyOXE2&utm_source=qr"><i class="fa-brands fa-instagram mx-5 has-text-white"></i></a>
+          <a target="_blank" href="https://t.me/youandyourmindca"><i class="fa-brands fa-telegram mx-3 has-text-white"></i></a>
+          <a target="_blank" href=""><i class="fa-brands fa-linkedin mx-3 has-text-white"></i></a>
+          <a target="_blank" href="https://www.youtube.com/channel/UCNroFfgqX13q3ltsC9j08Sw"><i class="fa-brands fa-youtube mx-5 has-text-white"></i></a>
         </div>
       </div>
     </div>
-  </section>
+</section>
   
 
 <script src="../../static/js/script.js"></script>
+<script src="../../static/js/script2.js"></script>
 {% endblock %}
 
 </body>

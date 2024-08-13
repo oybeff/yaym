@@ -9,11 +9,18 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" media='screen'>
     <link rel="stylesheet" href="{% static 'css/bulma.min.css' %}" type="text/css" media='screen'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% trans "Your Mind" %}{% endblock %}</title>
+    <meta property="og:title" content="YourMind">
+    <meta property="og:description" content="YourMind - Mental Health and Wellbeing">
+    <meta property="og:url" content="https://yourmindca.com/en/">
+    <meta property="og:type" content="website">
 </head>
 <body>
     {% csrf_token %}
 
-    <div class="navv mb-6">
+    <div class="navv">
         <nav class="navbar container navv" role="navigation" aria-label="main navigation" id="home">
           <div class="navbar-brand pr-6 navv">
             <figure class="image is-64x64">
@@ -35,16 +42,28 @@
               <a href="#aboutus" class="navbar-item mx-6">
                 {% trans "About Us" %}
               </a>
-              <a href="#howwework" class="navbar-item mx-6">
-                  {% trans "How We Work" %}
-              </a>
-              <a href="#team" class="navbar-item mx-6">
-                {% trans "Our Team" %}
-              </a>
-              <a href="#media" class="navbar-item mx-6">
-                {% trans "Media" %}
+              <!-- Media Dropdown -->
+              <div class="navbar-item has-dropdown is-hoverable mx-6">
+                <a class="navbar-link">
+                  {% trans "Media" %}
+                </a>
+                <div class="navbar-dropdown">
+                  <a href="{% url 'articlepage' %}" class="navbar-item">
+                    {% trans "Articles & Podcasts" %}
+                  </a>
+                  <a href="{% url 'team' %}" class="navbar-item">
+                    {% trans "Our Team" %}
+                  </a>
+                  <a href="{% url 'howwework' %}" class="navbar-item">
+                    {% trans "How We Work" %}
+                  </a>
+                </div>
+              </div>
+              <a href="#newsletter" class="navbar-item mx-6">
+                {% trans "Newsletter" %}
               </a>
             </div>
+            
 
             <div class="navbar-end">
               <div class="navbar-item">
@@ -100,10 +119,10 @@
                 <img src="{% static 'img/logo2.png' %}" alt="NAMI Logo" class="logo">
                 <p>{% trans "National Alliance on Mental Illness" %}</p>
                 <div class="social-icons">
-                  <a href=""><i class="fa-brands fa-instagram mx-5 has-text-white"></i></a>
-                  <a href=""><i class="fa-brands fa-telegram mx-3 has-text-white"></i></a>
-                  <a href=""><i class="fa-brands fa-linkedin mx-3 has-text-white"></i></a>
-                  <a href=""><i class="fa-brands fa-youtube mx-5 has-text-white"></i></a>
+                  <a target="_blank" href="https://www.instagram.com/yourmindca?igsh=bzh0ZDJiczJyOXE2&utm_source=qr"><i class="fa-brands fa-instagram mx-5 has-text-white"></i></a>
+                  <a target="_blank" href="https://t.me/youandyourmindca"><i class="fa-brands fa-telegram mx-3 has-text-white"></i></a>
+                  <a target="_blank" href="https://www.linkedin.com/company/yourmindca/"><i class="fa-brands fa-linkedin mx-3 has-text-white"></i></a>
+                  <a target="_blank" href="https://www.youtube.com/channel/UCNroFfgqX13q3ltsC9j08Sw"><i class="fa-brands fa-youtube mx-5 has-text-white"></i></a>
                 </div>
                 <p>Copyright &copy; 2024 NAMI. All rights reserved.</p>
             </div>
@@ -124,17 +143,18 @@
                 </div>
                 <div class="footer-column">
                     <p class="footer-heading">{% trans "Policies" %}</p>
-                    <a href="#">{% trans "Privacy Policy" %}</a>
-                    <a href="#">{% trans "Disclaimer" %}</a>
-                    <a href="#">{% trans "State Disclaimer" %}</a>
-                    <a href="#">{% trans "Link Policy" %}</a>
-                    <a href="#">{% trans "YOURMIND Required Disclosures For Written Solicitations" %}</a>
-                    <a href="#">{% trans "YOURMIND Store Policies" %}</a>
+                    <a href="{% url 'privacy' %}">{% trans "Privacy Policy" %}</a>
+                    <a href="{% url 'disclaimer' %}">{% trans "Disclaimer" %}</a>
+                    <a href="{% url 'statedc' %}">{% trans "State Disclaimer" %}</a>
+                    <a href="{% url 'linkpolicy' %}">{% trans "Link Policy" %}</a>
+                    <a href="{% url 'yyrequired' %}">{% trans "YOURMIND Required Disclosures For Written Solicitations" %}</a>
+                    <a href="{% url 'yystore' %}">{% trans "YOURMIND Store Policies" %}</a>
                 </div>
             </div>
         </div>
     </footer>
   
     <script src="{% static 'js/script.js' %}"></script>
+    <script src="{% static 'js/script2.js' %}"></script>
 </body>
 </html>

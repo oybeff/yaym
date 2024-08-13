@@ -1,0 +1,85 @@
+{% extends 'mind/nav_foot.html' %}
+{% load static %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    {% block content %}    
+
+
+  <section id="howwework">
+    <div class="text1">
+      <div class="text2">
+        <h1 class="title is-1 has-text-white">{% trans "How We Work" %}</h1>
+        <p>{% trans "We focus on creating relevant content that addresses the mental health challenges faced by young people today. Our content includes:" %}</p>
+      </div>
+      <div class="columns has-text-white has-text-centered">
+        {% for work_item in work %}
+          <div class="column is-4">
+            <h1>{{ work_item.subtitle|safe }}</h1>
+          </div>
+        {% endfor %}
+      </div>
+      <a href="{% url 'home' %}#contact"><button class="button btn2 is-success">{% trans "Contact US" %}</button></a>
+    </div>
+
+    <img class="bg3" src="{% static 'img/bg10.png' %}" alt="">
+  </section>
+
+
+
+  <div class="container10">
+    <h1 class="title is-1">{% trans "More about our process" %}</h1>
+    <p class="subtitle is-5 mt-6">{% trans "At our organization, we believe in a systematic and collaborative approach to addressing mental health issues and <br> promoting mental well-being in Central Asian countries." %}</p>
+    <p class="subtitle is-5">{% trans "Our process is built on a foundation of rigorous research, strategic partnerships, and a deep commitment <br> to cultural sensitivity and inclusivity." %}</p>
+    <p class="subtitle is-5">{% trans "Once we commit to an area of need, we define our major goals and identify a clear path to achieving them." %}</p>
+
+    <div class="accordion">
+        <div class="accordion-item">
+            <button class="accordion-button">{% trans "Articles, Monthly Newsletters, and Newspapers" %} <i class="fa-solid fa-plus iconplus"></i></button>
+            <div class="accordion-content">
+                <p class="">{% trans "We create and share a variety of written content, including articles, monthly newsletters, and newspapers. These publications cover a wide range of topics such as tips on managing depression and anxiety, success stories, and research papers. Daily posts on our social media platforms further amplify our message and provide valuable insights into mental health." %}</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button class="accordion-button">{% trans "Interviews with Experts" %} <i class="fa-solid fa-plus iconplus"></i></button>
+            <div class="accordion-content">
+                <p class="">{% trans "Our content extends beyond written publications to include engaging and informative interviews with psychologists and mental health experts from Australia, Switzerland, and New Zealand. These discussions offer professional insights and advice, making mental health information more accessible and relatable." %}</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button class="accordion-button">{% trans "Presentations and Workshops" %} <i class="fa-solid fa-plus iconplus"></i></button>
+            <div class="accordion-content">
+                <p class="">{% trans "Despite our remote work setup, we conduct occasional workshops and presentations to directly engage with our audience and raise awareness about mental health. These significant events, held in cities like Sydney, Auckland, and Tashkent, provide an opportunity for direct interaction and community building." %}</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button class="accordion-button">{% trans "Multilingual Content" %} <i class="fa-solid fa-plus iconplus"></i></button>
+            <div class="accordion-content">
+                <p class="">{% trans "To ensure our message reaches a broad audience, all our content is available in three languages: English, Russian, and Uzbek. This multilingual approach helps us address the diverse linguistic needs of our audience and makes mental health resources more accessible." %}</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button class="accordion-button">{% trans "International Team and Remote Work" %} <i class="fa-solid fa-plus iconplus"></i></button>
+            <div class="accordion-content">
+                <p class="">{% trans "Our international team comprises members from different parts of the globe, working remotely to create impactful content on mental health. This global collaboration enriches our perspectives and enables us to address mental health issues comprehensively and inclusively." %}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    {% endblock %}
+</body>
+
+</html>

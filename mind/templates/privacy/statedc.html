@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% extends 'mind/nav_foot.html' %}
+{% load static i18n %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% trans "Privacy" %}</title>
+</head>
+
+<body>
+
+    {% block content %}  
+
+    <div class="container">
+        <h1 class="has-text-black title is-2">{% trans "Disclaimer" %}</h1>
+        <hr class="has-background-black">
+        <p class="title is-3">Objective:
+        <h2 class='subtitle is-4'>{% trans "Objective:  To ensure compliance with state-specific legal requirements in Australia and Central Asia" %}</h2>
+        </p>
+        <p class="title is-3">Scope
+        <h2 class='subtitle is-4 mb-6'>{% trans "This policy applies to all state-specific communications and activities." %}</h2>
+        </p>
+        <p class="title is-2">{% trans "Policy:" %}</p>
+        <p class="subtitle is-4">
+            {% trans "- Australia: Your Mind complies with all relevant state laws and regulations in Australia. State-specific disclaimers will be included in all relevant communications." %}
+        </p>
+        <p class="subtitle is-4">
+            {% trans "- Central Asia: Your Mind complies with all relevant state laws and regulations in Central Asia. State-specific disclaimers will be included in all relevant communications." %}
+        </p>
+    
+    </div>
+
+    {% endblock %}
+</body>
+
+</html>
