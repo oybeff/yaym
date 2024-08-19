@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% trans "Privacy" %}</title>
+    <title>{% trans "Articles" %}</title>
 </head>
 
 <body>
@@ -20,7 +20,7 @@
             <h1 class="title is-2 artickleh1"><span class="firstl">{% trans "A" %}</span>{% trans "rticles" %}</h1>
             <div class="artickletext">
               <p>{% trans "This page shares my best articles to read on topics like health, happiness, creativity, productivity and more. The central question that drives my work is, “How can we live better?” To answer that question, I like to write about science-based ways to solve practical problems." %}</p>
-              <p class="mt-5">{% trans "You’ll find interesting articles to read on topics like how to stop procrastinating as well as personal recommendations like my list of the best books to read and my minimalist travel guide. Ready to dive in? You can use the categories below to browse my best articles." %}</p>
+              <p class="mt-5">{% trans "You’ll find inrteresting articles to read on topics like how to stop procrastinating as well as personal recommendations like my list of the best books to read and my minimalist travel guide. Ready to dive in? You can use the categories below to browse my best articles." %}</p>
             </div>
           </div>
           <div class="column is-6 ml-6 ">
@@ -30,42 +30,35 @@
       
         <h1 class="title is-1 has-text-centered font1"><span class="firstl">{% trans "A" %}</span>{% trans "ll Articles" %}</h1>
         <p class="subtitle is-4 has-text-centered mt-3">{% trans "Browse articles by topic" %}</p>
-      
+        
         <div class="columns articlepading">
-          <div class="column is-7">
-            <h1 class="title is-2 font1 hv2">{% trans "Creativity" %}</h1>
+        {% for item in article1 %}
+          <div class="column is-6">
+            <h1 class="title is-2 hv2">{{item.title1|safe}}</h1>
             <div class="font2">
               <hr class="line">
-              <a href="{% url 'articles' %}">
-                <p class="hv">{% trans "For a More Creative Brain Follow These 5 Steps" %}</p>
+              <a href="{% url 'articles' item.slug %}">
+                <p class="hv">{{item.title_article|safe}}</p>
+                <hr class="line">
+                <p class="hv has-text-black">{{item.title_article2|safe}}</p>
+                <hr class="line">
+                <p class="hv">{{item.title_article3|safe}}</p>
                 <hr class="line">
               </a>
-              <p class="hv has-text-black">{% trans "Creativity Is a Process, Not an Event" %}</p>
-              <hr class="line">
-              <p class="hv">{% trans "The Proven Path to Doing Unique and Meaningful Work" %}</p>
-              <hr class="line">
-              <p class="font3 hv">{% trans "READ MORE ARTICLES ON CREATIVITY" %} <i class="fa-solid fa-arrow-right ml-4"></i></p>
+
+              <a href="{% url "related_article" item.slug %}">
+              <button id="readMoreBtn" class="button is-info" data-category="{{ category_slug }}">Read More</button>
+              </a>
+
             </div>
           </div>
-      
-          <div class="column is-5">
-            <h1 class="title is-2 font1 hv">{% trans "Mental Health" %}</h1>
-            <div class="font2">
-              <hr class="line">
-              <p class="hv">{% trans "For a More Creative Brain Follow These 5 Steps" %}</p>
-              <hr class="line">
-              <p class="hv">{% trans "Creativity Is a Process, Not an Event" %}</p>
-              <hr class="line">
-              <p class="hv">{% trans "The Proven Path to Doing Unique and Meaningful Work" %}</p>
-              <hr class="line">
-              <p class="font3 hv">{% trans "READ MORE ARTICLES ON MENTAL HEALTH" %} <i class="fa-solid fa-arrow-right ml-4"></i></p>
-            </div>
-          </div>
+        {% endfor %}
         </div>
+      
+
       </section>
 
 
-      ... 
  
       <section>
           <div class="slideshow-container mt-6 mb-4">
@@ -102,8 +95,11 @@
       </section>
         
       
-
+      <script src="{% static 'js/script2.js' %}"></script> <!-- Script defining relatedArticles -->
+      <script src="{% static 'js/script.js' %}"></script> <!-- Script using relatedArticles -->
+     
     {% endblock %}
+
 </body>
 
 </html>

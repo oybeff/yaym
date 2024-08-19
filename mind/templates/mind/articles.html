@@ -1,43 +1,86 @@
-{% extends 'mind/nav_foot.html' %}
-{% load static %}
 <!DOCTYPE html>
+{% extends "mind/nav_foot.html" %}
+{% load i18n %}
+{% load static %}
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Mental Health and Wellness</title>
+   <link rel="stylesheet" href="{% static 'css/style.css' %}"> <!-- Link your CSS file -->
 </head>
-
 <body>
-    {% block content %}    
+   {% block content %}
+   <!-- Previous Article Section -->
+   {% for item in articlein %}
+   <div class="article-container">
+       <div class="header-section">
+           <h1>{{item.title_article|safe}}</h1>
+           <hr> 
+           <p>{{item.subtitle|safe}}</p>
+       </div>
+        {% if item.img1 %}
+            <figure class="image-article">
+                 <img src="{{ item.img.url }}" alt="">
+             </figure>
+        {% else %}
+             <p>No image available.</p>
+        {% endif %}
+       <div class="columns-container">
+           <div class="left-column">
+               <h2>{{item.title_first_article|safe}}</h2>
+               <p>{{item.content1|safe}}</p>
 
-    <div class="container6">
-        <header class="header3">
-            <h1>For a More Creative Brain Follow These 5 Steps</h1>
-            <p class="author">written by James Clear | CREATIVITY, PRODUCTIVITY</p>
-        </header>
-        <div class="content3">
-            <main>
-                <p>Nearly all great ideas follow a similar creative process and this article explains how this process works. Understanding this is important because creative thinking is one of the most useful skills you can possess. Nearly every problem you face in work and in life can benefit from innovative solutions, lateral thinking, and creative ideas.</p>
-                <p>Anyone can learn to be creative by using these five steps. That’s not to say being creative is easy. Uncovering your creative genius requires courage and tons of practice. However, this five-step approach should help demystify the creative process and illuminate the path to more innovative thinking.</p>
-            </main>
-            <aside>
-                <h2>About the Author</h2>
-                <p>James Clear writes about habits, decision making, and continuous improvement. He is the author of the #1 New York Times bestseller, Atomic Habits. The book has sold over 20 million copies worldwide and has been translated into more than 60 languages.</p>
-                <a href="#">Click here to learn more →</a>
-                <div class="social-media">
-                    <div class="columns">
-                        <a href=""><i class="fa-brands fa-instagram  has-text-black"></i></a>
-                        <a href=""><i class="fa-brands fa-linkedin  has-text-black"></i></a>
-                    </div>
-                </div>
-            </aside>
-        </div>
-    </div>
+               {% if item.img1 %}
+                <figure class="image-article">
+                    <img src="{{ item.img1.url }}" alt="">
+                </figure>
+                 {% else %}
+                <p>No image available.</p>
+                {% endif %}
 
-    {% endblock %}
+               <p>{{item.content2|safe}}</p>
+
+
+               {% if item.img1 %}
+                <figure class="image-article">
+                    <img src="{{ item.img2.url }}" alt="">
+                </figure>
+                 {% else %}
+                <p>No image available.</p>
+                {% endif %}
+                
+               <p>{{item.content3|safe}}</p>
+
+           </div>
+           <div class="right-column">
+            <p>{{item.content4|safe}}</p>
+            
+               {% comment %} title for 2 article  {% endcomment %}
+
+               <h1>{{item.title_second_article|safe}}</h1>
+               <p>{{item.content5|safe}}</p>
+
+               {% if item.img1 %}
+                <figure class="image-article">
+                    <img src="{{ item.img3.url }}" alt="">
+                </figure>
+                 {% else %}
+                <p>No image available.</p>
+                {% endif %}
+               <p>{{item.content6|safe}}</p>
+           </div>
+        
+       </div>
+       
+    
+       <div class="footer-text">
+           <p><span class="bullet-point">•</span> Thank You For Reading Our Article's Sinclerly YourMind Team</p>
+       </div>
+   </div>
+
+   {% endfor %}
+  
+   {% endblock %}
 </body>
-
 </html>

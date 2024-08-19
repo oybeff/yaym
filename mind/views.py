@@ -1,4 +1,4 @@
-from .models import Work, Team, Article,  Newsletter, UserProfile
+from .models import Work, Team, Article,  Newsletter, UserProfile, Newsletterin, Articlein, Category
 from django.shortcuts import render, redirect
 from django.contrib.auth import login as auth_login, authenticate
 from django.contrib.auth.forms import AuthenticationForm
@@ -11,25 +11,24 @@ from django.core.mail import send_mail
 from django.template.loader import render_to_string
 from django.conf import settings
 import ssl
+from django.shortcuts import get_object_or_404
 from django.core.mail import send_mail
 from django.utils.translation import gettext as _
 from django.http import HttpResponse
 from django.core.mail import send_mail
 from django.conf import settings
 from django.shortcuts import render, redirect
-from .models import UserProfile
 from datetime import datetime
 from .forms import CustomUserCreationForm, ContactForm 
 from django.contrib.auth import logout
 from django.shortcuts import render # type: ignore
-from datetime import datetime
-
 ssl._create_default_https_context = ssl._create_unverified_context
+
+
 
 def index(request):
     work_item = Work.objects.all()
-    article = Article.objects.all()
-    newsletter = Newsletter.objects.all()
+    newsletter1 = Newsletter.objects.all()
     translated_works = []
 
     for work in work_item:
@@ -59,19 +58,30 @@ def index(request):
 
     context = {
         'work': translated_works,
-        'team': team,
-        'article': article,
-        'newsletter': newsletter,
+        'newsletter1': newsletter1,
         'form': form
     }
 
     return render(request, 'mind/base.html', context)
 
-def newsletter(request):
-    return render(request, 'mind/index.html')
 
-def articles(request):
-    return render(request, 'mind/articles.html')
+
+   
+
+def newsletterin(request, slug):
+    newsletter = get_object_or_404(Newsletter, slug=slug)
+    newsletter_detail = Newsletterin.objects.filter(related_newsletter=newsletter)
+    
+    
+
+    context = {
+        'newsletter_detail': newsletter_detail,
+        'newsletter': newsletter,
+    }
+   
+
+    return render(request, 'mind/index.html', context)
+
 
 def register(request):
     if request.method == 'POST':
@@ -98,10 +108,6 @@ def login_view(request):
 def logout_view(request):
     logout(request)
     return redirect('home')
-
-# views.py
-# views.py
-
 
 def multi_step_form(request):
     if request.method == 'POST':
@@ -168,8 +174,8 @@ def team(request):
 
     return render(request, "mind/team.html", context)
 
-def articlepage(request):
-    return render(request, "mind/articlepage.html")
+
+import json
 
 
 def howwework(request):
@@ -181,9 +187,56 @@ def howwework(request):
         translated_works.append({'subtitle': translated_subtitle})
 
     
-
     context = {
         'work': translated_works,
     }
 
     return render(request, "mind/howwework.html", context)
+
+
+
+
+def articlepage(request):
+    
+    article1 = Article.objects.order_by('-published_date')[:5]  # Fetch the latest 5 articles
+    articles_json = list(article1.values('title1', 'subtitle', 'slug'))  # Convert to a JSON-friendly format
+
+    context = {
+        'article1': article1,
+        'articles_json': articles_json,
+    }
+    return render(request, "mind/articlepage.html", context)
+
+
+def articles_by_category(request, slug):
+    category = get_object_or_404(Category, slug=slug)
+    articles = Article.objects.filter(category=category).order_by('-published_date')
+    
+    if not articles.exists():
+        return render(request, '404.html', status=404)
+    
+    return render(request, 'mind/related_article.html', {'articles': articles, 'category': category})
+    
+def articles(request, slug):
+
+    article = get_object_or_404(Article, slug=slug)
+    articlein = Articlein.objects.filter(related_article=article)
+    
+
+    context = {
+        'article': article,
+        'articlein': articlein
+    }
+    return render(request, 'mind/articles.html', context)
+
+def related_article(request, slug):
+    articles = Article.objects.filter(category=slug).order_by('-published_date')
+    articles1 = Article.objects.all()
+    # Render the articles into a template
+
+    context = {
+        'articles': articles,
+        'category': slug,
+        'articles1':articles1
+    }
+    return render(request, 'mind/related_article.html', context)

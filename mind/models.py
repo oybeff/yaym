@@ -2,6 +2,9 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.template.defaultfilters import slugify
 from ckeditor.fields import RichTextField
+from django.utils.text import slugify
+from django.utils import timezone
+
 
 
 class Work(models.Model):
@@ -18,6 +21,7 @@ class Work(models.Model):
 class Team(models.Model):
     title = models.CharField(("full name"), max_length=100, null=True, blank=True)
     subtitle = models.CharField(("position_work"), max_length=250, null=True, blank=True)
+    description = models.TextField(("story_of_member"), null=True, blank=True)
     img = models.ImageField(("img_of_person"), upload_to=None, height_field=None, width_field=None, max_length=None, null=True, blank=True)
 
     def __str__(self):
@@ -28,12 +32,15 @@ class Team(models.Model):
         verbose_name_plural = 'teams'
 
 class Newsletter(models.Model):
-    title = models.CharField(("title"), max_length=100, null=True, blank=True)
-    subtitle = RichTextField(("description_of_newsletter"), null=True, blank=True)
+    title = models.CharField(("title"), max_length=100, null=True, blank=True, unique=True)
     img = models.ImageField(("img_of_newsletter"), upload_to=None, height_field=None, width_field=None, max_length=None, null=True, blank=True)
-    desciption = models.TextField(("description_of_newsletter"), null=True, blank=True)
-    img = models.ImageField(("img_of_newsletter"), upload_to=None, height_field=None, width_field=None, max_length=None, null=True, blank=True)
+    description = RichTextField(("description_of_newsletter"), null=True, blank=True)
+    slug = models.SlugField(unique=True, blank=True, null=True)
 
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            self.slug = slugify(self.title)
+        super().save(*args, **kwargs)
 
     def __str__(self):
         return self.title
@@ -42,22 +49,84 @@ class Newsletter(models.Model):
         verbose_name = 'newsletter'
         verbose_name_plural = 'newsletters'
 
-class Article(models.Model):
-    title = models.CharField(("title_of_article"), max_length=100, null=True, blank=True)
-    subtitle = models.CharField(("name_of_article"), max_length=250, null=True, blank=True)
-    title2 = models.CharField(("title_of_article"), max_length=100, null=True, blank=True)
-    desciption = models.TextField(("description_of_article"), null=True, blank=True)
-    img = models.ImageField(("img_of_article"), upload_to=None, height_field=None, width_field=None, max_length=None, null=True, blank=True)
+class Newsletterin(models.Model):
+    img1 = models.ImageField("img_of_newsletter1", upload_to=None, null=True, blank=True)
+    subtitle1 = RichTextField("description_of_newsletter1", null=True, blank=True,)
+    related_newsletter = models.ForeignKey(Newsletter, on_delete=models.CASCADE)
+    title = models.CharField(("title"), max_length=200, null=True, blank=True)
 
     def __str__(self):
         return self.title
-    
-    class Meta:
-        verbose_name = 'article'
-        verbose_name_plural = 'articles'
 
-# models.py
-from django.db import models
+    class Meta:
+        verbose_name = 'newsletterin'
+        verbose_name_plural = 'newsletterins'
+
+
+
+class Category(models.Model):
+    name = models.CharField(max_length=100, unique=True)
+    slug = models.SlugField(unique=True)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = 'Category'
+        verbose_name_plural = 'Categories'
+
+
+class Article(models.Model):
+    title1 = RichTextField(("title_of_article_whole"),  null=True, blank=True)
+    title_article = RichTextField(("title_article"), null=True, blank=True)
+    title_article2 = RichTextField(("title_article2"), null=True, blank=True)
+    title_article3 = RichTextField(("title_article3"), null=True, blank=True)
+    subtitle = models.TextField(("read more"), max_length=200, null=True, blank=True)
+    slug = models.SlugField(unique=True, blank=True, null=True)
+    title = models.CharField(("title_of_article"), max_length=100, null=True, blank=True)
+    published_date = models.DateTimeField("Published Date", default=timezone.now)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE, null=True, blank=True, related_name='Article')
+    img = models.ImageField("long image", upload_to=None, null=True, blank=True)
+    
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            self.slug = slugify(self.title)
+        super().save(*args, **kwargs)
+
+    def __str__(self):
+        return self.title or "No title"
+
+    class Meta:
+        verbose_name = 'Article'
+        verbose_name_plural = 'Articles'
+        ordering = ['-published_date']
+
+class Articlein(models.Model):
+    title_article = models.CharField(("title article"), max_length=200, null=True, blank=True)
+    subtitle = models.TextField(("subtitle article"),  null=True, blank=True)
+    img = models.ImageField("long image", upload_to=None, null=True, blank=True)
+    title_first_article = models.CharField(("title_first_article"), max_length=200, null=True, blank=True)
+    content1 = RichTextField("content for frist p", null=True, blank=True,)
+    img1 = models.ImageField("img of in left ", upload_to=None, null=True, blank=True)
+    content2 = RichTextField("content for second p", null=True, blank=True,)
+    img2 = models.ImageField("img of in left under ", upload_to=None, null=True, blank=True)
+    content3 = RichTextField("content for last before go right", null=True, blank=True,)
+    content4 = RichTextField("righ column continue left", null=True, blank=True,)
+    title_second_article = models.CharField(("title_second_article"), max_length=200, null=True, blank=True)
+    content5 = RichTextField("content for right", null=True, blank=True,)
+    img3 = models.ImageField("img for right  ", upload_to=None, null=True, blank=True)
+    content6 = RichTextField("content for right", null=True, blank=True,)
+    related_article = models.ForeignKey(Article, on_delete=models.CASCADE)
+    title = models.CharField(("title"), max_length=200, null=True, blank=True)
+
+    def __str__(self):
+        return self.title or "No title"
+
+    class Meta:
+        verbose_name = 'articlein'
+        verbose_name_plural = 'articleins'
+
+
 
 class UserProfile(models.Model):
     first_name = models.CharField(max_length=100)

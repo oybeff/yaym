@@ -68,3 +68,41 @@ function autoSlide() {
 }
 
 autoSlide();
+
+
+dots.forEach((dot, index) => {
+  dot.addEventListener('click', () => {
+    currentIndex = index;
+    updateSlider();
+  });
+});
+
+let isSliding = false;
+
+function updateSlider() {
+  if (isSliding) return;
+  isSliding = true;
+
+  const slideWidth = sliderItems[0].clientWidth;
+  sliderWrapper.style.transform = `translateX(-${slideWidth * currentIndex}px)`;
+
+  sliderItems.forEach((item, index) => {
+    item.classList.remove('active');
+    if (index === currentIndex) {
+      item.classList.add('active');
+      item.style.zIndex = 1;
+    } else {
+      item.style.zIndex = 0;
+    }
+  });
+
+  dots.forEach((dot, index) => {
+    dot.classList.remove('active');
+    if (index === currentIndex) {
+      dot.classList.add('active');
+    }
+  });
+
+  setTimeout(() => isSliding = false, 500); // Adjust timing as needed
+}
+

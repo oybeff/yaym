@@ -15,62 +15,38 @@
 
     {% block content %}  
 
-    <div class="newsletter-container">
-        <header class="newsletter-header">
-            <div class="newsletter-title">
-                Mental Health Awareness: Breaking the Silence
-            </div>
-            <div class="newsletter-overview">
-                <!-- Backend will inject this content -->
-            </div>
-        </header>
-    
-        <section class="newsletter-section" id="understanding-mental-health">
+    {% for newsletterin in newsletter_detail %}
+    {% if forloop.counter0|divisibleby:2 %}
+        <!-- Text on the left, Image on the right -->
+        <section class="newsletter-section">
             <div class="newsletter-content">
-                <!-- Backend will inject this content -->
-             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam officiis fugit at iure nam harum id sapiente sint quos nulla. Nihil sed quis ut excepturi quas libero consequuntur reprehenderit eligendi!</p>
+                <p>{{ newsletterin.subtitle1|safe }}</p>
+            </div>
+            {% if newsletterin.img1 %}
+                <img src="{{ newsletterin.img1.url }}" alt="{{ newsletterin.subtitle1 }}">
+            {% else %}
+                <p>No image available.</p>
+            {% endif %}
+        </section>
+    {% else %}
+        <!-- Image on the left, Text on the right -->
+        <section class="newsletter-section">
+            {% if newsletterin.img1 %}
+                <img src="{{ newsletterin.img1.url }}" alt="{{ newsletterin.subtitle1 }}">
+            {% else %}
+                <p>No image available.</p>
+            {% endif %}
+            <div class="newsletter-content">
+                <p>{{ newsletterin.subtitle1|safe }}</p>
+            </div>
+        </section>
+    {% endif %}
+    {% endfor %}
 
-            </div>
-            <img src="https://unsplash.com/photos/understanding-mental-health.jpg" alt="Understanding Mental Health">
-        </section>
-    
-        <section class="newsletter-section" id="recognizing-signs">
-            <img src="https://unsplash.com/photos/recognizing-signs.jpg" alt="Recognizing the Signs">
-            <div class="newsletter-content">
-             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam officiis fugit at iure nam harum id sapiente sint quos nulla. Nihil sed quis ut excepturi quas libero consequuntur reprehenderit eligendi!</p>
-            </div>
-        </section>
-    
-        <section class="newsletter-section" id="open-conversations">
-            <div class="newsletter-content">
-                <!-- Backend will inject this content -->
-             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam officiis fugit at iure nam harum id sapiente sint quos nulla. Nihil sed quis ut excepturi quas libero consequuntur reprehenderit eligendi!</p>
 
-            </div>
-            <img src="https://unsplash.com/photos/open-conversations.jpg" alt="Open Conversations">
-        </section>
-    
-        <section class="newsletter-section" id="resources-support">
-            <img src="https://unsplash.com/photos/resources-support.jpg" alt="Resources for Support">
-            <div class="newsletter-content">
-                <!-- Backend will inject this content -->
-             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam officiis fugit at iure nam harum id sapiente sint quos nulla. Nihil sed quis ut excepturi quas libero consequuntur reprehenderit eligendi!</p>
-
-            </div>
-        </section>
-    
-        <section class="newsletter-section" id="self-care">
-            <div class="newsletter-content">
-                <!-- Backend will inject this content -->
-             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam officiis fugit at iure nam harum id sapiente sint quos nulla. Nihil sed quis ut excepturi quas libero consequuntur reprehenderit eligendi!</p>
-
-            </div>
-            <img src="https://unsplash.com/photos/self-care.jpg" alt="Taking Care of Your Mental Health">
-        </section>
-    </div>
-    
    
     {% endblock %}
+
 </body>
 
 </html>

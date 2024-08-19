@@ -1,10 +1,16 @@
 from django.urls import path
 from . import views
+from django.urls import reverse
 
 urlpatterns = [
     path('', views.index, name='home'),  
-    path('newsletter/', views.newsletter, name='newsletter'),  
-    path('articles/', views.articles, name='articles'),  
+    path('newsletter/<slug:slug>/', views.newsletterin, name='newsletter_detail'),
+    path('articlepage/', views.articlepage, name='articlepage'),
+    # path('relatedarticle/', views.related_article, name='relatedarticle'),
+    path('related_articles/<slug:slug>/', views.related_article, name='related_article'),
+    path('articles/category/<slug:slug>/', views.articles_by_category, name='articles_by_category'),
+    path('articles<slug:slug>/', views.articles, name='articles'),
+    path('category/<slug:slug>/', views.articles, name='articles_by_category'),
     path('registration/', views.register, name='register'),  
     path('login/', views.login_view, name='login'),  
     path('logout/', views.logout_view, name='logout'),
