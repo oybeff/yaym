@@ -75,15 +75,11 @@ class Category(models.Model):
         verbose_name = 'Category'
         verbose_name_plural = 'Categories'
 
-
 class Article(models.Model):
-    title1 = RichTextField(("title_of_article_whole"),  null=True, blank=True)
     title_article = RichTextField(("title_article"), null=True, blank=True)
-    title_article2 = RichTextField(("title_article2"), null=True, blank=True)
-    title_article3 = RichTextField(("title_article3"), null=True, blank=True)
-    subtitle = models.TextField(("read more"), max_length=200, null=True, blank=True)
+    subtitle = RichTextField(("subtitle for card article"), null=True, blank=True)
     slug = models.SlugField(unique=True, blank=True, null=True)
-    title = models.CharField(("title_of_article"), max_length=100, null=True, blank=True)
+    title = models.CharField(("prsoto def str ga"), max_length=100, null=True, blank=True)
     published_date = models.DateTimeField("Published Date", default=timezone.now)
     category = models.ForeignKey(Category, on_delete=models.CASCADE, null=True, blank=True, related_name='Article')
     img = models.ImageField("long image", upload_to=None, null=True, blank=True)
@@ -95,11 +91,12 @@ class Article(models.Model):
 
     def __str__(self):
         return self.title or "No title"
-
+    
     class Meta:
         verbose_name = 'Article'
         verbose_name_plural = 'Articles'
         ordering = ['-published_date']
+
 
 class Articlein(models.Model):
     title_article = models.CharField(("title article"), max_length=200, null=True, blank=True)
@@ -116,8 +113,9 @@ class Articlein(models.Model):
     content5 = RichTextField("content for right", null=True, blank=True,)
     img3 = models.ImageField("img for right  ", upload_to=None, null=True, blank=True)
     content6 = RichTextField("content for right", null=True, blank=True,)
-    related_article = models.ForeignKey(Article, on_delete=models.CASCADE)
+    related_article = models.OneToOneField(Article, on_delete=models.CASCADE, unique=True, blank=True, null=True,)
     title = models.CharField(("title"), max_length=200, null=True, blank=True)
+    
 
     def __str__(self):
         return self.title or "No title"

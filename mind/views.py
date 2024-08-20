@@ -194,18 +194,20 @@ def howwework(request):
     return render(request, "mind/howwework.html", context)
 
 
-
-
-def articlepage(request):
-    
-    article1 = Article.objects.order_by('-published_date')[:5]  # Fetch the latest 5 articles
-    articles_json = list(article1.values('title1', 'subtitle', 'slug'))  # Convert to a JSON-friendly format
+def articlepage(request, slug=None):
+    if slug:
+        category = get_object_or_404(Category, slug=slug)
+        article1 = Article.objects.filter(category=category).order_by('-published_date')[:2]
+    else:
+        article1 = Article.objects.order_by('-published_date')[:2]
+        category = None
 
     context = {
         'article1': article1,
-        'articles_json': articles_json,
+        'category': category,
     }
     return render(request, "mind/articlepage.html", context)
+
 
 
 def articles_by_category(request, slug):
@@ -213,30 +215,31 @@ def articles_by_category(request, slug):
     articles = Article.objects.filter(category=category).order_by('-published_date')
     
     if not articles.exists():
-        return render(request, '404.html', status=404)
+        return render(request, 'mind/404.html', status=404)
     
     return render(request, 'mind/related_article.html', {'articles': articles, 'category': category})
-    
-def articles(request, slug):
 
+def articles(request, slug):
     article = get_object_or_404(Article, slug=slug)
-    articlein = Articlein.objects.filter(related_article=article)
-    
+    try:
+        articlein = Articlein.objects.get(related_article=article)
+    except Articlein.DoesNotExist:
+        return render(request, 'mind/404.html', {'error_message': 'Article details not found'}, status=404)
 
     context = {
         'article': article,
-        'articlein': articlein
+        'articlein': articlein,
     }
     return render(request, 'mind/articles.html', context)
 
 def related_article(request, slug):
-    articles = Article.objects.filter(category=slug).order_by('-published_date')
+    category = get_object_or_404(Category, slug=slug)
+    articles = Article.objects.filter(category=category).order_by('-published_date')
     articles1 = Article.objects.all()
-    # Render the articles into a template
 
     context = {
         'articles': articles,
-        'category': slug,
-        'articles1':articles1
+        'category': category,
+        'articles1': articles1
     }
     return render(request, 'mind/related_article.html', context)

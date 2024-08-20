@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 {% extends 'mind/nav_foot.html' %}
-{% load static %}
 {% load static i18n %}
 {% load static %}
 
@@ -14,43 +13,41 @@
 </head>
 
 <body>
-
-    {% block content %}  
-        <div class="columns">
-          {% for item in articles1 %}
-          <div class="column is-3">
+  {% block content %}
+  <div class="columns mt-4 column4">
+      {% for item in articles %}
+      <div class="column is-3">
+       <a href="{% url 'articles' item.slug %}">
           <div class="card">
-            <div class="card-image">
-              <figure class="image is-4by3">
-                <img
-                  src="{{ item.img.url}}"
-                  alt="Placeholder image"
-                />
-              </figure>
-            </div>
-            <div class="card-content">
-              <div class="media">
-                <div class="media-content">
-                  <p class="title is-4">{{item.title}}</p>
-                  <p class="subtitle is-6"></p>
-                </div>
+              <div class="card-image">
+                  {% if item.img %}
+                  <figure class="image is-4by3">
+                      <img src="{{ item.img.url }}" alt="Image for {{ item.title }}">
+                  </figure>
+                  {% else %}
+                   <p>No image available.</p>
+                  {% endif %}
               </div>
-          
-              <div class="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
-                iaculis mauris. <a>@bulmaio</a>. <a href="#">#css</a>
-                <a href="#">#responsive</a>
-                <br />
-                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+              <div class="card-content">
+                  <div class="media">
+                      <div class="media-content">
+                          <p class="title is-4">{{ item.title_article|safe }}</p>
+                      </div>
+                  </div>
+                  <div class="content">
+                      {{ item.subtitle|truncatewords:15|safe }}  <!-- Example of showing a short description -->
+                      <p>Read more</p>
+                  </div>
               </div>
-            </div>
           </div>
-          </div>
-          {% endfor %}
+        </a>
+      </div>
 
-        </div>
-            
-       {% endblock %}
+      {% endfor %}
+  </div>
+  {% endblock %}
+  
 </body>
 
 </html>
+                  

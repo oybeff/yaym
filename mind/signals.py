@@ -10,7 +10,7 @@ def create_related_articles(sender, instance, created, **kwargs):
         related_articles = Article.objects.filter(category=instance.category).exclude(id=instance.id)[:5]
         for related_article in related_articles:
             Articlein.objects.create(
-                title_article=related_article.title1,
+                title_article=related_article.title,
                 subtitle=related_article.subtitle,
                 related_article=instance
             )

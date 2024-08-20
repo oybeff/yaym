@@ -32,27 +32,44 @@
         <p class="subtitle is-4 has-text-centered mt-3">{% trans "Browse articles by topic" %}</p>
         
         <div class="columns articlepading">
-        {% for item in article1 %}
           <div class="column is-6">
-            <h1 class="title is-2 hv2">{{item.title1|safe}}</h1>
+            <h1 class="title is-2 hv2">Psychology</h1>
             <div class="font2">
-              <hr class="line">
-              <a href="{% url 'articles' item.slug %}">
-                <p class="hv">{{item.title_article|safe}}</p>
-                <hr class="line">
-                <p class="hv has-text-black">{{item.title_article2|safe}}</p>
-                <hr class="line">
-                <p class="hv">{{item.title_article3|safe}}</p>
-                <hr class="line">
-              </a>
-
-              <a href="{% url "related_article" item.slug %}">
-              <button id="readMoreBtn" class="button is-info" data-category="{{ category_slug }}">Read More</button>
-              </a>
-
+              {% for item in article1 %}
+                {% if item.category.name == "psychology" %}
+                  <hr class="line">
+                  <a href="{% url 'articles' item.slug %}">
+                    <p class="hv">{{item.title_article|safe}}</p>
+                  </a>
+                {% endif %}
+              {% endfor %}
             </div>
+            {% if article1 %}
+              <a href="{% url 'related_article' article1.first.category.slug %}">
+                <button id="readMoreBtn" class="button is-info" data-category="">Read More</button>
+              </a>
+            {% endif %}
           </div>
-        {% endfor %}
+          
+          <div class="column is-6">
+            <h1 class="title is-2 hv2">Mental health</h1>
+            <div class="font2">
+              {% for item in article1 %}
+                {% if item.category.name == "Mental Health" %}
+                  <hr class="line">
+                  <a href="{% url 'articles' item.slug %}">
+                    <p class="hv">{{item.title_article|safe}}</p>
+                  </a>
+                {% endif %}
+              {% endfor %}
+            </div>
+          {% if article1|length > 1 %}
+            <a href="{% url 'related_article' article1.1.category.slug %}">
+                <button id="readMoreBtn" class="button is-info" data-category="">Read More</button>
+            </a>
+        {% endif %}
+          </div>
+          
         </div>
       
 

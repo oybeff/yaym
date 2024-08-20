@@ -11,76 +11,58 @@
 </head>
 <body>
    {% block content %}
-   <!-- Previous Article Section -->
-   {% for item in articlein %}
    <div class="article-container">
        <div class="header-section">
-           <h1>{{item.title_article|safe}}</h1>
+           <h1>{{ articlein.title_article|safe }}</h1>
            <hr> 
-           <p>{{item.subtitle|safe}}</p>
+           <p>{{ articlein.subtitle|safe }}</p>
        </div>
-        {% if item.img1 %}
-            <figure class="image-article">
-                 <img src="{{ item.img.url }}" alt="">
-             </figure>
-        {% else %}
-             <p>No image available.</p>
-        {% endif %}
+       {% if articlein.img1 %}
+           <figure class="image-article">
+               <img src="{{ articlein.img.url }}" alt="">
+           </figure>
+       {% else %}
+           <p>No image available.</p>
+       {% endif %}
        <div class="columns-container">
            <div class="left-column">
-               <h2>{{item.title_first_article|safe}}</h2>
-               <p>{{item.content1|safe}}</p>
-
-               {% if item.img1 %}
-                <figure class="image-article">
-                    <img src="{{ item.img1.url }}" alt="">
-                </figure>
-                 {% else %}
-                <p>No image available.</p>
-                {% endif %}
-
-               <p>{{item.content2|safe}}</p>
-
-
-               {% if item.img1 %}
-                <figure class="image-article">
-                    <img src="{{ item.img2.url }}" alt="">
-                </figure>
-                 {% else %}
-                <p>No image available.</p>
-                {% endif %}
-                
-               <p>{{item.content3|safe}}</p>
-
+               <h2>{{ articlein.title_first_article|safe }}</h2>
+               <p>{{ articlein.content1|safe }}</p>
+               {% if articlein.img1 %}
+                   <figure class="image-article">
+                       <img src="{{ articlein.img1.url }}" alt="">
+                   </figure>
+               {% else %}
+                   <p>No image available.</p>
+               {% endif %}
+               <p>{{ articlein.content2|safe }}</p>
+               {% if articlein.img2 %}
+                   <figure class="image-article">
+                       <img src="{{ articlein.img2.url }}" alt="">
+                   </figure>
+               {% else %}
+                   <p>No image available.</p>
+               {% endif %}
+               <p>{{ articlein.content3|safe }}</p>
            </div>
            <div class="right-column">
-            <p>{{item.content4|safe}}</p>
-            
-               {% comment %} title for 2 article  {% endcomment %}
-
-               <h1>{{item.title_second_article|safe}}</h1>
-               <p>{{item.content5|safe}}</p>
-
-               {% if item.img1 %}
-                <figure class="image-article">
-                    <img src="{{ item.img3.url }}" alt="">
-                </figure>
-                 {% else %}
-                <p>No image available.</p>
-                {% endif %}
-               <p>{{item.content6|safe}}</p>
+               <p>{{ articlein.content4|safe }}</p>
+               <h1>{{ articlein.title_second_article|safe }}</h1>
+               <p>{{ articlein.content5|safe }}</p>
+               {% if articlein.img3 %}
+                   <figure class="image-article">
+                       <img src="{{ articlein.img3.url }}" alt="">
+                   </figure>
+               {% else %}
+                   <p>No image available.</p>
+               {% endif %}
+               <p>{{ articlein.content6|safe }}</p>
            </div>
-        
        </div>
-       
-    
        <div class="footer-text">
-           <p><span class="bullet-point">•</span> Thank You For Reading Our Article's Sinclerly YourMind Team</p>
+           <p><span class="bullet-point">•</span> Thank You For Reading Our Article's Sincerely, YourMind Team</p>
        </div>
    </div>
-
-   {% endfor %}
-  
    {% endblock %}
 </body>
 </html>
