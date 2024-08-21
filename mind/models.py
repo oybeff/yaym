@@ -22,7 +22,7 @@ class Team(models.Model):
     title = models.CharField(("full name"), max_length=100, null=True, blank=True)
     subtitle = models.CharField(("position_work"), max_length=250, null=True, blank=True)
     description = models.TextField(("story_of_member"), null=True, blank=True)
-    img = models.ImageField(("img_of_person"), upload_to=None, height_field=None, width_field=None, max_length=None, null=True, blank=True)
+    img = models.ImageField(("img_of_person"), null=True, blank=True)  # Specify upload_to
 
     def __str__(self):
         return self.title
@@ -96,7 +96,6 @@ class Article(models.Model):
         verbose_name = 'Article'
         verbose_name_plural = 'Articles'
         ordering = ['-published_date']
-
 
 class Articlein(models.Model):
     title_article = models.CharField(("title article"), max_length=200, null=True, blank=True)

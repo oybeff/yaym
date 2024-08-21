@@ -1,30 +1,90 @@
-# -*- coding: utf-8 -*-
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+#, fuzzy
 msgid ""
 msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-20 16:26+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: mind/templates/mind/base.html:9 mind/templates/mind/nav_foot.html:8
-msgid "Document"
-msgstr "Документ"
+#: mind/templates/mind/articlepage.html:10
+msgid "Articles"
+msgstr "Статьи"
 
-#: mind/templates/mind/base.html:27 mind/templates/mind/base.html:34
+#: mind/templates/mind/articlepage.html:20
+#: mind/templates/mind/articlepage.html:31
+msgid "A"
+msgstr "А"
+
+#: mind/templates/mind/articlepage.html:20
+msgid "rticles"
+msgstr "rticles"
+
+#: mind/templates/mind/articlepage.html:22
+msgid ""
+"This page shares my best articles to read on topics like health, happiness, "
+"creativity, productivity and more. The central question that drives my work "
+"is, “How can we live better?” To answer that question, I like to write about"
+" science-based ways to solve practical problems."
+msgstr ""
+"Эта страница делятся моими лучшими статьями, чтобы читать по таким темам, "
+"как здоровье, счастье, творчество, производительность и многое "
+"другое.Центральный вопрос, который движет моей работой: «Как мы можем жить "
+"лучше?»Чтобы ответить на этот вопрос, мне нравится писать о научных способах"
+" решения практических проблем."
+
+#: mind/templates/mind/articlepage.html:23
+msgid ""
+"You’ll find inrteresting articles to read on topics like how to stop "
+"procrastinating as well as personal recommendations like my list of the best"
+" books to read and my minimalist travel guide. Ready to dive in? You can use"
+" the categories below to browse my best articles."
+msgstr ""
+"Вы найдете неотъемлемые статьи для чтения по таким темам, как о том, как "
+"остановить откладывание, а также личные рекомендации, такие как мой список "
+"лучших книг для чтения, и мое минималистское путешествие.Готовы "
+"погрузиться?Вы можете использовать приведенные ниже категории, чтобы "
+"просмотреть мои лучшие статьи."
+
+#: mind/templates/mind/articlepage.html:31
+msgid "ll Articles"
+msgstr "LL Статьи"
+
+#: mind/templates/mind/articlepage.html:32
+msgid "Browse articles by topic"
+msgstr "Просматривать статьи по теме"
+
+#: mind/templates/mind/base.html:10 mind/templates/mind/nav_foot.html:14
+msgid "Your Mind"
+msgstr "Ваш разум"
+
+#: mind/templates/mind/base.html:30 mind/templates/mind/base.html:37
 #: mind/templates/mind/find_element.html:9
 msgid "Find Your Element"
 msgstr "Найдите свой элемент"
 
-#: mind/templates/mind/base.html:29
+#: mind/templates/mind/base.html:32
 msgid ""
-"The five elements  wood, fire, earth, water and metal  are regarded as the "
-"building blocks of all natural phenomena. Interconnected yet opposing, they "
-"enhance and complement each other."
+"The five elements – wood, fire, earth, water and metal – are regarded as the"
+" building blocks of all natural phenomena. Interconnected yet opposing, they"
+" enhance and complement each other."
 msgstr ""
-"Пять элементов древесины, огня, земли, воды и металла рассматриваются как "
+"Пять элементов - дерево, огонь, земля, вода и металл - рассматриваются как "
 "строительные блоки всех природных явлений.Взаимосвязанные, но "
 "противостоящие, они улучшают и дополняют друг друга."
 
-#: mind/templates/mind/base.html:30
+#: mind/templates/mind/base.html:33
 msgid ""
 "Known as the Wuxing, the elements have been used to interpret everything "
 "from the cosmos to our internal bodies for millennia. They were also the "
@@ -34,7 +94,7 @@ msgstr ""
 "космоса до наших внутренних тел на протяжении тысячелетий.Они также были "
 "вдохновением нашей первоначальной коллекции из десяти подписных ароматов."
 
-#: mind/templates/mind/base.html:31
+#: mind/templates/mind/base.html:34
 msgid ""
 "Each of us possesses all five elements within us. But we are guided by a "
 "particular element, which is informed by the date, time and location of our "
@@ -44,7 +104,7 @@ msgstr ""
 "руководствуемся конкретным элементом, который информируется датой, временем "
 "и местоположением нашего рождения, а также с нашим полом."
 
-#: mind/templates/mind/base.html:32
+#: mind/templates/mind/base.html:35
 msgid ""
 "To find your element or to better understand the energies operating within "
 "you, click the link below."
@@ -52,197 +112,100 @@ msgstr ""
 "Чтобы найти свой элемент или лучше понять энергии, работающие внутри вас, "
 "нажмите на ссылку ниже."
 
-#: mind/templates/mind/base.html:55 mind/templates/mind/nav_foot.html:36
+#: mind/templates/mind/base.html:58 mind/templates/mind/nav_foot.html:43
 msgid "About Us"
 msgstr "О нас"
 
-#: mind/templates/mind/base.html:58 mind/templates/mind/base.html:73
-#: mind/templates/mind/base.html:82
+#: mind/templates/mind/base.html:61
 msgid "OUR MISSION"
-msgstr "НАША МИССИЯ"
+msgstr "Наша миссия"
 
-#: mind/templates/mind/base.html:59 mind/templates/mind/base.html:61
-#: mind/templates/mind/base.html:74 mind/templates/mind/base.html:76
-#: mind/templates/mind/base.html:83 mind/templates/mind/base.html:85
+#: mind/templates/mind/base.html:62
 msgid ""
-"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur quas "
-"suscipit ea dolorem inventore. Optio, maiores! Vitae laudantium sed nisi, "
-"dolore cumque officiis eaque. Facilis animi ipsam vel tenetur molestias."
+"Our mission is to raise awareness and increase the availability, "
+"approachability, and accessibility of mental health services in Central  "
+"Asian countries. We cherish developing a community that is encouraging and "
+"kind, getting in touch with our inner selves, and working with organizations"
+" and mental health specialists. We seek to bridge generational and cultural "
+"gaps because we acknowledge the cultural foundations associated with "
+"experiences connected to mental health. ."
 msgstr ""
-"Lorem очень морковь, обязательный улучшенный разработчик "
-"Adipisuciate.Отвергает боль изобретателя.Вариант, больше!Жизни, похвалы, но "
-"только с болью, и когда их офисы.Легкие умы или обязательные быть "
-"неприятными."
+"Наша миссия состоит в том, чтобы повысить осведомленность и повысить "
+"доступность, доступность и доступность услуг по охране психического здоровья"
+" в странах Центральной Азии.Мы дорожим развитием сообщества, которое "
+"обнадеживает и добр, связываюсь с нашими внутренними я и работаем с "
+"организациями и специалистами по психическому здоровью.Мы стремимся "
+"преодолеть поколения и культурные пробелы, потому что мы признаем культурные"
+" основы, связанные с опытом, связанным с психическим здоровьем.Полем"
 
-#: mind/templates/mind/base.html:98 mind/templates/mind/nav_foot.html:39
-#: mind/templates/mind/nav_foot.html:122
-msgid "How We Work"
-msgstr "Как мы работаем"
+#: mind/templates/mind/base.html:75
+msgid "OUR VISION"
+msgstr "Наше видение"
 
-#: mind/templates/mind/base.html:99
+#: mind/templates/mind/base.html:76
 msgid ""
-"We focus on creating relevant content that addresses the mental health "
-"challenges faced by young people today. Our content includes:"
+"We envision a future where mental health is easily accessible and "
+"approachable for all Asian communities across the subregion. We aspire to "
+"promote understanding and provide essential resources to support emotional "
+"well-being. By integrating cultural insights and leveraging digital "
+"transformation, we aim to create a healthier, more resilient society where "
+"mental health is prioritized and valued.."
 msgstr ""
-"Мы сосредоточены на создании соответствующего контента, который решает "
-"проблемы психического здоровья, с которыми сегодня сталкиваются молодые "
-"люди.Наш контент включает в себя:"
+"Мы представляем будущее, где психическое здоровье легко доступно и доступно "
+"для всех азиатских сообществ по всему субрегиону.Мы стремимся способствовать"
+" пониманию и предоставлять важные ресурсы для поддержки эмоционального "
+"благополучия.Интегрируя культурные идеи и используя цифровые преобразования,"
+" мы стремимся создать более здоровое, более устойчивое общество, где "
+"психическое здоровье распределяется и ценится."
 
-#: mind/templates/mind/base.html:108
-msgid "Contact US"
-msgstr "Связаться с нами"
+#: mind/templates/mind/base.html:83
+msgid "OUR GOAL"
+msgstr "Наша цель"
 
-#: mind/templates/mind/base.html:115
-msgid "Meet Our Team"
-msgstr "Познакомьтесь с нашей командой"
-
-#: mind/templates/mind/base.html:116
+#: mind/templates/mind/base.html:84
 msgid ""
-"Meet our dedicated team, united by a common purpose: to support, uplift, and"
-" champion mental health for all."
+"We aim to become a leading project assisting people in maintaining and "
+"improving their mental health through presentations and workshops, raising "
+"awareness. Our goal is to establish a more resilient and healthier society "
+"where mental health is regarded as a vital aspect of life by incorporating "
+"cultural insights and utilizing digital change.."
 msgstr ""
-"Познакомьтесь с нашей преданной командой, объединенной общей целью: "
-"поддержать, подняться и чемпионат психического здоровья для всех."
-
-#: mind/templates/mind/base.html:122
-msgid "Placeholder image"
-msgstr "Изображение заполнителя"
-
-#: mind/templates/mind/base.html:137 mind/templates/mind/index.html:11
-msgid "Newsletter"
-msgstr "Новостная рассылка"
-
-#: mind/templates/mind/base.html:143
-msgid "Changes on Mental Health"
-msgstr "Изменения в психическом здоровье"
-
-#: mind/templates/mind/base.html:144
-msgid ""
-"Mental health clinics help Latinos bridge language and access barriers."
-msgstr ""
-"Психические клиники помогают латиноамериканским языку моста и барьеры "
-"доступа."
-
-#: mind/templates/mind/base.html:152
-msgid "Unlocking Opportunities with Mental Health"
-msgstr "Разблокировать возможности с психическим здоровьем"
-
-#: mind/templates/mind/base.html:153
-msgid ""
-"Exploring the pivotal role mental health plays in opening doors to personal "
-"and professional growth, fostering resilience, and building a balanced life."
-msgstr ""
-"Изучение ключевой роли психического здоровья играет в открытии дверей для "
-"личного и профессионального роста, повышения устойчивости и создания "
-"сбалансированной жизни."
-
-#: mind/templates/mind/base.html:159 mind/templates/mind/base.html:166
-msgid "Side Feature Title"
-msgstr "Название боковой функции"
-
-#: mind/templates/mind/base.html:160 mind/templates/mind/base.html:167
-msgid "Brief description of the side feature content."
-msgstr "Краткое описание содержимого боковой функции."
-
-#: mind/templates/mind/base.html:177 mind/templates/mind/base.html:188
-msgid "A"
-msgstr "А"
-
-#: mind/templates/mind/base.html:177
-msgid "rticles"
-msgstr "rticles"
-
-#: mind/templates/mind/base.html:179
-msgid ""
-"This page shares my best articles to read on topics like health, happiness, "
-"creativity, productivity and more. The central question that drives my work "
-"is, How can we live better? To answer that question, I like to write about "
-"science-based ways to solve practical problems."
-msgstr ""
-"Эта страница делятся моими лучшими статьями, чтобы читать по таким темам, "
-"как здоровье, счастье, творчество, производительность и многое "
-"другое.Центральный вопрос, который движет моей работой, - как мы можем жить "
-"лучше?Чтобы ответить на этот вопрос, мне нравится писать о научных способах "
-"решения практических проблем."
-
-#: mind/templates/mind/base.html:180
-msgid ""
-"Youll find interesting articles to read on topics like how to stop "
-"procrastinating as well as personal recommendations like my list of the best"
-" books to read and my minimalist travel guide. Ready to dive in? You can use"
-" the categories below to browse my best articles."
-msgstr ""
-"Вы найдете интересные статьи, которые можно прочитать по таким темам, как о "
-"том, как прекратить откладывание, а также личные рекомендации, такие как мой"
-" список лучших книг для чтения и мой минималистский путеводитель.Готовы "
-"погрузиться?Вы можете использовать приведенные ниже категории, чтобы "
-"просмотреть мои лучшие статьи."
+"Мы стремимся стать ведущим проектом, помогающим людям в поддержании и "
+"улучшении их психического здоровья посредством презентаций и семинаров, "
+"повышая осведомленность.Наша цель состоит в том, чтобы установить более "
+"устойчивое и здоровое общество, где психическое здоровье считается жизненно "
+"важным аспектом жизни путем включения культурной информации и использования "
+"цифровых изменений."
 
 #: mind/templates/mind/base.html:188
-msgid "ll Articles"
-msgstr "LL Статьи"
-
-#: mind/templates/mind/base.html:189
-msgid "Browse articles by topic"
-msgstr "Просматривать статьи по теме"
-
-#: mind/templates/mind/base.html:193
-msgid "Creativity"
-msgstr "Креативность"
-
-#: mind/templates/mind/base.html:197 mind/templates/mind/base.html:212
-msgid "For a More Creative Brain Follow These 5 Steps"
-msgstr "Для более творческого мозга следуйте этим 5 шагам"
-
-#: mind/templates/mind/base.html:200 mind/templates/mind/base.html:214
-msgid "Creativity Is a Process, Not an Event"
-msgstr "Творчество - это процесс, а не событие"
-
-#: mind/templates/mind/base.html:202 mind/templates/mind/base.html:216
-msgid "The Proven Path to Doing Unique and Meaningful Work"
-msgstr "Проверенный путь к уникальной и значимой работе"
-
-#: mind/templates/mind/base.html:204
-msgid "READ MORE ARTICLES ON CREATIVITY"
-msgstr "Читать больше статей о творчестве"
-
-#: mind/templates/mind/base.html:209
-msgid "Mental Health"
-msgstr "Душевное здоровье"
-
-#: mind/templates/mind/base.html:218
-msgid "READ MORE ARTICLES ON MENTAL HEALTH"
-msgstr "Прочитайте больше статей о психическом здоровье"
-
-#: mind/templates/mind/base.html:259
 msgid "Get In Touch"
-msgstr "Связаться"
+msgstr "Свяжитесь с нами"
 
-#: mind/templates/mind/base.html:262
+#: mind/templates/mind/base.html:191
 msgid "Send Us Message"
 msgstr "Отправить нам сообщение"
 
-#: mind/templates/mind/base.html:267
+#: mind/templates/mind/base.html:196
 msgid "Name:"
 msgstr "Имя:"
 
-#: mind/templates/mind/base.html:271
+#: mind/templates/mind/base.html:200
 msgid "Email:"
 msgstr "Электронная почта:"
 
-#: mind/templates/mind/base.html:275
+#: mind/templates/mind/base.html:204
 msgid "Message:"
 msgstr "Сообщение:"
 
-#: mind/templates/mind/base.html:278 mind/templates/mind/find_element.html:62
+#: mind/templates/mind/base.html:207 mind/templates/mind/find_element.html:62
 msgid "Submit"
 msgstr "Представлять на рассмотрение"
 
-#: mind/templates/mind/base.html:284
+#: mind/templates/mind/base.html:213
 msgid "Contact Us"
 msgstr "Связаться с нами"
 
-#: mind/templates/mind/base.html:285
+#: mind/templates/mind/base.html:214
 msgid ""
 "Not sure what you need? The team at Square Events will be happy to listen to"
 " you and suggest event ideas you haven't considered."
@@ -250,13 +213,13 @@ msgstr ""
 "Не уверен, что вам нужно?Команда на Square Events будет рада выслушать вас и"
 " предложить идеи событий, которые вы не рассмотрели."
 
-#: mind/templates/mind/base.html:289
+#: mind/templates/mind/base.html:218
 msgid "Sydney Office: 69 Macquarie St, Sydney, Australia"
 msgstr "Сиднейский офис: 69 Macquarie St, Сидней, Австралия"
 
 #: mind/templates/mind/find_element.html:20
 msgid "Enter Your Name"
-msgstr "Введите ваше имя"
+msgstr "Введите свое имя"
 
 #: mind/templates/mind/find_element.html:21
 msgid "Last Name"
@@ -320,7 +283,7 @@ msgstr "Страна"
 
 #: mind/templates/mind/find_element.html:58
 msgid "Enter Your Email"
-msgstr "Введите адрес электронной почты"
+msgstr "Введите свою электронную почту"
 
 #: mind/templates/mind/find_element.html:59
 msgid "Email"
@@ -342,183 +305,595 @@ msgstr "Элемент изображение"
 msgid "nurturing, charismatic, peaceful: You are the soft soil of the garden"
 msgstr "заболевание, харизматичное, мирное: вы мягкая почва сада"
 
-#: mind/templates/mind/index.html:20
-msgid "NEWSPAPER"
-msgstr "ГАЗЕТА"
+#: mind/templates/mind/howwework.html:22 mind/templates/mind/nav_foot.html:61
+#: mind/templates/mind/nav_foot.html:142 mind/templates/mind/team.html:11
+msgid "How We Work"
+msgstr "Как мы работаем"
 
-#: mind/templates/mind/index.html:22
+#: mind/templates/mind/howwework.html:23
 msgid ""
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac "
-"consectetur urna. Duis eget interdum ipsum."
+"We focus on creating relevant content that addresses the mental health "
+"challenges faced by young people today. Our content includes:"
 msgstr ""
-"Lorem очень морковь, томатный бакалавриат разработчик.Живи и томатный "
-"толчок.Иногда фильм иногда очень важен."
+"Мы сосредоточены на создании соответствующего контента, который решает "
+"проблемы психического здоровья, с которыми сегодня сталкиваются молодые "
+"люди.Наш контент включает в себя:"
 
-#: mind/templates/mind/index.html:25 mind/templates/mind/index.html:51
-msgid "Basketball Image"
-msgstr "Баскетбольный образ"
+#: mind/templates/mind/howwework.html:32
+msgid "Contact US"
+msgstr "Связаться с нами"
 
-#: mind/templates/mind/index.html:26 mind/templates/mind/index.html:52
-msgid "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-msgstr "Lorem очень морковь, томатный бакалавриат разработчик."
+#: mind/templates/mind/howwework.html:41
+msgid "More about our process"
+msgstr "Подробнее о нашем процессе"
 
-#: mind/templates/mind/index.html:30
-msgid "Win Medals"
-msgstr "Выиграть медали"
-
-#: mind/templates/mind/index.html:31
+#: mind/templates/mind/howwework.html:42
 msgid ""
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac "
-"consectetur urna. Duis eget interdum ipsum. Praesent quis maximus elit, non "
-"mattis neque. Nam consequat felis et lacus ultricies finibus."
+"At our organization, we believe in a systematic and collaborative approach "
+"to addressing mental health issues and <br> promoting mental well-being in "
+"Central Asian countries."
 msgstr ""
-"Lorem очень морковь, томатный бакалавриат разработчик.Живи и томатный "
-"толчок.Иногда фильм иногда очень важен.Представьте своего крупнейшего "
-"застройщика, нет недвижимости или.Для рецепта спускового крючка и патча "
-"ультрациров ​​заканчивается."
+"В нашей организации мы верим в систематический и совместный подход к решению"
+" проблем психического здоровья и <br>, способствуя психическому благополучию"
+" в странах Центральной Азии."
 
-#: mind/templates/mind/index.html:34 mind/templates/mind/index.html:44
+#: mind/templates/mind/howwework.html:43
 msgid ""
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac "
-"consectetur urna. Duis eget interdum ipsum. Praesent quis maximus elit, non "
-"mattis neque. Nam consequat felis et lacus ultricies finibus. Vivamus ac "
-"ullamcorper dolor. Phasellus at dolor egestas, aliquet nulla eu."
+"Our process is built on a foundation of rigorous research, strategic "
+"partnerships, and a deep commitment <br> to cultural sensitivity and "
+"inclusivity."
 msgstr ""
-"Lorem очень морковь, томатный бакалавриат разработчик.Живи и томатный "
-"толчок.Иногда фильм иногда очень важен.Представьте своего крупнейшего "
-"застройщика, нет недвижимости или.Для рецепта спускового крючка и патча "
-"ультрациров ​​заканчивается.Живи и боль в улламкорперке.Нам в "
-"правоприменении потребителей, бананы нет футбола."
+"Наш процесс основан на основе строгих исследований, стратегических "
+"партнерских отношений и глубокой приверженности <br> к культурной "
+"чувствительности и инклюзивности."
 
-#: mind/templates/mind/index.html:38
-msgid "High School"
-msgstr "Средняя школа"
-
-#: mind/templates/mind/index.html:39
-msgid "August, 2023"
-msgstr "Август, 2023 год"
-
-#: mind/templates/mind/index.html:41
-msgid "women's basketball championship won by fauget school"
-msgstr "Чемпионат по баскетболу женского баскетбола выиграл школой Фаугет"
-
-#: mind/templates/mind/index.html:47
+#: mind/templates/mind/howwework.html:44
 msgid ""
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac "
-"consectetur urna. Duis eget interdum ipsum. Praesent quis maximus elit, non "
-"mattis neque. Nam consequat felis et lacus ultricies finibus. Vivamus ac "
-"ullamcorper dolor. Phasellus at dolor egestas, aliquet nulla eu. Etiam "
-"mauris urna, egestas nec tortor quis, dignissim condimentum justo. Quisque "
-"luctus nulla ut sapien bibendum, et tristique quam semper. Nam a semper "
-"ipsum, et faucibus urna. Mauris dictum nisi non diam tincidunt ullamcorper."
+"Once we commit to an area of need, we define our major goals and identify a "
+"clear path to achieving them."
 msgstr ""
-"Lorem очень морковь, томатный бакалавриат разработчик.Живи и томатный "
-"толчок.Иногда фильм иногда очень важен.Представьте своего крупнейшего "
-"застройщика, нет недвижимости или.Для рецепта спускового крючка и патча "
-"ультрациров ​​заканчивается.Живи и боль в улламкорперке.Нам в "
-"правоприменении потребителей, бананы нет футбола.Даже Маурис Урна, Egestas "
-"Neque Macro любого, футбольный соус.Каждый траур не такой, как напиток "
-"Sapien, и грустный, чем когда -либо.Для самого самого и горла.Маурис сказал,"
-" что ничто не является разработчиком диаметром Ullamcorper."
+"После того, как мы посвятимся нужды, мы определяем наши основные цели и "
+"определяем четкий путь к их достижению."
 
-#: mind/templates/mind/nav_foot.html:33
+#: mind/templates/mind/howwework.html:48
+msgid "Articles, Monthly Newsletters, and Newspapers"
+msgstr "Статьи, ежемесячные бюллетени и газеты"
+
+#: mind/templates/mind/howwework.html:50
+msgid ""
+"We create and share a variety of written content, including articles, "
+"monthly newsletters, and newspapers. These publications cover a wide range "
+"of topics such as tips on managing depression and anxiety, success stories, "
+"and research papers. Daily posts on our social media platforms further "
+"amplify our message and provide valuable insights into mental health."
+msgstr ""
+"Мы создаем и делимся различным письменным контентом, включая статьи, "
+"ежемесячные информационные бюллетени и газеты.Эти публикации охватывают "
+"широкий спектр тем, таких как советы по управлению депрессией и "
+"беспокойством, истории успеха и исследовательских работ.Ежедневные сообщения"
+" на наших платформах социальных сетей еще больше усиливают наше сообщение и "
+"дают ценную информацию о психическом здоровье."
+
+#: mind/templates/mind/howwework.html:54
+msgid "Interviews with Experts"
+msgstr "Интервью с экспертами"
+
+#: mind/templates/mind/howwework.html:56
+msgid ""
+"Our content extends beyond written publications to include engaging and "
+"informative interviews with psychologists and mental health experts from "
+"Australia, Switzerland, and New Zealand. These discussions offer "
+"professional insights and advice, making mental health information more "
+"accessible and relatable."
+msgstr ""
+"Наш контент выходит за рамки письменных публикаций, чтобы включить "
+"вовлеченные и информативные интервью с психологами и экспертами по "
+"психическому здоровью из Австралии, Швейцарии и Новой Зеландии.Эти дискуссии"
+" предлагают профессиональную информацию и советы, делая информацию о "
+"психическом здоровье более доступной и связанной."
+
+#: mind/templates/mind/howwework.html:60
+msgid "Presentations and Workshops"
+msgstr "Презентации и семинары"
+
+#: mind/templates/mind/howwework.html:62
+msgid ""
+"Despite our remote work setup, we conduct occasional workshops and "
+"presentations to directly engage with our audience and raise awareness about"
+" mental health. These significant events, held in cities like Sydney, "
+"Auckland, and Tashkent, provide an opportunity for direct interaction and "
+"community building."
+msgstr ""
+"Несмотря на нашу удаленную работу, мы проводим случайные семинары и "
+"презентации, чтобы непосредственно взаимодействовать с нашей аудиторией и "
+"повышать осведомленность о психическом здоровье.Эти значительные события, "
+"проводимые в таких городах, как Сидней, Окленд и Ташкент, дают возможность "
+"для прямого взаимодействия и строительства сообщества."
+
+#: mind/templates/mind/howwework.html:66
+msgid "Multilingual Content"
+msgstr "Многоязычный контент"
+
+#: mind/templates/mind/howwework.html:68
+msgid ""
+"To ensure our message reaches a broad audience, all our content is available"
+" in three languages: English, Russian, and Uzbek. This multilingual approach"
+" helps us address the diverse linguistic needs of our audience and makes "
+"mental health resources more accessible."
+msgstr ""
+"Чтобы наше сообщение достигает широкой аудитории, весь наш контент доступен "
+"на трех языках: английский, русский и узбек.Этот многоязычный подход "
+"помогает нам удовлетворить разнообразные лингвистические потребности нашей "
+"аудитории и делает ресурсы психического здоровья более доступными."
+
+#: mind/templates/mind/howwework.html:72
+msgid "International Team and Remote Work"
+msgstr "Международная команда и удаленная работа"
+
+#: mind/templates/mind/howwework.html:74
+msgid ""
+"Our international team comprises members from different parts of the globe, "
+"working remotely to create impactful content on mental health. This global "
+"collaboration enriches our perspectives and enables us to address mental "
+"health issues comprehensively and inclusively."
+msgstr ""
+"Наша международная команда состоит из членов из разных частей земного шара, "
+"работая удаленно, чтобы создать эффектный контент по психическому "
+"здоровью.Это глобальное сотрудничество обогащает наши перспективы и "
+"позволяет нам решать проблемы психического здоровья всесторонне и "
+"инклюзивно."
+
+#: mind/templates/mind/index.html:11 mind/templates/mind/nav_foot.html:46
+msgid "Newsletter"
+msgstr "Информационный бюллетень"
+
+#: mind/templates/mind/nav_foot.html:8
+msgid "Document"
+msgstr "Документ"
+
+#: mind/templates/mind/nav_foot.html:40
 msgid "Home"
 msgstr "Дом"
 
-#: mind/templates/mind/nav_foot.html:42
-msgid "Our Team"
-msgstr "Наша команда"
-
-#: mind/templates/mind/nav_foot.html:45
+#: mind/templates/mind/nav_foot.html:51
 msgid "Media"
 msgstr "СМИ"
 
-#: mind/templates/mind/nav_foot.html:54
+#: mind/templates/mind/nav_foot.html:55
+msgid "Articles & Podcasts"
+msgstr "Статьи и подкасты"
+
+#: mind/templates/mind/nav_foot.html:58
+msgid "Our Team"
+msgstr "Наша команда"
+
+#: mind/templates/mind/nav_foot.html:74
 msgid "Welcome, "
 msgstr "Добро пожаловать,"
 
-#: mind/templates/mind/nav_foot.html:57
+#: mind/templates/mind/nav_foot.html:77
 msgid "Log out"
-msgstr "Выйти"
+msgstr "Выходите из строя"
 
-#: mind/templates/mind/nav_foot.html:61
+#: mind/templates/mind/nav_foot.html:81
 msgid "Sign up"
 msgstr "Зарегистрироваться"
 
-#: mind/templates/mind/nav_foot.html:70
+#: mind/templates/mind/nav_foot.html:90
 msgid "Language"
 msgstr "Язык"
 
-#: mind/templates/mind/nav_foot.html:101
+#: mind/templates/mind/nav_foot.html:121
 msgid "National Alliance on Mental Illness"
 msgstr "Национальный альянс по психическим заболеваниям"
 
-#: mind/templates/mind/nav_foot.html:112
+#: mind/templates/mind/nav_foot.html:132
 msgid "Address"
 msgstr "Адрес"
 
-#: mind/templates/mind/nav_foot.html:113
+#: mind/templates/mind/nav_foot.html:133
 msgid "Sydney Office: 69 Macquire st, Sydney, Australia"
 msgstr "Сиднейский офис: 69 Macquarie St, Сидней, Австралия"
 
-#: mind/templates/mind/nav_foot.html:115
+#: mind/templates/mind/nav_foot.html:135
 msgid "Phone: 703-524-7600"
 msgstr "Телефон: 703-524-7600"
 
-#: mind/templates/mind/nav_foot.html:117
+#: mind/templates/mind/nav_foot.html:137
 msgid "Email Services: yourmind@gmail.com"
 msgstr "Электронные услуги: yourmind@gmail.com"
 
-#: mind/templates/mind/nav_foot.html:120
+#: mind/templates/mind/nav_foot.html:140
 msgid "Quick Links"
 msgstr "Быстрые ссылки"
 
-#: mind/templates/mind/nav_foot.html:121
+#: mind/templates/mind/nav_foot.html:141
 msgid "Press & Media"
-msgstr "Печатные СМИ"
+msgstr "Press & Media"
 
-#: mind/templates/mind/nav_foot.html:123
+#: mind/templates/mind/nav_foot.html:143
 msgid "Find Element"
 msgstr "Найти элемент"
 
-#: mind/templates/mind/nav_foot.html:126
+#: mind/templates/mind/nav_foot.html:146
 msgid "Policies"
 msgstr "Политики"
 
-#: mind/templates/mind/nav_foot.html:127
+#: mind/templates/mind/nav_foot.html:147
+#: mind/templates/privacy/privacy_policy.html:18
 msgid "Privacy Policy"
 msgstr "политика конфиденциальности"
 
-#: mind/templates/mind/nav_foot.html:128
+#: mind/templates/mind/nav_foot.html:148
+#: mind/templates/privacy/disclaimer.html:18
+#: mind/templates/privacy/linkpolicy.html:18
+#: mind/templates/privacy/statedc.html:18
 msgid "Disclaimer"
 msgstr "Отказ от ответственности"
 
-#: mind/templates/mind/nav_foot.html:129
+#: mind/templates/mind/nav_foot.html:149
 msgid "State Disclaimer"
 msgstr "Государственный отказ от ответственности"
 
-#: mind/templates/mind/nav_foot.html:130
+#: mind/templates/mind/nav_foot.html:150
 msgid "Link Policy"
 msgstr "Ссылка политика"
 
-#: mind/templates/mind/nav_foot.html:131
+#: mind/templates/mind/nav_foot.html:151
 msgid "YOURMIND Required Disclosures For Written Solicitations"
 msgstr "Требуется раскрытие информации о письменных предложениях"
 
-#: mind/templates/mind/nav_foot.html:132
+#: mind/templates/mind/nav_foot.html:152
 msgid "YOURMIND Store Policies"
 msgstr "Политика в магазине"
+
+#: mind/templates/mind/related_article.html:12
+msgid "relatedArticles"
+msgstr "Связанные артузы"
 
 #: mind/templates/mind/result.html:9
 msgid "Your Element Result"
 msgstr "Ваш элемент результат"
 
-#: mind/views.py:47
+#: mind/templates/mind/team.html:20
+msgid ""
+"Meet our dedicated team, united by a common purpose: to support, uplift, and"
+" champion mental health for all."
+msgstr ""
+"Познакомьтесь с нашей преданной командой, объединенной общей целью: "
+"поддержать, подняться и чемпионат психического здоровья для всех."
+
+#: mind/templates/privacy/disclaimer.html:10
+#: mind/templates/privacy/linkpolicy.html:10
+#: mind/templates/privacy/privacy_policy.html:10
+#: mind/templates/privacy/statedc.html:10
+#: mind/templates/privacy/yyrequired.html:10
+#: mind/templates/privacy/yystore.html:10
+msgid "Privacy"
+msgstr "Конфиденциальность"
+
+#: mind/templates/privacy/disclaimer.html:21
+msgid ""
+"Objective: To clarify the limitations of liability and ensure transparency "
+"in the <br> organization's operations.."
+msgstr ""
+"Цель: прояснить ограничения ответственности и обеспечить прозрачность в "
+"операциях организации <br>."
+
+#: mind/templates/privacy/disclaimer.html:24
+msgid ""
+"This policy applies to all communications, services, and activities of <br> "
+"Your Mind.."
+msgstr ""
+"Эта политика относится ко всем коммуникациям, услугам и деятельности <br> "
+"Ваш разум .."
+
+#: mind/templates/privacy/disclaimer.html:26
+#: mind/templates/privacy/linkpolicy.html:26
+#: mind/templates/privacy/privacy_policy.html:26
+#: mind/templates/privacy/statedc.html:26
+#: mind/templates/privacy/yyrequired.html:26
+#: mind/templates/privacy/yystore.html:26
+msgid "Policy:"
+msgstr "Политика:"
+
+#: mind/templates/privacy/disclaimer.html:28
+msgid ""
+" - General Disclaimer: Your Mind provides information and services on an 'as"
+" is' basis. While we strive for accuracy, we make no representations or "
+"warranties regarding the completeness, accuracy, or reliability of the "
+"information."
+msgstr ""
+"- Общий отказ от ответственности: ваш разум предоставляет информацию и "
+"услуги на основе «как есть».Хотя мы стремимся к точности, мы не делаем "
+"никаких представлений или гарантий относительно полноты, точности или "
+"надежности информации."
+
+#: mind/templates/privacy/disclaimer.html:31
+msgid ""
+" - No Professional Advice: The information provided by Your Mind is not a "
+"substitute for professional advice. Individuals should seek professional "
+"assistance for specific concerns."
+msgstr ""
+"- Нет профессиональных советов: информация, предоставленная вашим разумом, "
+"не является заменой профессиональной консультации.Люди должны обращаться за "
+"профессиональной помощью для конкретных проблем."
+
+#: mind/templates/privacy/disclaimer.html:34
+msgid ""
+" - Limitation of Liability: Your Mind will not be liable for any direct, "
+"indirect, incidental, or consequential damages arising from the use of its "
+"services or information."
+msgstr ""
+"- Ограничение ответственности: ваш разум не будет нести ответственность за "
+"любые прямые, косвенные, случайные или косвенные убытки, возникающие в "
+"результате использования его услуг или информации."
+
+#: mind/templates/privacy/linkpolicy.html:21
+msgid ""
+"Objective: To manage the inclusion of links to external websites on Your "
+"Mind’s website and communications."
+msgstr ""
+"Цель: управлять включением ссылок на внешние веб -сайты на веб -сайте вашего"
+" ума и коммуникации."
+
+#: mind/templates/privacy/linkpolicy.html:24
+msgid "This policy applies to all digital content managed by Your Mind.."
+msgstr ""
+"Эта политика относится ко всему цифровому контенту, управляемому вашим "
+"разумом."
+
+#: mind/templates/privacy/linkpolicy.html:28
+msgid ""
+"- External Links: Links to external websites are provided for convenience "
+"and informational purposes only. Your Mind does not endorse or control the "
+"content of these external sites.."
+msgstr ""
+"- Внешние ссылки: ссылки на внешние веб -сайты предоставляются только для "
+"удобства и информационных целей.Ваш разум не поддерживает и не контролирует "
+"содержание этих внешних сайтов .."
+
+#: mind/templates/privacy/linkpolicy.html:31
+msgid ""
+"- Accuracy of Links: Your Mind is not responsible for the accuracy or "
+"reliability of the linked content."
+msgstr ""
+"- Точность ссылок: Ваш разум не несет ответственности за точность или "
+"надежность связанного контента."
+
+#: mind/templates/privacy/linkpolicy.html:34
+msgid ""
+"- Changes to Links: External links may change without notice. Your Mind is "
+"not liable for any changes that affect the usability or content of the "
+"linked sites."
+msgstr ""
+"- Изменения в ссылках: внешние ссылки могут измениться без уведомления.Ваш "
+"разум не несет ответственности за любые изменения, которые влияют на "
+"удобство использования или содержание связанных сайтов."
+
+#: mind/templates/privacy/privacy_policy.html:21
+msgid ""
+"To ensure the protection of personal information of all individuals "
+"associated <br> with Your Mind."
+msgstr ""
+"Чтобы обеспечить защиту личной информации всех людей, связанных <br> с вашим"
+" разумом."
+
+#: mind/templates/privacy/privacy_policy.html:24
+msgid ""
+"This policy applies to all employees, volunteers, donors, and beneficiaries "
+"<br> of Your Mind."
+msgstr ""
+"Эта политика распространяется на всех сотрудников, волонтеров, доноров и "
+"бенефициаров <br> вашего ума."
+
+#: mind/templates/privacy/privacy_policy.html:28
+msgid ""
+"- Collection of Information: Your Mind collects personal information only "
+"for the purpose of fulfilling its mission. This includes names, contact "
+"information, and other relevant details."
+msgstr ""
+"- Сбор информации: Ваш разум собирает личную информацию только для "
+"выполнения своей миссии.Это включает в себя имена, контактную информацию и "
+"другие соответствующие детали."
+
+#: mind/templates/privacy/privacy_policy.html:31
+msgid ""
+"- Use of Information: Personal information will only be used for the purpose"
+" it was collected, including communication, reporting, and service delivery."
+msgstr ""
+"- Использование информации: Личная информация будет использоваться только "
+"для той цели, которую она была собрана, включая общение, отчетность и "
+"предоставление услуг."
+
+#: mind/templates/privacy/privacy_policy.html:34
+msgid ""
+"- Storage and Security: Personal information will be stored securely and "
+"only accessible to authorized personnel."
+msgstr ""
+"- Хранение и безопасность: Личная информация будет храниться надежно и "
+"доступна только для уполномоченного персонала."
+
+#: mind/templates/privacy/privacy_policy.html:37
+msgid ""
+"- Disclosure: Personal information will not be disclosed to third parties "
+"without consent, except where required by law."
+msgstr ""
+"- Раскрытие: Личная информация не будет раскрыта третьим сторонам без "
+"согласия, за исключением случаев, если это требуется в соответствии с "
+"законом."
+
+#: mind/templates/privacy/privacy_policy.html:40
+msgid ""
+"- Access and Correction: Individuals have the right to access their personal"
+" information and request corrections if necessary."
+msgstr ""
+"- Доступ и исправление: люди имеют право доступа к своей личной информации и"
+" при необходимости запросить исправления."
+
+#: mind/templates/privacy/privacy_policy.html:43
+msgid ""
+"- Complaints: Complaints about breaches of privacy should be directed to the"
+" Privacy Officer at Your Mind."
+msgstr ""
+"- Жалобы: жалобы на нарушения конфиденциальности должны быть направлены "
+"сотрудникам конфиденциальности в вашем уме."
+
+#: mind/templates/privacy/statedc.html:21
+msgid ""
+"Objective:  To ensure compliance with state-specific legal requirements in "
+"Australia and Central Asia"
+msgstr ""
+"Цель: обеспечить соблюдение требований к законодательным требованиям в "
+"Австралии и Центральной Азии в Австралии и Центральной Азии"
+
+#: mind/templates/privacy/statedc.html:24
+msgid ""
+"This policy applies to all state-specific communications and activities."
+msgstr ""
+"Эта политика распространяется на все коммуникации и деятельность, "
+"специфичные для штата."
+
+#: mind/templates/privacy/statedc.html:28
+msgid ""
+"- Australia: Your Mind complies with all relevant state laws and regulations"
+" in Australia. State-specific disclaimers will be included in all relevant "
+"communications."
+msgstr ""
+"- Австралия: Ваш разум соответствует всем соответствующим законам и правилам"
+" штатов в Австралии.Отказ от ответственности, специфичные для состояния, "
+"будут включены во все соответствующие сообщения."
+
+#: mind/templates/privacy/statedc.html:31
+msgid ""
+"- Central Asia: Your Mind complies with all relevant state laws and "
+"regulations in Central Asia. State-specific disclaimers will be included in "
+"all relevant communications."
+msgstr ""
+"- Центральная Азия: Ваш разум соответствует всем соответствующим законам "
+"штатов и правилам в Центральной Азии.Отказ от ответственности, специфичные "
+"для состояния, будут включены во все соответствующие сообщения."
+
+#: mind/templates/privacy/yyrequired.html:18
+msgid "YOUR MIND Required Disclosures for Written Solicitations"
+msgstr "Требуется ваш разум раскрытия для письменных предложений"
+
+#: mind/templates/privacy/yyrequired.html:21
+msgid ""
+"To ensure transparency and compliance with legal requirements for written "
+"solicitations"
+msgstr ""
+"Чтобы обеспечить прозрачность и соответствие требованиям к юридическим "
+"требованиям для письменных предложений"
+
+#: mind/templates/privacy/yyrequired.html:24
+msgid ""
+"This policy applies to all written solicitations for donations, support, or "
+"participation.."
+msgstr ""
+"Эта политика применяется ко всем письменным ходатайствам о пожертвованиях, "
+"поддержке или участии."
+
+#: mind/templates/privacy/yyrequired.html:28
+msgid ""
+"- Disclosure of Information: All written solicitations will include the "
+"following information:"
+msgstr ""
+"- Раскрытие информации: все письменные запросы будут включать в себя "
+"следующую информацию:"
+
+#: mind/templates/privacy/yyrequired.html:31
+msgid "- The mission and purpose of Your Mind."
+msgstr "- Миссия и цель вашего разума."
+
+#: mind/templates/privacy/yyrequired.html:34
+msgid "- How the funds will be used."
+msgstr "- Как будут использоваться средства."
+
+#: mind/templates/privacy/yyrequired.html:37
+msgid "- Contact information for Your Mind."
+msgstr "- Контактная информация для вашего ума."
+
+#: mind/templates/privacy/yyrequired.html:40
+msgid "- A statement confirming the non-profit status of the organization."
+msgstr "- Заявление, подтверждающее некоммерческий статус организации."
+
+#: mind/templates/privacy/yyrequired.html:43
+msgid ""
+"- Accuracy: All information provided in solicitations will be accurate and "
+"not misleading."
+msgstr ""
+"- Точность: вся информация, представленная в ходе ходатайства, будет точной "
+"и не вводящей в заблуждение."
+
+#: mind/templates/privacy/yyrequired.html:46
+msgid ""
+"- Opt-Out: Recipients of solicitations will be provided with an option to "
+"opt-out of future communications."
+msgstr ""
+"-ОТКРЫТАЯ: получателям ходатайств будет предоставлена ​​возможность "
+"отказаться от будущих коммуникаций."
+
+#: mind/templates/privacy/yystore.html:18
+msgid "YOUR MIND Store Policies"
+msgstr "Ваша политика в магазине"
+
+#: mind/templates/privacy/yystore.html:21
+msgid ""
+" To govern the operations of any online or physical stores operated by Your "
+"Mind."
+msgstr ""
+"Управлять операциями любых онлайн или физических магазинов, управляемых "
+"вашим разумом."
+
+#: mind/templates/privacy/yystore.html:24
+msgid ""
+"This policy applies to all sales and transactions conducted by Your Mind’s "
+"store."
+msgstr ""
+"Эта политика применяется ко всем продажам и транзакциям, проведенным "
+"магазином вашего ума."
+
+#: mind/templates/privacy/yystore.html:28
+msgid ""
+"- Product Information: All products sold by Your Mind will be accurately "
+"described and fairly priced."
+msgstr ""
+"- Информация о продукте: все продукты, продаваемые вашим разумом, будут "
+"точно описаны и по справедливой цене."
+
+#: mind/templates/privacy/yystore.html:31
+msgid ""
+"- Non-Profit Nature: All proceeds from the store will be used to support the"
+" mission of Your Mind."
+msgstr ""
+"- Некоммерческий характер: все доходы от магазина будут использоваться для "
+"поддержки миссии вашего ума."
+
+#: mind/templates/privacy/yystore.html:34
+msgid ""
+"- Refunds and Returns: Your Mind will provide clear policies on refunds and "
+"returns, ensuring customer satisfaction while maintaining the organization’s"
+" non-profit objectives."
+msgstr ""
+"- Возврат и возврат: ваш ум предоставит четкую политику в отношении "
+"возмещения и доходов, обеспечивая удовлетворенность клиентов при сохранении "
+"некоммерческих целей организации."
+
+#: mind/templates/privacy/yystore.html:37
+msgid ""
+"- Compliance: All store operations will comply with relevant consumer "
+"protection laws in Australia and Central Asia."
+msgstr ""
+"- Соответствие: все операции магазина будут соответствовать соответствующим "
+"законам о защите потребителей в Австралии и Центральной Азии."
+
+#: mind/views.py:46
 #, python-brace-format
 msgid "New Contact Form Submission from {name}"
 msgstr "Новая контактная форма подачи от {name}"
 
-#: mind/views.py:48
+#: mind/views.py:47
 #, python-brace-format
 msgid ""
 "Name: {name}\n"
@@ -533,26 +908,19 @@ msgstr ""
 "Сообщение:\n"
 "{msg}"
 
-#: mind/views.py:55
+#: mind/views.py:54
 #, python-brace-format
 msgid "An error occurred: {e}"
 msgstr "Произошла ошибка: {e}"
 
-#, fuzzy, python-format
-#~ MSGID "{{ work_item.subtitle|safe }}"
-#~ MSGSTR "% Презентации и мастер-классы. Несмотря на удаленную работу, мы время от времени проводим семинары и презентации для повышения осведомленности о психическом здоровье, где у нас есть возможность напрямую взаимодействовать с нашей аудиторией. Эти значимые мероприятия проходят в Сиднее, Окленде и Ташкенте. !."
-
-#~ MSGID "{% work_item.subtitle|safe %}"
-#~ MSGSTR "Презентации и мастер-классы. Несмотря на удаленную работу, мы время от времени проводим семинары и презентации для повышения осведомленности о психическом здоровье, где у нас есть возможность напрямую взаимодействовать с нашей аудиторией. Эти значимые мероприятия проходят в Сиднее, Окленде и Ташкенте.."
-
-#: yaym/settings.py:165
+#: yaym/settings.py:173
 msgid "English"
 msgstr "Английский"
 
-#: yaym/settings.py:166
+#: yaym/settings.py:174
 msgid "French"
 msgstr "Французский"
 
-#: yaym/settings.py:167
+#: yaym/settings.py:175
 msgid "Russian"
 msgstr "Русский"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-20 16:28+0500\n"
+"POT-Creation-Date: 2024-08-20 16:24+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,11 +16,10 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 #: mind/templates/mind/articlepage.html:10
 msgid "Articles"
-msgstr "Articles"
+msgstr ""
 
 #: mind/templates/mind/articlepage.html:20
 #: mind/templates/mind/articlepage.html:31
@@ -29,60 +28,47 @@ msgstr ""
 
 #: mind/templates/mind/articlepage.html:20
 msgid "rticles"
-msgstr "rticles"
+msgstr ""
 
 #: mind/templates/mind/articlepage.html:22
 msgid ""
 "This page shares my best articles to read on topics like health, happiness, "
 "creativity, productivity and more. The central question that drives my work "
-"is, “How can we live better?” To answer that question, I like to write about"
-" science-based ways to solve practical problems."
+"is, “How can we live better?” To answer that question, I like to write about "
+"science-based ways to solve practical problems."
 msgstr ""
-"Cette page partage mes meilleurs articles à lire sur des sujets comme la "
-"santé, le bonheur, la créativité, la productivité et plus encore.La question"
-" centrale qui anime mon travail est: «Comment pouvons-nous mieux vivre?»Pour"
-" répondre à cette question, j'aime écrire sur les moyens scientifiques de "
-"résoudre des problèmes pratiques."
 
 #: mind/templates/mind/articlepage.html:23
 msgid ""
 "You’ll find inrteresting articles to read on topics like how to stop "
-"procrastinating as well as personal recommendations like my list of the best"
-" books to read and my minimalist travel guide. Ready to dive in? You can use"
-" the categories below to browse my best articles."
+"procrastinating as well as personal recommendations like my list of the best "
+"books to read and my minimalist travel guide. Ready to dive in? You can use "
+"the categories below to browse my best articles."
 msgstr ""
-"Vous trouverez des articles insuffisants à lire sur des sujets comme comment"
-" arrêter la procrastination ainsi que des recommandations personnelles comme"
-" ma liste des meilleurs livres à lire et mon guide de voyage "
-"minimaliste.Prêt à plonger?Vous pouvez utiliser les catégories ci-dessous "
-"pour parcourir mes meilleurs articles."
 
 #: mind/templates/mind/articlepage.html:31
 msgid "ll Articles"
-msgstr "Articles"
+msgstr ""
 
 #: mind/templates/mind/articlepage.html:32
 msgid "Browse articles by topic"
-msgstr "Parcourir les articles par sujet"
+msgstr ""
 
 #: mind/templates/mind/base.html:10 mind/templates/mind/nav_foot.html:14
 msgid "Your Mind"
-msgstr "Votre esprit"
+msgstr ""
 
 #: mind/templates/mind/base.html:30 mind/templates/mind/base.html:37
 #: mind/templates/mind/find_element.html:9
 msgid "Find Your Element"
-msgstr "Trouvez votre élément"
+msgstr ""
 
 #: mind/templates/mind/base.html:32
 msgid ""
-"The five elements – wood, fire, earth, water and metal – are regarded as the"
-" building blocks of all natural phenomena. Interconnected yet opposing, they"
-" enhance and complement each other."
+"The five elements – wood, fire, earth, water and metal – are regarded as the "
+"building blocks of all natural phenomena. Interconnected yet opposing, they "
+"enhance and complement each other."
 msgstr ""
-"Les cinq éléments - bois, incendie, terre, eau et métal - sont considérés "
-"comme les éléments constitutifs de tous les phénomènes "
-"naturels.Interconnectés mais opposés, ils s'améliorent et se complètent."
 
 #: mind/templates/mind/base.html:33
 msgid ""
@@ -90,10 +76,6 @@ msgid ""
 "from the cosmos to our internal bodies for millennia. They were also the "
 "inspiration behind our initial collection of ten signature scents."
 msgstr ""
-"Connues sous le nom de Wuxing, les éléments ont été utilisés pour "
-"interpréter tout, du cosmos à nos corps internes depuis des millénaires.Ils "
-"ont également été l'inspiration derrière notre collection initiale de dix "
-"parfums de signature."
 
 #: mind/templates/mind/base.html:34
 msgid ""
@@ -101,48 +83,35 @@ msgid ""
 "particular element, which is informed by the date, time and location of our "
 "birth, as well as our gender."
 msgstr ""
-"Chacun de nous possède les cinq éléments en nous.Mais nous sommes guidés par"
-" un élément particulier, qui est informé par la date, l'heure et "
-"l'emplacement de notre naissance, ainsi que par notre sexe."
 
 #: mind/templates/mind/base.html:35
 msgid ""
 "To find your element or to better understand the energies operating within "
 "you, click the link below."
 msgstr ""
-"Pour trouver votre élément ou pour mieux comprendre les énergies "
-"fonctionnant en vous, cliquez sur le lien ci-dessous."
 
 #: mind/templates/mind/base.html:58 mind/templates/mind/nav_foot.html:43
 msgid "About Us"
-msgstr "À propos de nous"
+msgstr ""
 
 #: mind/templates/mind/base.html:61
 msgid "OUR MISSION"
-msgstr "Notre mission"
+msgstr ""
 
 #: mind/templates/mind/base.html:62
 msgid ""
 "Our mission is to raise awareness and increase the availability, "
 "approachability, and accessibility of mental health services in Central  "
 "Asian countries. We cherish developing a community that is encouraging and "
-"kind, getting in touch with our inner selves, and working with organizations"
-" and mental health specialists. We seek to bridge generational and cultural "
+"kind, getting in touch with our inner selves, and working with organizations "
+"and mental health specialists. We seek to bridge generational and cultural "
 "gaps because we acknowledge the cultural foundations associated with "
 "experiences connected to mental health. ."
 msgstr ""
-"Notre mission est de sensibiliser et d'accroître la disponibilité, "
-"l'approvisionnement et l'accessibilité des services de santé mentale dans "
-"les pays d'Asie centrale.Nous chérissons le développement d'une communauté "
-"qui est encourageante et aimable, nous contactions avec notre moi intérieur "
-"et travaillons avec des organisations et des spécialistes de la santé "
-"mentale.Nous cherchons à combler les lacunes générationnelles et culturelles"
-" parce que nous reconnaissons les fondements culturels associés aux "
-"expériences liées à la santé mentale.."
 
 #: mind/templates/mind/base.html:75
 msgid "OUR VISION"
-msgstr "Notre vision"
+msgstr ""
 
 #: mind/templates/mind/base.html:76
 msgid ""
@@ -153,17 +122,10 @@ msgid ""
 "transformation, we aim to create a healthier, more resilient society where "
 "mental health is prioritized and valued.."
 msgstr ""
-"Nous envisageons un avenir où la santé mentale est facilement accessible et "
-"accessible pour toutes les communautés asiatiques de la sous-région.Nous "
-"aspirons à promouvoir la compréhension et à fournir des ressources "
-"essentielles pour soutenir le bien-être émotionnel.En intégrant les idées "
-"culturelles et en tirant parti de la transformation numérique, nous visons à"
-" créer une société plus saine et plus résiliente où la santé mentale est "
-"priorisée et appréciée."
 
 #: mind/templates/mind/base.html:83
 msgid "OUR GOAL"
-msgstr "Notre objectif"
+msgstr ""
 
 #: mind/templates/mind/base.html:84
 msgid ""
@@ -173,65 +135,56 @@ msgid ""
 "where mental health is regarded as a vital aspect of life by incorporating "
 "cultural insights and utilizing digital change.."
 msgstr ""
-"Nous visons à devenir un projet de premier plan aidant les gens à maintenir "
-"et à améliorer leur santé mentale par le biais de présentations et "
-"d'ateliers, à sensibiliser.Notre objectif est d'établir une société plus "
-"résiliente et plus saine où la santé mentale est considérée comme un aspect "
-"vital de la vie en incorporant les idées culturelles et en utilisant le "
-"changement numérique."
 
 #: mind/templates/mind/base.html:188
 msgid "Get In Touch"
-msgstr "Entrer en contact"
+msgstr ""
 
 #: mind/templates/mind/base.html:191
 msgid "Send Us Message"
-msgstr "Envoyez-nous un message"
+msgstr ""
 
 #: mind/templates/mind/base.html:196
 msgid "Name:"
-msgstr "Nom:"
+msgstr ""
 
 #: mind/templates/mind/base.html:200
 msgid "Email:"
-msgstr "E-mail:"
+msgstr ""
 
 #: mind/templates/mind/base.html:204
 msgid "Message:"
-msgstr "Message:"
+msgstr ""
 
 #: mind/templates/mind/base.html:207 mind/templates/mind/find_element.html:62
 msgid "Submit"
-msgstr "Soumettre"
+msgstr ""
 
 #: mind/templates/mind/base.html:213
 msgid "Contact Us"
-msgstr "Contactez-nous"
+msgstr ""
 
 #: mind/templates/mind/base.html:214
 msgid ""
-"Not sure what you need? The team at Square Events will be happy to listen to"
-" you and suggest event ideas you haven't considered."
+"Not sure what you need? The team at Square Events will be happy to listen to "
+"you and suggest event ideas you haven't considered."
 msgstr ""
-"Vous ne savez pas ce dont vous avez besoin?L'équipe de Square Events sera "
-"heureuse de vous écouter et de suggérer des idées d'événements que vous "
-"n'avez pas considérées."
 
 #: mind/templates/mind/base.html:218
 msgid "Sydney Office: 69 Macquarie St, Sydney, Australia"
-msgstr "Bureau de Sydney: 69 Macquarie St, Sydney, Australie"
+msgstr ""
 
 #: mind/templates/mind/find_element.html:20
 msgid "Enter Your Name"
-msgstr "Entrez votre nom"
+msgstr ""
 
 #: mind/templates/mind/find_element.html:21
 msgid "Last Name"
-msgstr "Nom de famille"
+msgstr ""
 
 #: mind/templates/mind/find_element.html:23
 msgid "First Name"
-msgstr "Prénom"
+msgstr ""
 
 #: mind/templates/mind/find_element.html:25
 #: mind/templates/mind/find_element.html:43
@@ -241,31 +194,31 @@ msgstr ""
 
 #: mind/templates/mind/find_element.html:30
 msgid "Enter Your Birth Time"
-msgstr "Entrez votre temps de naissance"
+msgstr ""
 
 #: mind/templates/mind/find_element.html:31
 msgid "Month"
-msgstr "Mois"
+msgstr ""
 
 #: mind/templates/mind/find_element.html:33
 msgid "Day"
-msgstr "Jour"
+msgstr ""
 
 #: mind/templates/mind/find_element.html:34
 msgid "Year"
-msgstr "Année"
+msgstr ""
 
 #: mind/templates/mind/find_element.html:35
 msgid "Hour"
-msgstr "Heure"
+msgstr ""
 
 #: mind/templates/mind/find_element.html:36
 msgid "Minute"
-msgstr "Minute"
+msgstr ""
 
 #: mind/templates/mind/find_element.html:41
 msgid "I don't know the exact time"
-msgstr "Je ne connais pas l'heure exacte"
+msgstr ""
 
 #: mind/templates/mind/find_element.html:42
 #: mind/templates/mind/find_element.html:52
@@ -275,61 +228,58 @@ msgstr ""
 
 #: mind/templates/mind/find_element.html:48
 msgid "Enter Your Location"
-msgstr "Entrez votre emplacement"
+msgstr ""
 
 #: mind/templates/mind/find_element.html:49
 msgid "Region"
-msgstr "Région"
+msgstr ""
 
 #: mind/templates/mind/find_element.html:51
 msgid "Country"
-msgstr "Pays"
+msgstr ""
 
 #: mind/templates/mind/find_element.html:58
 msgid "Enter Your Email"
-msgstr "Entrez votre e-mail"
+msgstr ""
 
 #: mind/templates/mind/find_element.html:59
 msgid "Email"
-msgstr "E-mail"
+msgstr ""
 
 #: mind/templates/mind/find_element.html:67 mind/templates/mind/result.html:19
 msgid "Your Element Is:"
-msgstr "Votre élément est:"
+msgstr ""
 
 #: mind/templates/mind/find_element.html:68 mind/templates/mind/result.html:20
 msgid "Yin Earth"
-msgstr "Terre de yin"
+msgstr ""
 
 #: mind/templates/mind/find_element.html:69 mind/templates/mind/result.html:21
 msgid "Element Image"
-msgstr "Image d'élément"
+msgstr ""
 
 #: mind/templates/mind/find_element.html:70 mind/templates/mind/result.html:22
 msgid "nurturing, charismatic, peaceful: You are the soft soil of the garden"
-msgstr "Nourrissant, charismatique, paisible: vous êtes le sol doux du jardin"
+msgstr ""
 
 #: mind/templates/mind/howwework.html:22 mind/templates/mind/nav_foot.html:61
 #: mind/templates/mind/nav_foot.html:142 mind/templates/mind/team.html:11
 msgid "How We Work"
-msgstr "Comment nous travaillons"
+msgstr ""
 
 #: mind/templates/mind/howwework.html:23
 msgid ""
 "We focus on creating relevant content that addresses the mental health "
 "challenges faced by young people today. Our content includes:"
 msgstr ""
-"Nous nous concentrons sur la création de contenu pertinent qui relève des "
-"défis de santé mentale auxquels sont confrontés les jeunes aujourd'hui.Notre"
-" contenu comprend:"
 
 #: mind/templates/mind/howwework.html:32
 msgid "Contact US"
-msgstr "Contactez-nous"
+msgstr ""
 
 #: mind/templates/mind/howwework.html:41
 msgid "More about our process"
-msgstr "En savoir plus sur notre processus"
+msgstr ""
 
 #: mind/templates/mind/howwework.html:42
 msgid ""
@@ -337,9 +287,6 @@ msgid ""
 "to addressing mental health issues and <br> promoting mental well-being in "
 "Central Asian countries."
 msgstr ""
-"Dans notre organisation, nous croyons en une approche systématique et "
-"collaborative pour résoudre les problèmes de santé mentale et <br> la "
-"promotion du bien-être mental dans les pays d'Asie centrale."
 
 #: mind/templates/mind/howwework.html:43
 msgid ""
@@ -347,21 +294,16 @@ msgid ""
 "partnerships, and a deep commitment <br> to cultural sensitivity and "
 "inclusivity."
 msgstr ""
-"Notre processus repose sur une base de recherches rigoureuses, de "
-"partenariats stratégiques et d'un engagement profond <br> à la sensibilité "
-"culturelle et à l'inclusivité."
 
 #: mind/templates/mind/howwework.html:44
 msgid ""
 "Once we commit to an area of need, we define our major goals and identify a "
 "clear path to achieving them."
 msgstr ""
-"Une fois que nous nous engageons dans un domaine de besoin, nous définissons"
-" nos principaux objectifs et identifions un chemin clair pour les atteindre."
 
 #: mind/templates/mind/howwework.html:48
 msgid "Articles, Monthly Newsletters, and Newspapers"
-msgstr "Articles, newsletters mensuels et journaux"
+msgstr ""
 
 #: mind/templates/mind/howwework.html:50
 msgid ""
@@ -371,16 +313,10 @@ msgid ""
 "and research papers. Daily posts on our social media platforms further "
 "amplify our message and provide valuable insights into mental health."
 msgstr ""
-"Nous créons et partageons une variété de contenus écrits, y compris des "
-"articles, des newsletters mensuels et des journaux.Ces publications couvrent"
-" un large éventail de sujets tels que des conseils sur la gestion de la "
-"dépression et de l'anxiété, des réussites et des articles de recherche.Les "
-"articles quotidiens sur nos plateformes de médias sociaux amplifient notre "
-"message et fournissent des informations précieuses sur la santé mentale."
 
 #: mind/templates/mind/howwework.html:54
 msgid "Interviews with Experts"
-msgstr "Entretiens avec des experts"
+msgstr ""
 
 #: mind/templates/mind/howwework.html:56
 msgid ""
@@ -390,50 +326,35 @@ msgid ""
 "professional insights and advice, making mental health information more "
 "accessible and relatable."
 msgstr ""
-"Notre contenu s'étend au-delà des publications écrites pour inclure des "
-"entretiens engageants et informatifs avec des psychologues et des experts en"
-" santé mentale d'Australie, de la Suisse et de la Nouvelle-Zélande.Ces "
-"discussions offrent des idées et des conseils professionnels, rendant les "
-"informations sur la santé mentale plus accessibles et relatables."
 
 #: mind/templates/mind/howwework.html:60
 msgid "Presentations and Workshops"
-msgstr "Présentations et ateliers"
+msgstr ""
 
 #: mind/templates/mind/howwework.html:62
 msgid ""
 "Despite our remote work setup, we conduct occasional workshops and "
-"presentations to directly engage with our audience and raise awareness about"
-" mental health. These significant events, held in cities like Sydney, "
+"presentations to directly engage with our audience and raise awareness about "
+"mental health. These significant events, held in cities like Sydney, "
 "Auckland, and Tashkent, provide an opportunity for direct interaction and "
 "community building."
 msgstr ""
-"Malgré notre configuration de travail à distance, nous organisons des "
-"ateliers et des présentations occasionnels pour s'engager directement avec "
-"notre public et sensibiliser à la santé mentale.Ces événements importants, "
-"organisés dans des villes comme Sydney, Auckland et Tashkent, offrent une "
-"opportunité d'interaction directe et de bâtiment communautaire."
 
 #: mind/templates/mind/howwework.html:66
 msgid "Multilingual Content"
-msgstr "Contenu multilingue"
+msgstr ""
 
 #: mind/templates/mind/howwework.html:68
 msgid ""
-"To ensure our message reaches a broad audience, all our content is available"
-" in three languages: English, Russian, and Uzbek. This multilingual approach"
-" helps us address the diverse linguistic needs of our audience and makes "
+"To ensure our message reaches a broad audience, all our content is available "
+"in three languages: English, Russian, and Uzbek. This multilingual approach "
+"helps us address the diverse linguistic needs of our audience and makes "
 "mental health resources more accessible."
 msgstr ""
-"Pour nous assurer que notre message atteint un large public, tout notre "
-"contenu est disponible en trois langues: l'anglais, le russe et "
-"l'Ouzbek.Cette approche multilingue nous aide à répondre aux divers besoins "
-"linguistiques de notre public et rend les ressources de santé mentale plus "
-"accessibles."
 
 #: mind/templates/mind/howwework.html:72
 msgid "International Team and Remote Work"
-msgstr "Équipe internationale et travail à distance"
+msgstr ""
 
 #: mind/templates/mind/howwework.html:74
 msgid ""
@@ -442,35 +363,30 @@ msgid ""
 "collaboration enriches our perspectives and enables us to address mental "
 "health issues comprehensively and inclusively."
 msgstr ""
-"Notre équipe internationale comprend des membres de différentes parties du "
-"globe, travaillant à distance pour créer un contenu percutant sur la santé "
-"mentale.Cette collaboration mondiale enrichit nos perspectives et nous "
-"permet de résoudre les problèmes de santé mentale de manière approfondie et "
-"inclusivement."
 
 #: mind/templates/mind/index.html:11 mind/templates/mind/nav_foot.html:46
 msgid "Newsletter"
-msgstr "Bulletin"
+msgstr ""
 
 #: mind/templates/mind/nav_foot.html:8
 msgid "Document"
-msgstr "Document"
+msgstr ""
 
 #: mind/templates/mind/nav_foot.html:40
 msgid "Home"
-msgstr "Maison"
+msgstr ""
 
 #: mind/templates/mind/nav_foot.html:51
 msgid "Media"
-msgstr "Médias"
+msgstr ""
 
 #: mind/templates/mind/nav_foot.html:55
 msgid "Articles & Podcasts"
-msgstr "Articles et podcasts"
+msgstr ""
 
 #: mind/templates/mind/nav_foot.html:58
 msgid "Our Team"
-msgstr "Notre équipe"
+msgstr ""
 
 #: mind/templates/mind/nav_foot.html:74
 msgid "Welcome, "
@@ -478,95 +394,93 @@ msgstr ""
 
 #: mind/templates/mind/nav_foot.html:77
 msgid "Log out"
-msgstr "Déconnecter"
+msgstr ""
 
 #: mind/templates/mind/nav_foot.html:81
 msgid "Sign up"
-msgstr "S'inscrire"
+msgstr ""
 
 #: mind/templates/mind/nav_foot.html:90
 msgid "Language"
-msgstr "Langue"
+msgstr ""
 
 #: mind/templates/mind/nav_foot.html:121
 msgid "National Alliance on Mental Illness"
-msgstr "Alliance nationale sur la maladie mentale"
+msgstr ""
 
 #: mind/templates/mind/nav_foot.html:132
 msgid "Address"
-msgstr "Adresse"
+msgstr ""
 
 #: mind/templates/mind/nav_foot.html:133
 msgid "Sydney Office: 69 Macquire st, Sydney, Australia"
-msgstr "Bureau de Sydney: 69 Macquarie St, Sydney, Australie"
+msgstr ""
 
 #: mind/templates/mind/nav_foot.html:135
 msgid "Phone: 703-524-7600"
-msgstr "Téléphone: 703-524-7600"
+msgstr ""
 
 #: mind/templates/mind/nav_foot.html:137
 msgid "Email Services: yourmind@gmail.com"
-msgstr "Services par e-mail: yourmind@gmail.com"
+msgstr ""
 
 #: mind/templates/mind/nav_foot.html:140
 msgid "Quick Links"
-msgstr "Liens rapides"
+msgstr ""
 
 #: mind/templates/mind/nav_foot.html:141
 msgid "Press & Media"
-msgstr "Presse et médias"
+msgstr ""
 
 #: mind/templates/mind/nav_foot.html:143
 msgid "Find Element"
-msgstr "Trouver un élément"
+msgstr ""
 
 #: mind/templates/mind/nav_foot.html:146
 msgid "Policies"
-msgstr "Politiques"
+msgstr ""
 
 #: mind/templates/mind/nav_foot.html:147
 #: mind/templates/privacy/privacy_policy.html:18
 msgid "Privacy Policy"
-msgstr "politique de confidentialité"
+msgstr ""
 
 #: mind/templates/mind/nav_foot.html:148
 #: mind/templates/privacy/disclaimer.html:18
 #: mind/templates/privacy/linkpolicy.html:18
 #: mind/templates/privacy/statedc.html:18
 msgid "Disclaimer"
-msgstr "Clause de non-responsabilité"
+msgstr ""
 
 #: mind/templates/mind/nav_foot.html:149
 msgid "State Disclaimer"
-msgstr "Avertissement d'État"
+msgstr ""
 
 #: mind/templates/mind/nav_foot.html:150
 msgid "Link Policy"
-msgstr "Politique de liaison"
+msgstr ""
 
 #: mind/templates/mind/nav_foot.html:151
 msgid "YOURMIND Required Disclosures For Written Solicitations"
-msgstr "VOTREMIND DES DIVLUSURES DE SOLICITATIONS ÉCRITES"
+msgstr ""
 
 #: mind/templates/mind/nav_foot.html:152
 msgid "YOURMIND Store Policies"
-msgstr "Les politiques de votre magasin de votre mind"
+msgstr ""
 
 #: mind/templates/mind/related_article.html:12
 msgid "relatedArticles"
-msgstr "Articules connexes"
+msgstr ""
 
 #: mind/templates/mind/result.html:9
 msgid "Your Element Result"
-msgstr "Votre résultat d'élément"
+msgstr ""
 
 #: mind/templates/mind/team.html:20
 msgid ""
-"Meet our dedicated team, united by a common purpose: to support, uplift, and"
-" champion mental health for all."
+"Meet our dedicated team, united by a common purpose: to support, uplift, and "
+"champion mental health for all."
 msgstr ""
-"Rencontrez notre équipe dédiée, unie par un objectif commun: soutenir, "
-"élever et défendre la santé mentale pour tous."
 
 #: mind/templates/privacy/disclaimer.html:10
 #: mind/templates/privacy/linkpolicy.html:10
@@ -575,23 +489,19 @@ msgstr ""
 #: mind/templates/privacy/yyrequired.html:10
 #: mind/templates/privacy/yystore.html:10
 msgid "Privacy"
-msgstr "Confidentialité"
+msgstr ""
 
 #: mind/templates/privacy/disclaimer.html:21
 msgid ""
 "Objective: To clarify the limitations of liability and ensure transparency "
 "in the <br> organization's operations.."
 msgstr ""
-"Objectif: clarifier les limites de responsabilité et assurer la transparence"
-" dans les opérations de l'organisation <br>."
 
 #: mind/templates/privacy/disclaimer.html:24
 msgid ""
 "This policy applies to all communications, services, and activities of <br> "
 "Your Mind.."
 msgstr ""
-"Cette politique s'applique à toutes les communications, services et "
-"activités de <br> Votre esprit .."
 
 #: mind/templates/privacy/disclaimer.html:26
 #: mind/templates/privacy/linkpolicy.html:26
@@ -600,19 +510,15 @@ msgstr ""
 #: mind/templates/privacy/yyrequired.html:26
 #: mind/templates/privacy/yystore.html:26
 msgid "Policy:"
-msgstr "Politique:"
+msgstr ""
 
 #: mind/templates/privacy/disclaimer.html:28
 msgid ""
-" - General Disclaimer: Your Mind provides information and services on an 'as"
-" is' basis. While we strive for accuracy, we make no representations or "
+" - General Disclaimer: Your Mind provides information and services on an 'as "
+"is' basis. While we strive for accuracy, we make no representations or "
 "warranties regarding the completeness, accuracy, or reliability of the "
 "information."
 msgstr ""
-"- Avis de non-responsabilité générale: votre esprit fournit des informations"
-" et des services sur une base «tel quel».Bien que nous recherchons "
-"l'exactitude, nous ne faisons aucune représentation ou garantie concernant "
-"l'exhaustivité, l'exactitude ou la fiabilité des informations."
 
 #: mind/templates/privacy/disclaimer.html:31
 msgid ""
@@ -620,9 +526,6 @@ msgid ""
 "substitute for professional advice. Individuals should seek professional "
 "assistance for specific concerns."
 msgstr ""
-"- Aucun conseil professionnel: les informations fournies par votre esprit ne"
-" remplacent pas les conseils professionnels.Les individus devraient demander"
-" une assistance professionnelle pour des préoccupations spécifiques."
 
 #: mind/templates/privacy/disclaimer.html:34
 msgid ""
@@ -630,23 +533,16 @@ msgid ""
 "indirect, incidental, or consequential damages arising from the use of its "
 "services or information."
 msgstr ""
-"- Limitation de la responsabilité: Votre esprit ne sera pas responsable des "
-"dommages directs, indirects, accessoires ou conséquents résultant de "
-"l'utilisation de ses services ou de ses informations."
 
 #: mind/templates/privacy/linkpolicy.html:21
 msgid ""
 "Objective: To manage the inclusion of links to external websites on Your "
 "Mind’s website and communications."
 msgstr ""
-"Objectif: gérer l'inclusion de liens vers des sites Web externes sur le site"
-" Web et les communications de votre esprit."
 
 #: mind/templates/privacy/linkpolicy.html:24
 msgid "This policy applies to all digital content managed by Your Mind.."
 msgstr ""
-"Cette politique s'applique à tous les contenus numériques gérés par votre "
-"esprit."
 
 #: mind/templates/privacy/linkpolicy.html:28
 msgid ""
@@ -654,17 +550,12 @@ msgid ""
 "and informational purposes only. Your Mind does not endorse or control the "
 "content of these external sites.."
 msgstr ""
-"- Liens externes: les liens vers des sites Web externes sont fournis à des "
-"fins de commodité et d'information uniquement.Votre esprit n'approuve ni ne "
-"contrôle le contenu de ces sites externes."
 
 #: mind/templates/privacy/linkpolicy.html:31
 msgid ""
 "- Accuracy of Links: Your Mind is not responsible for the accuracy or "
 "reliability of the linked content."
 msgstr ""
-"- Précision des liens: Votre esprit n'est pas responsable de l'exactitude ou"
-" de la fiabilité du contenu lié."
 
 #: mind/templates/privacy/linkpolicy.html:34
 msgid ""
@@ -672,25 +563,18 @@ msgid ""
 "not liable for any changes that affect the usability or content of the "
 "linked sites."
 msgstr ""
-"- Modifications des liens: les liens externes peuvent changer sans "
-"préavis.Votre esprit n'est pas responsable des changements qui affectent la "
-"convivialité ou le contenu des sites liés."
 
 #: mind/templates/privacy/privacy_policy.html:21
 msgid ""
 "To ensure the protection of personal information of all individuals "
 "associated <br> with Your Mind."
 msgstr ""
-"Pour assurer la protection des informations personnelles de toutes les "
-"personnes associées à <br> à votre esprit."
 
 #: mind/templates/privacy/privacy_policy.html:24
 msgid ""
 "This policy applies to all employees, volunteers, donors, and beneficiaries "
 "<br> of Your Mind."
 msgstr ""
-"Cette politique s'applique à tous les employés, bénévoles, donateurs et "
-"bénéficiaires <br> de votre esprit."
 
 #: mind/templates/privacy/privacy_policy.html:28
 msgid ""
@@ -698,75 +582,54 @@ msgid ""
 "for the purpose of fulfilling its mission. This includes names, contact "
 "information, and other relevant details."
 msgstr ""
-"- Collecte d'informations: Votre esprit collecte des informations "
-"personnelles uniquement dans le but de réaliser sa mission.Cela inclut les "
-"noms, les coordonnées et autres détails pertinents."
 
 #: mind/templates/privacy/privacy_policy.html:31
 msgid ""
-"- Use of Information: Personal information will only be used for the purpose"
-" it was collected, including communication, reporting, and service delivery."
+"- Use of Information: Personal information will only be used for the purpose "
+"it was collected, including communication, reporting, and service delivery."
 msgstr ""
-"- Utilisation des informations: les informations personnelles ne seront "
-"utilisées qu'aux fins qu'elles ont été collectées, y compris la "
-"communication, les rapports et la prestation de services."
 
 #: mind/templates/privacy/privacy_policy.html:34
 msgid ""
 "- Storage and Security: Personal information will be stored securely and "
 "only accessible to authorized personnel."
 msgstr ""
-"- Stockage et sécurité: les informations personnelles seront stockées en "
-"toute sécurité et uniquement accessibles au personnel autorisé."
 
 #: mind/templates/privacy/privacy_policy.html:37
 msgid ""
 "- Disclosure: Personal information will not be disclosed to third parties "
 "without consent, except where required by law."
 msgstr ""
-"- Divulgation: Les informations personnelles ne seront pas divulguées à des "
-"tiers sans consentement, sauf le cas échéant."
 
 #: mind/templates/privacy/privacy_policy.html:40
 msgid ""
-"- Access and Correction: Individuals have the right to access their personal"
-" information and request corrections if necessary."
+"- Access and Correction: Individuals have the right to access their personal "
+"information and request corrections if necessary."
 msgstr ""
-"- Accès et correction: les individus ont le droit d'accéder à leurs "
-"informations personnelles et de demander des corrections si nécessaire."
 
 #: mind/templates/privacy/privacy_policy.html:43
 msgid ""
-"- Complaints: Complaints about breaches of privacy should be directed to the"
-" Privacy Officer at Your Mind."
+"- Complaints: Complaints about breaches of privacy should be directed to the "
+"Privacy Officer at Your Mind."
 msgstr ""
-"- Plaintes: Les plaintes concernant les violations de la vie privée "
-"devraient être adressées au responsable de la vie privée à votre esprit."
 
 #: mind/templates/privacy/statedc.html:21
 msgid ""
 "Objective:  To ensure compliance with state-specific legal requirements in "
 "Australia and Central Asia"
 msgstr ""
-"Objectif: assurer la conformité aux exigences légales spécifiques à l'État "
-"en Australie et en Asie centrale"
 
 #: mind/templates/privacy/statedc.html:24
 msgid ""
 "This policy applies to all state-specific communications and activities."
 msgstr ""
-"Cette politique s'applique à toutes les communications et activités "
-"spécifiques à l'État."
 
 #: mind/templates/privacy/statedc.html:28
 msgid ""
-"- Australia: Your Mind complies with all relevant state laws and regulations"
-" in Australia. State-specific disclaimers will be included in all relevant "
+"- Australia: Your Mind complies with all relevant state laws and regulations "
+"in Australia. State-specific disclaimers will be included in all relevant "
 "communications."
 msgstr ""
-"- Australie: Votre esprit est conforme à toutes les lois et réglementations "
-"pertinentes de l'État en Australie.Les avertissements spécifiques à l'État "
-"seront inclus dans toutes les communications pertinentes."
 
 #: mind/templates/privacy/statedc.html:31
 msgid ""
@@ -774,132 +637,102 @@ msgid ""
 "regulations in Central Asia. State-specific disclaimers will be included in "
 "all relevant communications."
 msgstr ""
-"- Asie centrale: votre esprit est conforme à toutes les lois et "
-"réglementations pertinentes des États en Asie centrale.Les avertissements "
-"spécifiques à l'État seront inclus dans toutes les communications "
-"pertinentes."
 
 #: mind/templates/privacy/yyrequired.html:18
 msgid "YOUR MIND Required Disclosures for Written Solicitations"
 msgstr ""
-"Votre esprit a nécessité des divulgations pour les sollicitations écrites"
 
 #: mind/templates/privacy/yyrequired.html:21
 msgid ""
 "To ensure transparency and compliance with legal requirements for written "
 "solicitations"
 msgstr ""
-"Assurer la transparence et le respect des exigences légales pour les "
-"sollicitations écrites"
 
 #: mind/templates/privacy/yyrequired.html:24
 msgid ""
 "This policy applies to all written solicitations for donations, support, or "
 "participation.."
 msgstr ""
-"Cette politique s'applique à toutes les sollicitations écrites pour les "
-"dons, le soutien ou la participation."
 
 #: mind/templates/privacy/yyrequired.html:28
 msgid ""
 "- Disclosure of Information: All written solicitations will include the "
 "following information:"
 msgstr ""
-"- Divulgation des informations: Toutes les sollicitations écrites "
-"comprendront les informations suivantes:"
 
 #: mind/templates/privacy/yyrequired.html:31
 msgid "- The mission and purpose of Your Mind."
-msgstr "- la mission et le but de votre esprit."
+msgstr ""
 
 #: mind/templates/privacy/yyrequired.html:34
 msgid "- How the funds will be used."
-msgstr "- Comment les fonds seront utilisés."
+msgstr ""
 
 #: mind/templates/privacy/yyrequired.html:37
 msgid "- Contact information for Your Mind."
-msgstr "- coordonnées de votre esprit."
+msgstr ""
 
 #: mind/templates/privacy/yyrequired.html:40
 msgid "- A statement confirming the non-profit status of the organization."
 msgstr ""
-"- Une déclaration confirmant le statut à but non lucratif de l'organisation."
 
 #: mind/templates/privacy/yyrequired.html:43
 msgid ""
 "- Accuracy: All information provided in solicitations will be accurate and "
 "not misleading."
 msgstr ""
-"- Exactitude: toutes les informations fournies dans les sollicitations "
-"seront exactes et non trompeuses."
 
 #: mind/templates/privacy/yyrequired.html:46
 msgid ""
 "- Opt-Out: Recipients of solicitations will be provided with an option to "
 "opt-out of future communications."
 msgstr ""
-"- Opt-Out: Les destinataires des sollicitations seront fournis avec une "
-"option pour se désabonner des futures communications."
 
 #: mind/templates/privacy/yystore.html:18
 msgid "YOUR MIND Store Policies"
-msgstr "Vos politiques de magasin d'esprit"
+msgstr ""
 
 #: mind/templates/privacy/yystore.html:21
 msgid ""
 " To govern the operations of any online or physical stores operated by Your "
 "Mind."
 msgstr ""
-"Pour régir les opérations de tout magasin en ligne ou physique opéré par "
-"votre esprit."
 
 #: mind/templates/privacy/yystore.html:24
 msgid ""
 "This policy applies to all sales and transactions conducted by Your Mind’s "
 "store."
 msgstr ""
-"Cette politique s'applique à toutes les ventes et transactions effectuées "
-"par votre magasin d'esprit."
 
 #: mind/templates/privacy/yystore.html:28
 msgid ""
 "- Product Information: All products sold by Your Mind will be accurately "
 "described and fairly priced."
 msgstr ""
-"- Informations sur les produits: Tous les produits vendus dans votre esprit "
-"seront décrits avec précision et à un prix équitable."
 
 #: mind/templates/privacy/yystore.html:31
 msgid ""
-"- Non-Profit Nature: All proceeds from the store will be used to support the"
-" mission of Your Mind."
+"- Non-Profit Nature: All proceeds from the store will be used to support the "
+"mission of Your Mind."
 msgstr ""
-"- Nature à but non lucratif: tous les bénéfices du magasin seront utilisés "
-"pour soutenir la mission de votre esprit."
 
 #: mind/templates/privacy/yystore.html:34
 msgid ""
 "- Refunds and Returns: Your Mind will provide clear policies on refunds and "
-"returns, ensuring customer satisfaction while maintaining the organization’s"
-" non-profit objectives."
+"returns, ensuring customer satisfaction while maintaining the organization’s "
+"non-profit objectives."
 msgstr ""
-"- REMPLAGES ET RETOURS: Votre esprit fournira des politiques claires sur les"
-" remboursements et les rendements, assurant la satisfaction du client tout "
-"en maintenant les objectifs à but non lucratif de l'organisation."
 
 #: mind/templates/privacy/yystore.html:37
 msgid ""
 "- Compliance: All store operations will comply with relevant consumer "
 "protection laws in Australia and Central Asia."
 msgstr ""
-"- Conformité: toutes les opérations des magasins respecteront les lois "
-"pertinentes de protection des consommateurs en Australie et en Asie "
-"centrale."
 
 #: mind/views.py:46
 #, python-brace-format
 msgid "New Contact Form Submission from {name}"
-msgstr "Nouveau formulaire de contact soumission de {name}"
+msgstr ""
 
 #: mind/views.py:47
 #, python-brace-format
@@ -910,17 +743,11 @@ msgid ""
 "Message:\n"
 "{msg}"
 msgstr ""
-"Nom: {name}\n"
-"Email: {email}\n"
-"\n"
-"Message:\n"
-"{msg}"
-
 
 #: mind/views.py:54
 #, python-brace-format
 msgid "An error occurred: {e}"
-msgstr "Une erreur s'est produite: {e}"
+msgstr ""
 
 #: yaym/settings.py:173
 msgid "English"
@@ -928,8 +755,8 @@ msgstr ""
 
 #: yaym/settings.py:174
 msgid "French"
-msgstr "Français"
+msgstr ""
 
 #: yaym/settings.py:175
 msgid "Russian"
-msgstr "russe"
+msgstr ""

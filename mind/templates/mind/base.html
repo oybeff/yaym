@@ -157,28 +157,27 @@
       </div>
     </div>
   </section> {% endcomment %}
-
   <div class="slider-container">
     <div class="slider-wrapper">
-      {% for item in newsletter1 %}
-        <div class="section-item">
-          <a href="{% url 'newsletter_detail' item.slug %}">
-            {% if item.img %}
-            <img src="{{ item.img.url }}" alt="Image description">
-            {% else %}
-            <p>No image available.</p>
-            {% endif %}
-              <div class="section-content">
-              <h2 class="stylized-title">{{item.title}}</h2>
-              <p class="stylized-text">{{item.desciption}}</p>
+        {% for item in newsletter1 %}
+            <div class="section-item">
+                <a href="{% url 'newsletter_detail' item.slug %}">
+                    {% if item.img %}
+                        <img src="{{ item.img }}" alt="{% trans 'Image description' %}">
+                    {% else %}
+                        <p>{% trans "No image available." %}</p>
+                    {% endif %}
+                    <div class="section-content">
+                        <h2 class="stylized-title">{{ item.title }}</h2>
+                        <p class="stylized-text">{{ item.description }}</p>
+                    </div>
+                </a>
             </div>
-          </a>
-        </div>
-      {% endfor %}
+        {% endfor %}
     </div>
     <div class="slider-controls">
-      <button class="slider-control prev">❮</button>
-      <button class="slider-control next">❯</button>
+        <button class="slider-control prev">❮</button>
+        <button class="slider-control next">❯</button>
     </div>
   </div>
   

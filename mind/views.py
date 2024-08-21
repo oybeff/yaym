@@ -22,18 +22,37 @@ from datetime import datetime
 from .forms import CustomUserCreationForm, ContactForm 
 from django.contrib.auth import logout
 from django.shortcuts import render # type: ignore
+from googletrans import Translator
+from django.utils.translation import get_language
 ssl._create_default_https_context = ssl._create_unverified_context
 
 
 
 def index(request):
-    work_item = Work.objects.all()
-    newsletter1 = Newsletter.objects.all()
-    translated_works = []
+    # Fetch all newsletters
+    newsletters = Newsletter.objects.all()
 
-    for work in work_item:
-        translated_subtitle = _(work.subtitle)  # Mark for translation
-        translated_works.append({'subtitle': translated_subtitle})
+    # Initialize the translator
+    translator = Translator()
+    lang_code = get_language()  # Get the current language code
+
+    # Translate newsletter titles and descriptions
+    translated_newsletters = []
+    for newsletter in newsletters:
+        try:
+            translated_title = translator.translate(newsletter.title, dest=lang_code).text if newsletter.title else None
+            translated_description = translator.translate(newsletter.description, dest=lang_code).text if newsletter.description else None
+        except Exception as e:
+            # Use the original title and description if translation fails
+            translated_title = newsletter.title
+            translated_description = newsletter.description
+
+        translated_newsletters.append({
+            'title': translated_title,
+            'img': newsletter.img.url if newsletter.img else None,
+            'description': translated_description,
+            'slug': newsletter.slug
+        })
 
     if request.method == 'POST':
         form = ContactForm(request.POST)
@@ -51,21 +70,18 @@ def index(request):
                 send_mail(email_subject, email_message, email, ['yourmindca@gmail.com'])
                 return redirect('home')
             except Exception as e:
-                return HttpResponse(_("An error occurred: {e}").format(e=e))  # Mark for translation
+                error_message = _("An error occurred: {error}").format(error=str(e))
+                return HttpResponse(error_message)
 
     else:
         form = ContactForm()
 
     context = {
-        'work': translated_works,
-        'newsletter1': newsletter1,
+        'newsletter1': translated_newsletters,
         'form': form
     }
 
     return render(request, 'mind/base.html', context)
-
-
-
    
 
 def newsletterin(request, slug):
@@ -166,35 +182,62 @@ def yystore(request):
     return render(request, "privacy/yystore.html")
 
 def team(request):
-    team = Team.objects.all()
+    # Fetch all team members
+    team_members = Team.objects.all()
+    translated_team_members = []
+
+    # Initialize the translator
+    translator = Translator()
+    lang_code = get_language()  # Get the current language code
+
+    for member in team_members:
+        try:
+            # Translate the fields dynamically
+            translated_title = translator.translate(member.title, dest=lang_code).text if member.title else None
+            translated_subtitle = translator.translate(member.subtitle, dest=lang_code).text if member.subtitle else None
+            translated_description = translator.translate(member.description, dest=lang_code).text if member.description else None
+        except Exception:
+            # Use the original fields if translation fails
+            translated_title = member.title
+            translated_subtitle = member.subtitle
+            translated_description = member.description
+
+        translated_team_members.append({
+            'title': translated_title,
+            'img': member.img,
+            'subtitle': translated_subtitle,
+            'description': translated_description,
+        })
 
     context = {
-        'team': team,
+        'team': translated_team_members,
     }
 
     return render(request, "mind/team.html", context)
 
 
-import json
-
-
 def howwework(request):
-    work_item = Work.objects.all()
+    work_items = Work.objects.all()
     translated_works = []
 
-    for work in work_item:
-        translated_subtitle = _(work.subtitle)  # Mark for translation
+    translator = Translator()
+    lang_code = get_language()  # Get the current language code
+
+    for work in work_items:
+        # Translate the subtitle dynamically
+        translated_subtitle = translator.translate(work.subtitle, dest=lang_code).text
         translated_works.append({'subtitle': translated_subtitle})
 
-    
     context = {
         'work': translated_works,
     }
 
     return render(request, "mind/howwework.html", context)
 
-
 def articlepage(request, slug=None):
+    # Initialize the translator
+    translator = Translator()
+
     if slug:
         category = get_object_or_404(Category, slug=slug)
         article1 = Article.objects.filter(category=category).order_by('-published_date')[:2]
@@ -202,14 +245,22 @@ def articlepage(request, slug=None):
         article1 = Article.objects.order_by('-published_date')[:2]
         category = None
 
+    # Get the current language code
+    lang_code = get_language()
+
+    # Translate article fields
+    for article in article1:
+        if article.title_article:
+            article.title_article = translator.translate(article.title_article, dest=lang_code).text
+
+        if article.subtitle:
+            article.subtitle = translator.translate(article.subtitle, dest=lang_code).text
+
     context = {
         'article1': article1,
         'category': category,
     }
     return render(request, "mind/articlepage.html", context)
-
-
-
 def articles_by_category(request, slug):
     category = get_object_or_404(Category, slug=slug)
     articles = Article.objects.filter(category=category).order_by('-published_date')
@@ -219,10 +270,48 @@ def articles_by_category(request, slug):
     
     return render(request, 'mind/related_article.html', {'articles': articles, 'category': category})
 
+
 def articles(request, slug):
+    translator = Translator()
     article = get_object_or_404(Article, slug=slug)
+
+    # Get the current language code
+    lang_code = get_language()
+
     try:
         articlein = Articlein.objects.get(related_article=article)
+
+        # Translate all relevant fields
+        if articlein.title_article:
+            articlein.title_article = translator.translate(articlein.title_article, dest=lang_code).text
+
+        if articlein.subtitle:
+            articlein.subtitle = translator.translate(articlein.subtitle, dest=lang_code).text
+
+        if articlein.title_first_article:
+            articlein.title_first_article = translator.translate(articlein.title_first_article, dest=lang_code).text
+
+        if articlein.content1:
+            articlein.content1 = translator.translate(articlein.content1, dest=lang_code).text
+
+        if articlein.content2:
+            articlein.content2 = translator.translate(articlein.content2, dest=lang_code).text
+
+        if articlein.content3:
+            articlein.content3 = translator.translate(articlein.content3, dest=lang_code).text
+
+        if articlein.content4:
+            articlein.content4 = translator.translate(articlein.content4, dest=lang_code).text
+
+        if articlein.title_second_article:
+            articlein.title_second_article = translator.translate(articlein.title_second_article, dest=lang_code).text
+
+        if articlein.content5:
+            articlein.content5 = translator.translate(articlein.content5, dest=lang_code).text
+
+        if articlein.content6:
+            articlein.content6 = translator.translate(articlein.content6, dest=lang_code).text
+
     except Articlein.DoesNotExist:
         return render(request, 'mind/404.html', {'error_message': 'Article details not found'}, status=404)
 
@@ -243,3 +332,6 @@ def related_article(request, slug):
         'articles1': articles1
     }
     return render(request, 'mind/related_article.html', context)
+
+def shop(request):
+    return render(request, 'mind/shop.html')

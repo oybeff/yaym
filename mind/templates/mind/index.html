@@ -23,9 +23,9 @@
                 <p>{{ newsletterin.subtitle1|safe }}</p>
             </div>
             {% if newsletterin.img1 %}
-                <img src="{{ newsletterin.img1.url }}" alt="{{ newsletterin.subtitle1 }}">
+            <img src="{{ newsletterin.img1.url }}" alt="{{ "no image" }}">
             {% else %}
-                <p>No image available.</p>
+            <p>No image available.</p>
             {% endif %}
         </section>
     {% else %}

@@ -22,11 +22,15 @@
     <div class="team-grid">
       {% for team in team %}  
         <div class="team-member">
+        {% if team.img %}
             <img src="{{ team.img.url }}" alt="Team Member">
+        {% else %}
+            <p>{% trans "No image available." %}</p>
+        {% endif %}
             <div class="member-info">
                 <h2>{{ team.title }}</h2>
                 <h3>{{team.subtitle}}</h3>
-                <p>{{team.desciption}}</p>
+                <p>{{team.description}}</p>
             </div>
         </div>
         <!-- Repeat the above block for more team members -->
