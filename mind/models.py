@@ -21,8 +21,15 @@ class Work(models.Model):
 class Team(models.Model):
     title = models.CharField(("full name"), max_length=100, null=True, blank=True)
     subtitle = models.CharField(("position_work"), max_length=250, null=True, blank=True)
-    description = models.TextField(("story_of_member"), null=True, blank=True)
+    description = RichTextField(("story_of_member"), null=True, blank=True)
     img = models.ImageField(("img_of_person"), null=True, blank=True)  # Specify upload_to
+    slug = models.SlugField(unique=True, blank=True, null=True)
+      
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            self.slug = slugify(self.title)
+        super().save(*args, **kwargs)
+
 
     def __str__(self):
         return self.title
@@ -30,6 +37,13 @@ class Team(models.Model):
     class Meta:
         verbose_name = 'team'
         verbose_name_plural = 'teams'
+
+class Teamin(models.Model):
+    img = models.ImageField(("img_of_person"), null=True, blank=True)  
+    related_person = models.OneToOneField(Team, on_delete=models.CASCADE)
+
+
+                 
 
 class Newsletter(models.Model):
     title = models.CharField(("title"), max_length=100, null=True, blank=True, unique=True)

@@ -25,5 +25,6 @@ urlpatterns = [
     path('articlepage/', views.articlepage, name='articlepage'),
     path('how_we_work/', views.howwework, name='howwework'),
     path('shop/', views.shop, name='shop'),
+    path('team_detailed/<slug:slug>/', views.teamin, name='team_detailed'),
 ]
   

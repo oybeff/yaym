@@ -1,122 +1,159 @@
 <!DOCTYPE html>
 {% extends 'mind/nav_foot.html' %}
-{% load static i18n %}
+{% load static  %}
+{% load i18n %}
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{% trans "Articles" %}</title>
-</head>
+  </head>
 
-<body>
-
-    {% block content %}  
+  <body>
+    {% block content %}
 
     <section class="container articl">
-        <div class="columns p-6">
-          <div class="column is-5">
-            <h1 class="title is-2 artickleh1"><span class="firstl">{% trans "A" %}</span>{% trans "rticles" %}</h1>
-            <div class="artickletext">
-              <p>{% trans "This page shares my best articles to read on topics like health, happiness, creativity, productivity and more. The central question that drives my work is, “How can we live better?” To answer that question, I like to write about science-based ways to solve practical problems." %}</p>
-              <p class="mt-5">{% trans "You’ll find inrteresting articles to read on topics like how to stop procrastinating as well as personal recommendations like my list of the best books to read and my minimalist travel guide. Ready to dive in? You can use the categories below to browse my best articles." %}</p>
-            </div>
-          </div>
-          <div class="column is-6 ml-6 ">
-            <img src="../../static/img/artickle.jpg" alt="">
+      <div class="columns p-6">
+        <div class="column is-5">
+          <h1 class="title is-2 artickleh1">
+            <span class="firstl">{% trans "A" %}</span>{% trans "rticles" %}
+          </h1>
+          <div class="artickletext">
+            <p>{% trans "Welcome to our Articles & Resources section, where we
+              provide insightful and valuable content on various topics related
+              to mental health and psychology. Explore our collection of
+              articles that delve into issues such as anxiety, depression,
+              self-care, and more. Our expert-written content aims to offer
+              practical advice, evidence-based information, and support to help
+              you better understand and manage your mental well-being." %}</p>
+            <p class="mt-5">
+              {% trans "You’ll find inrteresting articles to read on topics like
+              how to stop procrastinating as well as personal recommendations
+              like my list of the best books to read and my minimalist travel
+              guide. Ready to dive in? You can use the categories below to
+              browse my best articles." %}
+            </p>
           </div>
         </div>
-      
-        <h1 class="title is-1 has-text-centered font1"><span class="firstl">{% trans "A" %}</span>{% trans "ll Articles" %}</h1>
-        <p class="subtitle is-4 has-text-centered mt-3">{% trans "Browse articles by topic" %}</p>
-        
-        <div class="columns articlepading">
-          <div class="column is-6">
-            <h1 class="title is-2 hv2">Psychology</h1>
-            <div class="font2">
-              {% for item in article1 %}
-                {% if item.category.name == "psychology" %}
-                  <hr class="line">
-                  <a href="{% url 'articles' item.slug %}">
-                    <p class="hv">{{item.title_article|safe}}</p>
-                  </a>
-                {% endif %}
-              {% endfor %}
-            </div>
-            {% if article1 %}
-              <a href="{% url 'related_article' article1.first.category.slug %}">
-                <button id="readMoreBtn" class="button is-info" data-category="">Read More</button>
-              </a>
-            {% endif %}
-          </div>
-          
-          <div class="column is-6">
-            <h1 class="title is-2 hv2">Mental health</h1>
-            <div class="font2">
-              {% for item in article1 %}
-                {% if item.category.name == "Mental Health" %}
-                  <hr class="line">
-                  <a href="{% url 'articles' item.slug %}">
-                    <p class="hv">{{item.title_article|safe}}</p>
-                  </a>
-                {% endif %}
-              {% endfor %}
-            </div>
-          {% if article1|length > 1 %}
-            <a href="{% url 'related_article' article1.1.category.slug %}">
-                <button id="readMoreBtn" class="button is-info" data-category="">Read More</button>
+        <div class="column is-6 ml-6">
+          <img src="../../static/img/artickle.jpg" alt="" />
+        </div>
+      </div>
+
+      <h1 class="title is-1 has-text-centered font1">
+        <span class="firstl">{% trans "A" %}</span>{% trans "ll Articles" %}
+      </h1>
+      <p class="subtitle is-4 has-text-centered mt-3">
+        {% trans "Browse articles by topic" %}
+      </p>
+
+      <div class="columns articlepading">
+        <div class="column is-6">
+          <h1 class="title is-2 hv2">Psychology</h1>
+          <div class="font2">
+            {% for item in article1 %}
+            <p></p>
+            {% if item.category.name == "psychology" %}
+            <hr class="line"/>
+            <a href="{% url 'articles' item.slug %}">
+              <p class="hv">{{item.title_article|safe}}</p>
             </a>
-        {% endif %}
+            {% endif %}
+            <p></p>
+            {% endfor %}
           </div>
-          
+          {% if article1 %}
+          <a href="{% url 'related_article' article1.first.category.slug %}">
+            <button id="readMoreBtn" class="button is-info" data-category="">
+              Read More
+            </button>
+          </a>
+          {% endif %}
         </div>
-      
 
-      </section>
-
-
- 
-      <section>
-          <div class="slideshow-container mt-6 mb-4">
-            <div class="mySlides fade">
-              <figure class="image is-16by9">
-                <iframe class="has-ratio" width="340" height="260" src="https://www.youtube.com/embed/YE7VzlLtp-4" frameborder=""></iframe>
-              </figure>
-            </div>
-        
-            <div class="mySlides fade">
-              <figure class="image is-16by9">
-                <iframe class="has-ratio" width="340" height="260" src="https://www.youtube.com/embed/NVmnw5k6Fb4" frameborder=""></iframe>
-              </figure>
-            </div>
-        
-            <div class="mySlides fade">
-              <figure class="image is-16by9">
-                <iframe class="has-ratio" width="340" height="260" src="https://www.youtube.com/embed/YE7VzlLtp-4" frameborder="1"></iframe>
-              </figure>
-            </div>
-        
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div class="column is-6">
+          <h1 class="title is-2 hv2">Mental health</h1>
+          <div class="font2">
+            {% for item in article1 %}
+            <p></p>
+            {% if item.category.name == "Mental Health" %}
+            <hr class="line" />
+            <a href="{% url 'articles' item.slug %}">
+              <p class="hv">{{item.title_article|safe}}</p>
+            </a>
+            {% endif %}
+            <p></p>
+            {% endfor %}
           </div>
-          <br>
-        
-          <!-- The dots/circles -->
-          <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-          </div>
-      </section>
-        
-      
-      <script src="{% static 'js/script2.js' %}"></script> <!-- Script defining relatedArticles -->
-      <script src="{% static 'js/script.js' %}"></script> <!-- Script using relatedArticles -->
-     
+          {% if article1|length > 1 %}
+          <a href="{% url 'related_article' article1.1.category.slug %}">
+            <button id="readMoreBtn" class="button is-info" data-category="">
+              Read More
+            </button>
+          </a>
+          {% endif %}
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="slideshow-container mt-6 mb-4">
+        <div class="mySlides fade">
+          <figure class="image is-16by9">
+            <iframe
+              class="has-ratio"
+              width="340"
+              height="260"
+              src="https://www.youtube.com/embed/YE7VzlLtp-4"
+              frameborder=""
+            ></iframe>
+          </figure>
+        </div>
+
+        <div class="mySlides fade">
+          <figure class="image is-16by9">
+            <iframe
+              class="has-ratio"
+              width="340"
+              height="260"
+              src="https://www.youtube.com/embed/NVmnw5k6Fb4"
+              frameborder=""
+            ></iframe>
+          </figure>
+        </div>
+
+        <div class="mySlides fade">
+          <figure class="image is-16by9">
+            <iframe
+              class="has-ratio"
+              width="340"
+              height="260"
+              src="https://www.youtube.com/embed/YE7VzlLtp-4"
+              frameborder="1"
+            ></iframe>
+          </figure>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br />
+
+      <!-- The dots/circles -->
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </section>
+
+    <script src="{% static 'js/script2.js' %}"></script>
+    <!-- Script defining relatedArticles -->
+    <script src="{% static 'js/script.js' %}"></script>
+    <!-- Script using relatedArticles -->
+
     {% endblock %}
-
-</body>
-
+  </body>
 </html>

@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Newsletter, Article, Work, Team, Newsletterin, Articlein
+from .models import Newsletter, Article, Work, Team, Newsletterin, Articlein, Teamin
 
 # Register your models here.
 admin.site.register(Team)
@@ -8,6 +8,7 @@ admin.site.register(Newsletterin)
 admin.site.register(Newsletter)
 admin.site.register(Article)
 admin.site.register(Articlein)
+admin.site.register(Teamin)
 
 from ckeditor.widgets import CKEditorWidget
 from django import forms

@@ -210,8 +210,7 @@ msgstr "Contactez-nous"
 
 #: mind/templates/mind/base.html:214
 msgid ""
-"Not sure what you need? The team at Square Events will be happy to listen to"
-" you and suggest event ideas you haven't considered."
+"We’re here to support your mental health journey. If you have any questions, need assistance, or just want to share your thoughts, don’t hesitate to reach out. Email us at "
 msgstr ""
 "Vous ne savez pas ce dont vous avez besoin?L'équipe de Square Events sera "
 "heureuse de vous écouter et de suggérer des idées d'événements que vous "

@@ -1,44 +1,49 @@
 <!DOCTYPE html>
-{% extends "mind/nav_foot.html" %}
-{% load i18n %}
-{% load static %}
+{% extends "mind/nav_foot.html" %} {% load i18n %} {% load static %}
 
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{% trans "How We Work" %}</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
     {% block content %}
-  
 
-  <div class="team-section">
-    <h1 class="section-title">MEET OUR TEAM</h1>
-    <p class="subtitle is-4 has-text-centered">{% trans "Meet our dedicated team, united by a common purpose: to support, uplift, and champion mental health for all." %}</p>
+    <div class="team-section">
+      <h1 class="section-title">MEET OUR TEAM</h1>
+      <p class="subtitle is-4 has-text-centered">
+        {% trans "Meet our dedicated team, united by a common purpose: to
+        support, uplift, and champion mental health for all." %}
+      </p>
 
-    <div class="team-grid">
-      {% for team in team %}  
+      <div class="team-grid">
+        {% for member in team %}
         <div class="team-member">
-        {% if team.img %}
-            <img src="{{ team.img.url }}" alt="Team Member">
-        {% else %}
-            <p>{% trans "No image available." %}</p>
-        {% endif %}
-            <div class="member-info">
-                <h2>{{ team.title }}</h2>
-                <h3>{{team.subtitle}}</h3>
-                <p>{{team.description}}</p>
-            </div>
+          {% if member.img %}
+          <img src="{{ member.img.url }}" alt="Team Member" />
+          {% else %}
+          <p>{% trans "No image available." %}</p>
+          {% endif %}
+          <div class="member-info">
+            <a href="{% url 'team_detailed' member.slug %}">
+              <h2>{{ member.title }}</h2>
+            </a>
+
+            <h3>{{ member.subtitle }}</h3>
+            <p>{{ member.description|truncatewords:15|safe }}</p>
+          </div>
         </div>
-        <!-- Repeat the above block for more team members -->
         {% endfor %}
+      </div>
     </div>
-</div>
 
     <script src="{% static 'js/script.js' %}"></script>
     {% endblock %}
-</body>
+  </body>
 </html>

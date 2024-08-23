@@ -1,15 +1,13 @@
-from .models import Work, Team, Article,  Newsletter, UserProfile, Newsletterin, Articlein, Category
+from .models import Work, Team, Article,  Newsletter, UserProfile, Newsletterin, Articlein, Category, Teamin
 from django.shortcuts import render, redirect
 from django.contrib.auth import login as auth_login, authenticate
 from django.contrib.auth.forms import AuthenticationForm
 from .forms import CustomUserCreationForm, UserCreationForm
-from django.shortcuts import render, redirect
 from django.contrib.auth import login, authenticate
 from django.contrib.auth.forms import AuthenticationForm
 from .forms import CustomUserCreationForm, ContactForm
 from django.core.mail import send_mail 
 from django.template.loader import render_to_string
-from django.conf import settings
 import ssl
 from django.shortcuts import get_object_or_404
 from django.core.mail import send_mail
@@ -21,7 +19,6 @@ from django.shortcuts import render, redirect
 from datetime import datetime
 from .forms import CustomUserCreationForm, ContactForm 
 from django.contrib.auth import logout
-from django.shortcuts import render # type: ignore
 from googletrans import Translator
 from django.utils.translation import get_language
 ssl._create_default_https_context = ssl._create_unverified_context
@@ -181,40 +178,6 @@ def yyrequired(request):
 def yystore(request):
     return render(request, "privacy/yystore.html")
 
-def team(request):
-    # Fetch all team members
-    team_members = Team.objects.all()
-    translated_team_members = []
-
-    # Initialize the translator
-    translator = Translator()
-    lang_code = get_language()  # Get the current language code
-
-    for member in team_members:
-        try:
-            # Translate the fields dynamically
-            translated_title = translator.translate(member.title, dest=lang_code).text if member.title else None
-            translated_subtitle = translator.translate(member.subtitle, dest=lang_code).text if member.subtitle else None
-            translated_description = translator.translate(member.description, dest=lang_code).text if member.description else None
-        except Exception:
-            # Use the original fields if translation fails
-            translated_title = member.title
-            translated_subtitle = member.subtitle
-            translated_description = member.description
-
-        translated_team_members.append({
-            'title': translated_title,
-            'img': member.img,
-            'subtitle': translated_subtitle,
-            'description': translated_description,
-        })
-
-    context = {
-        'team': translated_team_members,
-    }
-
-    return render(request, "mind/team.html", context)
-
 
 def howwework(request):
     work_items = Work.objects.all()
@@ -335,3 +298,52 @@ def related_article(request, slug):
 
 def shop(request):
     return render(request, 'mind/shop.html')
+
+def teamin(request, slug):
+    # Fetch the team member based on the slug
+    team_member = get_object_or_404(Team, slug=slug)
+    
+    # Fetch the related image from the Teamin model
+    teamin_img = Teamin.objects.filter(related_person=team_member).first()
+    
+    context = {
+        'title': team_member.title,
+        'description': team_member.description,
+        'img': teamin_img.img if teamin_img else None,  # Use the image from Teamin or None if not available
+    }
+    return render(request, 'mind/teamin.html', context)
+
+def team(request):
+    # Fetch all team members
+    team_members = Team.objects.all()
+    translated_team_members = []
+
+    # Initialize the translator
+    translator = Translator()
+    lang_code = get_language()  # Get the current language code
+
+    for member in team_members:
+        try:
+            # Translate the fields dynamically
+            translated_title = translator.translate(member.title, dest=lang_code).text if member.title else None
+            translated_subtitle = translator.translate(member.subtitle, dest=lang_code).text if member.subtitle else None
+            translated_description = translator.translate(member.description, dest=lang_code).text if member.description else None
+        except Exception:
+            # Use the original fields if translation fails
+            translated_title = member.title
+            translated_subtitle = member.subtitle
+            translated_description = member.description
+
+        translated_team_members.append({
+            'title': translated_title,
+            'img': member.img,
+            'subtitle': translated_subtitle,
+            'description': translated_description,
+            'slug': member.slug,  # Include slug here
+        })
+
+    context = {
+        'team': translated_team_members,
+    }
+
+    return render(request, "mind/team.html", context)
